@@ -1,0 +1,84 @@
+Introduction
+============
+
+Description
+Metadata extractor for all the project Gutenberg titles
+
+Installation
+===================
+
+- `git clone https://github.com/RV8V/Task_`
+- `cd Metadata-extractor && npm i`
+  - `sudo -iu postgres`
+  - `psql`
+  - `create database db;`
+  - `\q`
+  - `psql -U postgres -d db -af '_database.sql';` (enter full path to file `_database.sql`)
+  - `exit`
+- `npm run start`
+- `npm run test`
+
+Notice:
+===================
+
+- Make sure that `your password` to RDBMS Postgres is correct. If it's not, change file `config/database.js`
+- Extract folder `epub` from https://www.gutenberg.org/cache/epub/feeds/rdf-files.tar.zip that needs to be processed later. After that `drag it into this application`!
+- Time of processing is approximately 7 minutes using workers
+- Each method except `then` returns instance of class `Cursor` so that we can do chaining
+- See file `usage.js` for getting data from database
+```js
+const database = require('./lib/builder')
+const config = require('./config/database')
+
+const pg = database.open(config)
+// usage
+pg.select('author')
+  .fields(['title', 'authorname', 'data'])
+  .join('publisher', 'id')
+  .join('book', 'id', null, 'left')
+  .limit(2, 4)
+  .then(rows => {
+    console.table(rows);
+    pg.close();
+  })
+```
+
+Methods in my quary builder for later querying
+===================
+
+- `select` for choosing needed table.
+Parameters:
+-`table name`
+
+- `fields` for choosing needed fields in table.
+Parameters:
+-`table fields`
+
+- `join` for joining tables.
+Parameters:
+-`table name`
+-`field`
+-`linkTo` - reference to another field (optional)
+-`type` - type of join (`inner`, `left`, `right`) (optional)
+
+- `limit` for choosing fixed number of records in table.
+Parameters:
+-`limit`
+-`offset`
+
+- `then` to fire all previous calls.
+Parameters:
+-`callback`
+Returns: gives result in callback function
+
+`Notice`:
+===================
+
+-each method except `then` returns instance of class Cursor so that we can do chaining
+-folder `epub` needs to be in application for processing
+-time of processing is approximately 7 minutes using workers
+
+License and Authors
+===================
+
+Author:: Ruslan Volovik <rv.volovik88@gmail.com>
