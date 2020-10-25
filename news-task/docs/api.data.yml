@@ -1,0 +1,255 @@
+swagger: "2.0"
+info:
+  description: "."
+  version: "1.0.0"
+  title: ""
+host: "server.local"
+basePath: "/v2"
+schemes:
+- "http"
+paths:
+  /article/getArticles:
+    get:
+      summary: "get all articles from mongo"
+      responses:
+        200:
+          description: Successful operation
+        500:
+          description: Server error
+  /article/feed:
+    post:
+      summary: "post new article"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/FeedExample"
+      responses:
+        200:
+          description: News was saved
+          schema:
+            $ref: "#/definitions/Feed"
+        500:
+          description: Server error
+        403:
+          description: Forbidden
+        401:
+          description: Unauthorized
+  /article/favorites/save:
+    post:
+      summary: "add to user favorites"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/Favor"
+      responses:
+        200:
+          description: Article was added
+          schema:
+            $ref: "#/definitions/Favorite"
+        500:
+          description: Server error
+        403:
+          description: Forbidden
+        401:
+          description: Unauthorized
+  /article/feed/{id}:
+    delete:
+      summary: "delete article using id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "user news id"
+        required: true
+        type: "string"
+      responses:
+        204:
+          description: Successfully deleted
+        403:
+          description: Forbidden
+  /article/favorites/{id}:
+    delete:
+      summary: "delete favorite article using id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "id for favorite article"
+        required: true
+        type: "string"
+      responses:
+        204:
+          description: Successfully deleted
+        403:
+          description: Forbidden
+  /article/favorites/{userId}:
+    get:
+      summary: "get all favorite articles that are related to user with his id"
+      parameters:
+      - name: "userId"
+        in: "path"
+        description: "user id to get data"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: Successfully done
+          schema:
+            $ref: "#/definitions/Cache"
+        500:
+          description: Server error
+        403:
+          description: Forbidden
+        401:
+          description: Unauthorized
+  /article/favorite/{id}:
+    get:
+      summary: "get favorite user article using his id"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "user id to get favorite article"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: Successfully done
+          schema:
+            $ref: "#/definitions/Cache"
+        500:
+          description: Server error
+        403:
+          description: Forbidden
+        401:
+          description: Unauthorized
+definitions:
+  Feed:
+    type: object
+    properties:
+      message:
+        type: string
+        example: "News was saved"
+      id:
+        type: string
+        example: "5ef60cb4125e160d8a14b38c"
+  Favorite:
+    type: object
+    properties:
+      message:
+        type: string
+        example: "Article was added to favorites"
+      id:
+        type: string
+        example: "5ef60fb2e882b711b6a6e15d"
+  Favor:
+    type: object
+    properties:
+      name:
+        type: string
+        example: "John"
+      id:
+        type: string
+        example: "5ef60f0be882b711b6a6e15c"
+  FeedExample:
+    type: object
+    properties:
+      username:
+        type: string
+        example: "John"
+      source:
+        type: object
+        properties:
+          name:
+            type: string
+            example: "Bob"
+          id:
+            type: string
+            example: "20"
+      author:
+        type: string
+        example: "Noah"
+      title:
+        type: string
+        example: "Texa hospitalizations rise - CNBC"
+      description:
+        type: string
+        example: "Description for this article"
+      url:
+        type: string
+        example: "https://www.cnbc.com/2020/06/25/texas-gov-abbott-.html"
+      urlToImage:
+        type: string
+        example: "https://image.cnb.jpg?v=1593103152"
+      publishedAt:
+        type: string
+        example: "2020-06-25T16:30:28.000Z"
+      content:
+        type: string
+        example: "Texas Govening as the state continues to report record increases in Covid-19 cases and hospits"
+  Cache:
+    type: object
+    properties:
+      message:
+        type: string
+        example: "from cache"
+      data:
+        type: array
+        items:
+          type: object
+          properties:
+            username:
+              type: string
+              example: "John"
+            source:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "Bob"
+                id:
+                  type: string
+                  example: "20"
+            author:
+              type: string
+              example: "Noah"
+            title:
+              type: string
+              example: "Texa hospitalizations rise - CNBC"
+            description:
+              type: string
+              example: "Description for this article"
+            url:
+              type: string
+              example: "https://www.cnbc.com/2020/06/25/texas-gov-abbott-.html"
+            urlToImage:
+              type: string
+              example: "https://image.cnb.jpg?v=1593103152"
+            publishedAt:
+              type: string
+              example: "2020-06-25T16:30:28.000Z"
+            content:
+              type: string
+              example: "Texas Govening as the state continues to report record increases in Covid-19 cases and hospits"
+            userId:
+              type: string
+              example: "5ef618ece882b711b6a6e15e"
+      _id:
+        type: string
+        example: "5ef61942e882b711b6a6e162"
+      userId:
+        type: string
+        example: "5ef618ece882b711b6a6e15e"
