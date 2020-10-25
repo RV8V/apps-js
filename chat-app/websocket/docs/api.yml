@@ -1,0 +1,65 @@
+swagger: "2.0"
+info:
+  description: "."
+  version: "1.0.0"
+  title: ""
+host: "server.local"
+basePath: "/v2"
+schemes: 
+- "http"
+paths:
+  /post:
+    post:
+      summary: "create user post"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/PostForm"
+      responses:
+        401:
+          description: "Auth failed"
+        200:
+          description: "Auth successfull"
+  /getPosts:
+    get:
+      tags:
+      - "user"
+      summary: "Get all posts with pagination"
+      produces:
+      - "application/json"
+      responses:
+        401:
+          description: "conditions failed"
+        200:
+          description: "Ok"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Data"
+definitions:
+  PostForm:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+        example: "Bob"
+      content:
+        type: "string"
+        example: "My post is here"
+  Data:
+    properties:
+      _id:
+        type: "string"
+        example: "5eb9e688edb49b3f7ca46161"
+      username:
+        type: "string"
+        example: "Jim"
+      content:
+        type: "string"
+        example: "Jim is writting post.."
