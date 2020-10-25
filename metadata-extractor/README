@@ -2,7 +2,7 @@ Introduction
 ============
 
 Description
-Metadata extractor for all the project Gutenberg titles
+Metadata extractor for all the project Gutenberg titles, used for this target RDBMS Postgres, quary builder for later querying, class Cursor so that we can do chaining
 
 Installation
 ===================
