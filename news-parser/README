@@ -1,0 +1,30 @@
+Introduction
+============
+
+News Parser
+Description
+Parser, which in parallel mode from the [ain.ua](https://ain.ua/) website will save the last five articles from different categories to the relational database Postgres.
+
+## Intallation
+- `git clone https://github.com/RV8V/News-parser.git`
+- `cd News-parser && npm i`
+  - `sudo -iu postgres`
+  - `psql`
+  - `create database database;`
+  - `\c database;`
+  - `\q`
+  - `exit`
+- `npm run start`
+## Notice
+- Check result:
+  - `sudo -iu postgres`
+  - `psql`
+  - `\c database;`
+  - `\d`
+  - `select * from category;`
+  - `select * from page;`
+
+License and Authors
+===================
+
+Author:: Ruslan Volovik <rv.volovik88@gmail.com>
