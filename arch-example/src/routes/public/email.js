@@ -1,8 +1,8 @@
-import { Router } = require('express')
-import request = require('request')
+const { Router } = require('express')
+const request = require('request')
 
-import models = require('../../models')
-import http = require('../../../config/http')
+const models = require('../../models')
+const http = require('../../../config/http')
 
 const router = Router()
 
