@@ -57,5 +57,5 @@ bot.onText(/\/start/, ({ chat: { id } }, [source, match]) => bot.sendMessage(id,
 bot.onText(/\/picture/, ({ chat: { id } }) => bot.sendPhoto(id, fs.readFileSync(__dirname + '/testing.hello.world.jpg'), { caption: 'hello world, comrade' }))
 
 bot.onText(/\/audio/, ({ chat: { id } }) => (bot.sendMessage(id, 'started uploading audio'), fs.readFile(__dirname, './' + 'hello.world.comrade.mp3', (err, data) => bot.sendAudio(id, data).then(() => bot.sendMessage(id, 'file has been successfully uploaded')))))
-
+ 
 bot.onText(/\/document/, ({ chat: { id } }) => (bot.sendMessage(id, 'started uploading document'), fs.readFile(__dirname, './' + 'hello.zip', (err, file) => bot.sendDocument(id, file, { caption: 'additional text' }).then(() => bot.sendMessage(id, 'uploaded with success')))))
