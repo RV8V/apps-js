@@ -26,6 +26,8 @@ bot.on('message', ({ chat, from, text }) => {
   })
 })
 
+bot.on('polling_error', err => process.stdout.write(err.message))
+
 bot.onText(/\/start/, ({ chat: { id } }) => bot.sendMessage(id, 'hello'))
 
 bot.onText(/\/help (.+)/, ({ chat: { id }, }, [source, match]) => bot.sendMessage(id, debug(match)))
