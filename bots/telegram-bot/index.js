@@ -8,7 +8,7 @@ process.env.NTBA_FIX_319 = 1
 
 const TOKEN = '1376866800:AAFQYmpyLsbA1Hkf8DkxlpCSPKFqEZ_nRHQ'
 const bot = new telegram_bot(TOKEN, { polling: { interval: 300, autoStart: true, params: { timeout: 10 } }})
-/*
+
 bot.on('message', ({ chat, from, text }) => {
   const html = `<h2><strong>hello, ${from.first_name}</strong><i>test message</i></h2><hr /><pre>${debug(from)}</pre>`
   const markdown = `*hello, ${from.first_name}* _Italic spme testing text in md_`
@@ -24,7 +24,7 @@ bot.on('message', ({ chat, from, text }) => {
       keyboard: [ [{ text: 'send location', request_location: true}], ['answer', 'shut down'], [{ text: 'send contact', request_contact: true }], ['what do you want to see'] ], one_time_keyboard: true
     }
   })
-})*/
+})
 
 bot.onText(/\/start/, ({ chat: { id } }) => bot.sendMessage(id, 'hello'))
 
@@ -57,5 +57,5 @@ bot.onText(/\/start/, ({ chat: { id } }, [source, match]) => bot.sendMessage(id,
 bot.onText(/\/picture/, ({ chat: { id } }) => bot.sendPhoto(id, fs.readFileSync(__dirname + '/testing.hello.world.jpg'), { caption: 'hello world, comrade' }))
 
 bot.onText(/\/audio/, ({ chat: { id } }) => (bot.sendMessage(id, 'started uploading audio'), fs.readFile(__dirname, './' + 'hello.world.comrade.mp3', (err, data) => bot.sendAudio(id, data).then(() => bot.sendMessage(id, 'file has been successfully uploaded')))))
- 
+
 bot.onText(/\/document/, ({ chat: { id } }) => (bot.sendMessage(id, 'started uploading document'), fs.readFile(__dirname, './' + 'hello.zip', (err, file) => bot.sendDocument(id, file, { caption: 'additional text' }).then(() => bot.sendMessage(id, 'uploaded with success')))))
