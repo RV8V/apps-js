@@ -1,5 +1,6 @@
 const telegram_bot = require('node-telegram-bot-api')
 const process = require('process')
+const fs = require('fs')
 
 const { debug, lower, flag, html_format, reference, inline_keyboard } = require('./util')
 
@@ -51,6 +52,8 @@ bot.on('inline_query', ({ id }) => {
   bot.answerInlineQuery(id, results, { cache_time: 0 })
 })
 
-bot.onText(/\/start/, ({ chat: { id } }, [source, match]) => {
-  bot.sendMessage(id, 'keyboard', { reply_markup: { inline_keyboard } })
-})
+bot.onText(/\/start/, ({ chat: { id } }, [source, match]) => bot.sendMessage(id, 'keyboard', { reply_markup: { inline_keyboard } }))
+
+bot.onText(/\/picture/, ({ chat: { id } }) => bot.sendPhoto(id, fs.readFileSync(__dirname + '/testing.hello.world.jpg'), { caption: 'hello world, comrade' }))
+
+bot.onText(/\/audio/, ({ chat: { id } }) => (bot.sendMessage(id, 'started uploading'), fs.readFile(__dirname, './' + 'hello.world.comrade.mp3', (err, data) => bot.sendAudio(id, data).then(() => bot.sendMessage(id, 'file has been successfully uploaded')))))
