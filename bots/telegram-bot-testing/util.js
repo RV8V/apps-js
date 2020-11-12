@@ -1,0 +1,11 @@
+module.exports = {
+  log_start: () => process.stdout.write('bot has been started\n'),
+  get_chat_id: ({ chat: { id } }) => id,
+  send_films_by_query: (chat_id, query) => film.find(query).then(films => (process.stdout.write(JSON.stringify(films)), bot.sendMessage(chat_id, films.map(({ name, uuid }, i) => `<b>${i + 1}</b>${name} - /f${uuid}`).join('\n'), { reply_markup: { parse_mode: 'HTML' } }))),
+  send_html: (chat_id, html, kb_name = null, options = {}) => (options = { parse_mode: 'HTML' }, kb_name ? options['reply_markup'] = { keyboard: keyboard[kb_name] } : '', bot.sendMessage(chat_id, html, options)),
+  get_item_uuid: ({ length }) => source.substr(2, length),
+  get_cinema_coords: (id, location) => (cinema.find({}).then((cinemas, html = null) => (process.stdout.write(JSON.stringify(cinemas)), html = cinemas.map(({ name }, i) => '<b>' + i + 1 + '</b>' + name + '<em>' + ' distance -> ' + '</em>').join('\n'), module.exports.send_html(id, html, 'home')))),
+  change_film: ({ id }, user, user_id, id, { f_uuid, favourite }, user_promise) => (user.findOne({ telegram_id: user_id }).then(user => user ? favourite ? user.films = user.films.filter(uuid => uuid !== f_uuid) : user.films.push(f_uuid) : (user_promise = new user({ telegram_id: user_id, films: [f_uuid] }))), user_promise.save().then(_ => bot.answerCallbackQuery({ callback_query_id: text: favourite ? 'deleted' : 'added' }).catch(({ message }) => process.stderr.write(JSON.stringify(message))).catch(({ message }) => process.stderr.write(JSON.stringify(message)))),
+  show_favourite_films: (chat_id, user_id, user, film) => (user.findOne({ telegram_id: user_id }).then(user => user ? (film.find({ uuid: {'$in': user.films} }).then((films, html = null) => (films.length ? html = films.map((f, i) => `<b>${i + 1}</b> ${f.name} - <b>${f.rate}</b> (/f${f.uuid})`) : html = 'add something, nothing now')), module.exports.send_html(chat_id, html, 'home')) : module.exports.send_html(chat_id, 'u just added nothing', 'home')).catch(err => process.stderr.write(JSON.stringify(err) + '\n'))),
+  show_cinemas_by_query: (user_id, query, cinema) => (cinema.find(query).then((cinemas, html = null) => (html = cinemas.map(({ name, uuid }, i) => `<b>${i + 1}</b> ${name} - /c${uuid}`).join('\n'), module.exports.send_html(user_id, html, 'home'))))
+}
