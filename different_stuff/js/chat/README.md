@@ -1,0 +1,18 @@
+# Task  
+## Description
+The Node.js app - a simple public chat where authenticated users can post text and everyone, who is authenticated too, can read and write posts. Posts are stored in the database and users can get and create posts by using the REST API.  
+ 
+## Notice
+- We have 1 server - for authorization and communication target    
+- Documentation is made using swagger: all the routers are described in files `docs/api.yml` - accordingly to the servers API   .    
+- Test are in folder `test/api` - for authorization server. I used `chai`. Before running tests `npm run test` make sure that user name, password and refresh token was saved to database.  
+- Used JWT Authentication and Authorization  
+- Used not relational database `MongoDB` for saving posts  
+- Used `github actions`
+- Deploy to `AWS`   
+
+## Intallation
+
+## Usage  
+- Run server. When users are authenticated - open chat windows and try to make post - there is reference `make post`. For example, one user make a post and others can read it and so on.  
+- So that you can fill the form to make post or write messages like in a usual chat  
