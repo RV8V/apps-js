@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Train: Data/APIs 1</title>
+  </head>
+  <body>
+    <p>latitude: <span id="latitude"></span></p>
+    <p>longitude: <span id="longitude"></span></p>
+    <script>
+      if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(async position => {
+          const lat = position.coords.latitude
+          const lon = position.coords.longitude
+
+          document.getElementById('latitude').textContent = lat
+          document.getElementById('longitude').textContent = lon
+
+          const data = { lat, lon }
+          const options = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+          }
+          const res = await fetch('/api', options)
+          const json = await res.json()
+          console.log(json)
+
+        })
+      }
+    </script>
+  </body>
+</html>
