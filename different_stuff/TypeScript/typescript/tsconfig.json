@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strictPropertyInitialization": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "target": "ES2019",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./build",
+    "sourceMap": false,
+    "strict": true,
+    "watch": true,
+    "noImplicitAny": true,
+    "noEmitOnError": true
+  }
+}
