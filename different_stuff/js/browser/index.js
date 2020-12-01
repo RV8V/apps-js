@@ -51,3 +51,12 @@ var sin = Math.sin(0.3);
 var random = Math.floor(Math.random() * 11);
 var down = Math.floor(3.4);
 var up = Math.ceil(3.2);
+
+var date = new Date();
+var text;
+text = "year today: " + date.getFullYear();
+text += "month today: " + date.getMonth();
+text += "day today: " + date.getDate();
+text += "hours: " + date.getHours();
+text += "minutes: " + date.getMinutes();
+text += "seconds: " + date.getSeconds();
