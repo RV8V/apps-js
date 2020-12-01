@@ -9,7 +9,7 @@ if (x, y, 44 > 33, g, h)
 else if (1, 3 > 2)
   document.write('enter');
 
-document.write('<br />result -> ' + (function () {
+document.write('<br />result -> ' + (function() {
   var result = 1;
   switch (result) {
     case 1: return 1
@@ -43,3 +43,11 @@ alert((function() {
     default: return 'hello, user'
   }
 }).bind(this)())
+
+var pi = Math.PI;
+var e = Math.E;
+var mod = Math.abs(-7);
+var sin = Math.sin(0.3);
+var random = Math.floor(Math.random() * 11);
+var down = Math.floor(3.4);
+var up = Math.ceil(3.2);

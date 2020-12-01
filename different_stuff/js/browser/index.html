@@ -45,11 +45,32 @@
       }
     </script>
   </head>
-  <body onload="alert('page is loaded')">
+  <body onload="timer()">
     <script type="text/javascript">
       document.write('hello, world')
       document.write('<br />in browser')
+
+      var id, count;
+      count = 0;
+      id = setInterval("myFunc_1()", 1000);
+
+      function myFunc_1() {
+        count++;
+        alert('seconds passed: ' + count);
+        if (count == 3) {
+          clearInterval(id);
+        }
+      }
+
+      function timer() {
+        count++;
+        document.getElementById("count").innerHTML = count;
+        setTimeout("timer()", 1000);
+      }
     </script>
+
+    seconds passed <span id="count">-1</span>
+
     <input type="button" name="b" value="click on" onclick="buttonClick(this)" />
     <span onmouseover="counter(this)">on this text was 0 times rendered</span>
 
