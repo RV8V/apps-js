@@ -6,11 +6,42 @@
     <script type="text/javascript">
       var count, result, i;
       count = result = i = 0;
+
       function buttonClick(button) {
         alert('you pressed the button, ' + button.value)
       }
+
       function counter(element) {
         element.innerHTML = 'on this text was ' + count++ + ' times rendered'
+      }
+
+      function valid(form) {
+        var name, password, email, fail, message, adr_regexp;
+        fail = false;
+        name = form.name.value;
+        password = form.password.value;
+        email = form.email.value;
+
+        adr_regexp = /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i;
+
+        if (!name) {
+          fail = true;
+          message = 'you did not enter your name';
+        } else if (!password) {
+          fail = true;
+          message = 'you did not enter your password';
+        } else if (!adr_regexp.test(email)) {
+          fail = true;
+          message = 'you did not enter your email';
+        } else if (email.split('@').length - 1 == 0) {
+          fail = true;
+          message = 'you did not enter your email';
+        }
+        if (fail) {
+          alert(message);
+        } else {
+          window.location = 'http://google.com';
+        }
       }
     </script>
   </head>
@@ -45,5 +76,15 @@
         }).call(this)
       }).call(this)
     ">remove value</span>
+
+    <form action="" method="post" name="test" id="form">
+      <label for="name">name</label>
+      <input type="text" name="name" placeholder="enter your name" id="name" /><br />
+      <label for="name">check email</label>
+      <input type="text" name="email" placeholder="enter your email" id="email" /><br />
+      <label for="email">check password</label>
+      <input type="text" name="password" placeholder="enter your password" id="password" /><br />
+      <input type="button" onclick="valid(document.getElementById('form'))" name="submit" value="done" />
+    </form>
   </body>
 </html>
