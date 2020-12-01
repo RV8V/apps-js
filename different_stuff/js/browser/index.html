@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>learn js in browser runtime</title>
+    <script type="text/javascript">
+      var count, result, i;
+      count = result = i = 0;
+      function buttonClick(button) {
+        alert('you pressed the button, ' + button.value)
+      }
+      function counter(element) {
+        element.innerHTML = 'on this text was ' + count++ + ' times rendered'
+      }
+    </script>
+  </head>
+  <body onload="alert('page is loaded')">
+    <script type="text/javascript">
+      document.write('hello, world')
+      document.write('<br />in browser')
+    </script>
+    <input type="button" name="b" value="click on" onclick="buttonClick(this)" />
+    <span onmouseover="counter(this)">on this text was 0 times rendered</span>
+
+    <span onmouseover="
+      (function() {
+        this.innerHTML = 'result = ' + result
+      }).call(this)
+    ">result</span>
+
+    <span onmouseover="
+      (function() {
+        var _this;
+        _this = this;
+        return (function() {
+          _this.innerHTML = ++i;
+        })()
+      }).call(this)
+    ">0</span>
+
+    <span onmousemove="
+      (function() {
+        return (function() {
+          this.innerHTML = --i;
+        }).call(this)
+      }).call(this)
+    ">remove value</span>
+  </body>
+</html>
