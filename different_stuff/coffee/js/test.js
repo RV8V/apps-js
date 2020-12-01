@@ -39,4 +39,22 @@
     }
   }).bind([1, 2, 3])(1)
   console.log({ result })
+  var string, _str
+  string = (function() {
+    function string(length) {
+      this.length = length
+    }
+
+    string.prototype.test = function() {
+      return (function(_this) {
+        console.log(this)
+        return (function() {
+          console.log(this)
+        })()
+      }).call(this)
+    }
+    return string
+  })()
+  _str = new string(10)
+  _str.test()
 }).call(this)
