@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jquery scroll</title>
+    <style>
+      #more {
+        margin-top: 2000px;
+        margin-bottom: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="up"></div>
+    <script src="jquery.min.js" charset="utf-8"></script>
+    <a href="javascript://0" onclick="scroll('#more')">more detailed</a>
+    <div id="more">more information | <a href="javascript://0" onclick="scroll('#up')">to the up</a></div>
+
+    <script>
+      function scroll(id) {
+        var offset = 0;
+        $('html, body').animate({
+          scrollTop: $(id).offset().top - offset
+        }, 500);
+        return false;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>recognition of voice</title>
+  </head>
+  <body>
+    <button onclick="return speech()">listen</button>
+    <button onclick="return talk()">talk</button>
+    <button onclick="return stop()">stop</button>
+
+    <script type="text/javascript">
+      var recognizer = new webkitSpeechRecognition();
+      recognizer.interimResults = true;
+      recognizer.lang = 'en-En';
+      recognizer.onresult = function(event) {
+        var result = event.results[event.resultIndex];
+        if (result.isFinal) {
+          alert('you said ', result[0].transcript);
+        } else {
+          console.log('current result');
+          result[0].transcript;
+        }
+      }
+
+      function speech() {
+        recognizer.start();
+      }
+
+      var synch = window.speechSyntesis;
+
+      function talk() {
+        speechSyntesis.speak(
+          new SpeechSyntesisUtterance('javascript speech SpeechSyntesis Utterance')
+        );
+      }
+
+      function stop() {
+        speechSyntesisInstance.pause();
+      }
+    </script>
+  </body>
+</html>
