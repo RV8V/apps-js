@@ -16,7 +16,7 @@
     return function(...args) {
       fn.apply(ctx, args)
     }
-  }
+  } 
 
   console.log(r)
 }.call(global)
