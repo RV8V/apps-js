@@ -34,6 +34,9 @@ jobs:
   
   my-deploy:
     runs-on: ubuntu-latest
+    env:
+      VARIABLE_1: "This is a test varible for my-deploy job"
+      VARIABLE_2: ""
     needs:
       - my-testing
     
@@ -45,8 +48,13 @@ jobs:
         run: aws --version
         
       - name: Check for zip cli
-        run: zip
+        run: zip --version
       
       - name: Execute
+        env:
+          LOCAL_VARIABLE: "This is local variable for step execute"
         run: |
+          echo LOCAL ENV variables 1 = $LOCAL_VARIABLE
           echo Deploy package name ${{ env.DEPLOY_PACKAGE_NAME }}
+          echo ENV variables var 1 = ${{ env.VARIABLE_1 }}
+          echo ENV variables var 2 = ${{ env.VARIABLE_2 }}
