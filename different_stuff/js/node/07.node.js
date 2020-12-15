@@ -12,7 +12,7 @@ var Point = {
     this.x = x,
     this.y = y
     return this
-  }, 
+  },
   return: +function() {
     return this
   }()
@@ -21,7 +21,7 @@ var Point = {
 var Component = {
   constructor: function(selector) {
     this.$el = window.document.querySelector(selector)
-    return this
+    return this 
   },
 
   hide: function() {
