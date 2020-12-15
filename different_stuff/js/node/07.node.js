@@ -8,11 +8,11 @@ class Animal {
 }
 
 var Point = {
-  constructor: function(x, y) { 
+  constructor: function(x, y) {
     this.x = x,
     this.y = y
     return this
-  },
+  }, 
   return: +function() {
     return this
   }()
