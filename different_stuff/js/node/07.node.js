@@ -4,13 +4,13 @@ class Animal {
     this.age = options.age
   }
 
-  static TYPE = 1
+  static TYPE = 1 
 }
 
 var Point = {
   constructor: function(x, y) {
     this.x = x,
-    this.y = y 
+    this.y = y
     return this
   },
   return: +function() {
