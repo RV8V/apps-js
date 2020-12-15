@@ -19,8 +19,8 @@ var Point = {
 }
 
 var Component = {
-  constructor: function(selector) { 
-    this.$el = window.document.querySelector(selector)
+  constructor: function(selector) {
+    this.$el = window.document.querySelector(selector) 
     return this
   },
 
