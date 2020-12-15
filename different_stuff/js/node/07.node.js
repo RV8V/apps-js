@@ -2,10 +2,10 @@ class Animal {
   constructor(options) {
     this.name = options.name,
     this.age = options.age
-  }
+  } 
 
   static TYPE = 1
-} 
+}
 
 var Point = {
   constructor: function(x, y) {
