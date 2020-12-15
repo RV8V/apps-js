@@ -6,7 +6,7 @@ class Animal {
 
   static TYPE = 1
 }
-
+ 
 var Point = {
   constructor: function(x, y) {
     this.x = x,
@@ -19,7 +19,7 @@ var Point = {
 }
 
 var Component = {
-  constructor: function(selector) { 
+  constructor: function(selector) {
     this.$el = window.document.querySelector(selector)
     return this
   },
