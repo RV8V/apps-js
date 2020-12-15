@@ -13,11 +13,11 @@ var Point = {
     this.y = y
     return this
   },
-  return: +function() {
+  return: +function() { 
     return this
   }()
 }
-  
+
 var Component = {
   constructor: function(selector) {
     this.$el = window.document.querySelector(selector)
