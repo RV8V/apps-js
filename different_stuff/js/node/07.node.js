@@ -10,7 +10,7 @@ class Animal {
 var Point = {
   constructor: function(x, y) {
     this.x = x,
-    this.y = y
+    this.y = y 
     return this
   },
   return: +function() {
@@ -18,7 +18,7 @@ var Point = {
   }()
 }
 
-var Component = { 
+var Component = {
   constructor: function(selector) {
     this.$el = window.document.querySelector(selector)
     return this
