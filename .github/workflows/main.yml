@@ -1,4 +1,7 @@
 name: CI\/CD basic examples
+env:
+  APPLICATION_NAME: "node"
+  DEPLOY_PACKAGE_NAME: "node-to-test version ${{ github.sha }}"
 
 on:
   push:
@@ -12,6 +15,13 @@ jobs:
     steps:
       - name: Run a one-line script(print hello world)
         run: echo Hello, world!
+      
+      - name: Execute some commands
+        run: |
+          echo Hello, message one
+          echo Hello, message two...
+          echo Application name ${{ env.APPLICATION_NAME }}
+          echo Deploy package name ${{ env.DEPLOY_PACKAGE_NAME }}
   
   my-deploy:
     runs-on: ubuntu-latest
@@ -21,3 +31,7 @@ jobs:
     steps:
       - name: deploy testing
         run: echo Hello, world from deploy
+      
+      - name: Execute
+        run: |
+          echo Deploy package name ${{ env.DEPLOY_PACKAGE_NAME }}
