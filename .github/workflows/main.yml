@@ -23,7 +23,13 @@ jobs:
           echo Application name ${{ env.APPLICATION_NAME }}
           echo Deploy package name ${{ env.DEPLOY_PACKAGE_NAME }}
           
-      - name: List current folder
+      - name: List current folder before cloning
+        run: ls -la   
+        
+      - name: Clone git repository
+        uses: actions/checkout@v1  
+      
+      - name: List current folder after cloning
         run: ls -la   
   
   my-deploy:
@@ -34,6 +40,12 @@ jobs:
     steps:
       - name: deploy testing
         run: echo Hello, world from deploy
+      
+      - name: Check for aws package
+        run: aws --version
+        
+      - name: Check for zip cli
+        run: zip
       
       - name: Execute
         run: |
