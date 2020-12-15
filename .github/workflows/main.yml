@@ -1,0 +1,21 @@
+name: CI\/CD basic examples
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  my-testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a one-line script(print hello world)
+        run: echo Hello, world!
+  
+  my-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: deploy testing
+        run: echo Hello, world from deploy
