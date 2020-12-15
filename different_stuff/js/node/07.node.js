@@ -12,8 +12,8 @@ var Point = {
     this.x = x,
     this.y = y
     return this
-  },
-  return: +function() { 
+  }, 
+  return: +function() {
     return this
   }()
 }
