@@ -5,7 +5,7 @@
 
   !function() {
     console.log('!')
-  }() 
+  }()
 
   +function() {
     console.log('+')
@@ -15,7 +15,7 @@
   (() => {
     console.log('()()')
   })();
-
+ 
   /*!() => {
     console.log('tes string e')
   }();*/
