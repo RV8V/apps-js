@@ -15,10 +15,10 @@ var Point = {
   },
   return: +function() {
     return this
-  }() 
+  }()
 }
 
-var Component = {
+var Component = { 
   constructor: function(selector) {
     this.$el = window.document.querySelector(selector)
     return this
