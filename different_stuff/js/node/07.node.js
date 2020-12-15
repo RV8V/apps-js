@@ -13,7 +13,7 @@ var Point = {
     this.y = y
     return this
   },
-  return: +function() { 
+  return: +function() {  
     return this
   }()
 }
