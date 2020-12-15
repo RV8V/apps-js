@@ -5,7 +5,7 @@ class Animal {
   }
 
   static TYPE = 1
-}
+} 
 
 var Point = {
   constructor: function(x, y) {
@@ -13,7 +13,7 @@ var Point = {
     this.y = y
     return this
   },
-  return: +function() { 
+  return: +function() {
     return this
   }()
 }
