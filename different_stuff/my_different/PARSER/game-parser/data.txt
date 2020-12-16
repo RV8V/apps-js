@@ -1,0 +1,169 @@
+title:  Grand Theft Auto 5  - link: https://kanobu.ru/games/grand-theft-auto-5/
+title:  The Witcher 3: Wild Hunt  - link: https://kanobu.ru/games/the-witcher-3-wild-hunt/
+title:  S.T.A.L.K.E.R. 2  - link: https://kanobu.ru/games/stalker-2/
+title:  Cyberpunk 2077  - link: https://kanobu.ru/games/cyberpunk/
+title:  Watch Dogs  - link: https://kanobu.ru/games/watch-dogs/
+title:  The Elder Scrolls Online  - link: https://kanobu.ru/games/the-elder-scrolls-online/
+title:  Doom Eternal  - link: https://kanobu.ru/games/doom-eternal/
+title:  War Thunder  - link: https://kanobu.ru/games/war-thunder-world-of-planes/
+title:  Days Gone  - link: https://kanobu.ru/games/days-gone/
+title:  Devil May Cry 5  - link: https://kanobu.ru/games/devil-may-cry-v/
+title:  Watch Dogs Legion  - link: https://kanobu.ru/games/watch-dogs-legion/
+title:  For Honor  - link: https://kanobu.ru/games/honor/
+title:  Assassin's Creed: Valhalla  - link: https://kanobu.ru/games/assassins-creed-valhalla/
+title:  Tom Clancy's Rainbow Six: Siege  - link: https://kanobu.ru/games/tom-clancys-rainbow-six-siege/
+title:  Tom Clancy's The Division 2  - link: https://kanobu.ru/games/tom-clancys-division-2/
+title:  Fortnite  - link: https://kanobu.ru/games/fortnite/
+title:  Marvel’s Avengers  - link: https://kanobu.ru/games/avengers-project/
+title:  Warframe  - link: https://kanobu.ru/games/warframe/
+title:  Control  - link: https://kanobu.ru/games/control/
+title:  Rocket League  - link: https://kanobu.ru/games/rocket-league/
+title:  Escape From Tarkov  - link: https://kanobu.ru/games/escape-tarkov/
+title:  Tom Clancy’s Ghost Recon: Breakpoint  - link: https://kanobu.ru/games/tom-clancys-ghost-recon-breakpoint/
+title:  Vampire: The Masquerade — Bloodlines 2  - link: https://kanobu.ru/games/vampire-masquerade-bloodlines-2/
+title:  Destiny 2  - link: https://kanobu.ru/games/destiny-2/
+title:  Chernobylite  - link: https://kanobu.ru/games/chernobylite/
+title:  Immortals Fenyx Rising  - link: https://kanobu.ru/games/gods-monsters/
+title:  GreedFall  - link: https://kanobu.ru/games/greedfall/
+title:  Dead by Daylight  - link: https://kanobu.ru/games/dead-daylight/
+title:  Atomic Heart  - link: https://kanobu.ru/games/atomic-heart/
+title:  Ghostrunner  - link: https://kanobu.ru/games/ghostrunner/
+title:  Far Cry 6  - link: https://kanobu.ru/games/far-cry-6/
+title:  Marvel’s Spider-Man: Miles Morales  - link: https://kanobu.ru/games/marvels-spider-man-miles-morales/
+title:  Call of Duty: Black Ops — Cold War   - link: https://kanobu.ru/games/call-duty-black-ops-cold-war/
+title:  Gran Turismo 7  - link: https://kanobu.ru/games/gran-turismo-7/
+title:  LEGO Star Wars: The Skywalker Saga  - link: https://kanobu.ru/games/lego-star-wars-skywalker-saga/
+title:  Demon's Souls (2020)  - link: https://kanobu.ru/games/demons-souls-remake/
+title:  Outriders  - link: https://kanobu.ru/games/outriders/
+title:  Gothic (2021)  - link: https://kanobu.ru/games/gothic-remake/
+title:  Dragon Age 4: The Dread Wolf Rises  - link: https://kanobu.ru/games/dread-wolf-rises/
+title:  DIRT 5  - link: https://kanobu.ru/games/dirt-5/
+title:  Star Wars: Squadrons  - link: https://kanobu.ru/games/star-wars-squadrons/
+title:  Hyper Scape  - link: https://kanobu.ru/games/hyper-scape/
+title:  Crash Bandicoot 4: It's About Time  - link: https://kanobu.ru/games/crash-bandicoot-4-its-about-time/
+title:  Yakuza: Like a Dragon  - link: https://kanobu.ru/games/yakuza-7/
+title:  Godfall  - link: https://kanobu.ru/games/godfall/
+title:  Zombie Driver  - link: https://kanobu.ru/games/zombie-driver/
+title:  GhostWire: Tokyo  - link: https://kanobu.ru/games/ghostwire-tokyo/
+title:  Starfield  - link: https://kanobu.ru/games/starfield/
+title:  Cuisine Royale  - link: https://kanobu.ru/games/cuisine-royale/
+title:  Horizon: Forbidden West  - link: https://kanobu.ru/games/horizon-forbidden-west/
+title:  FIFA 21  - link: https://kanobu.ru/games/fifa-21/
+title:  Hitman 3  - link: https://kanobu.ru/games/hitman-3/
+title:  Everspace 2  - link: https://kanobu.ru/games/everspace-2/
+title:  Resident Evil: Village  - link: https://kanobu.ru/games/resident-evil-village/
+title:  RIDE 4  - link: https://kanobu.ru/games/ride-4/
+title:  Observer System Redux  - link: https://kanobu.ru/games/observer-system-redux/
+title:  Maneater  - link: https://kanobu.ru/games/maneater/
+title:  Shakedown Hawaii  - link: https://kanobu.ru/games/shakedown-hawaii/
+title:  Hellpoint  - link: https://kanobu.ru/games/hellpoint/
+title:  Destiny 2: Beyond Light  - link: https://kanobu.ru/games/destiny-2-beyond-light/
+title:  Warhammer: Chaosbane  - link: https://kanobu.ru/games/warhammer-chaosbane/
+title:  WRC 9  - link: https://kanobu.ru/games/wrc-9/
+title:  Prince of Persia: The Sands of Time Remake  - link: https://kanobu.ru/games/prince-persia-sands-time-remake/
+title:  Worms Rumble  - link: https://kanobu.ru/games/worms-rumble/
+title:  Planet Coaster  - link: https://kanobu.ru/games/planet-coaster/
+title:  Deathloop  - link: https://kanobu.ru/games/deathloop/
+title:  The Riftbreaker  - link: https://kanobu.ru/games/riftbreaker/
+title:  112 Operator  - link: https://kanobu.ru/games/112-operator/
+title:  MXGP 2020  - link: https://kanobu.ru/games/mxgp-2020/
+title:  The Pathless   - link: https://kanobu.ru/games/pathless/
+title:  Lord of the Rings: Gollum  - link: https://kanobu.ru/games/lord-rings-gollum/
+title:  Just Dance 2021  - link: https://kanobu.ru/games/just-dance-2021/
+title:  Spirit of the North  - link: https://kanobu.ru/games/spirit-north/
+title:  Spacelords   - link: https://kanobu.ru/games/raiders-broken-planet/
+title:  Sackboy: A Big Adventure  - link: https://kanobu.ru/games/sackboy-big-adventure/
+title:  Vigor  - link: https://kanobu.ru/games/vigor/
+title:  Granblue Fantasy Project Re: Link  - link: https://kanobu.ru/games/granblue-fantasy-project-re-link/
+title:  Black Myth: Wukong  - link: https://kanobu.ru/games/black-myth-wukong/
+title:  Destruction Allstars  - link: https://kanobu.ru/games/destruction-allstars/
+title:  Bugsnax  - link: https://kanobu.ru/games/bugsnax/
+title:  Temtem  - link: https://kanobu.ru/games/temtem/
+title:  Chivalry 2  - link: https://kanobu.ru/games/chivalry-2/
+title:  Hogwarts Legacy  - link: https://kanobu.ru/games/hogwarts-legacy/
+title:  Haven (2020)  - link: https://kanobu.ru/games/haven-2020/
+title:  Blood & Truth  - link: https://kanobu.ru/games/blood-truth/
+title:  Overcooked! All You Can Eat  - link: https://kanobu.ru/games/overcooked-all-you-can-eat/
+title:  NBA 2K21  - link: https://kanobu.ru/games/nba-2k21/
+title:  Astro’s Playroom  - link: https://kanobu.ru/games/astros-playroom/
+title:  Override 2: Super Mech League  - link: https://kanobu.ru/games/override-2-super-mech-league/
+title:  Guilty Gear Strive: Ramlethal  - link: https://kanobu.ru/games/guilty-gear-2020/
+title:  Mass Effect: Legendary Edition  - link: https://kanobu.ru/games/mass-effect-legendary-edition/
+title:  Alba: A Wildlife Adventure  - link: https://kanobu.ru/games/alba-wildlife-adventure/
+title:  Stray (2021)  - link: https://kanobu.ru/games/stray_2021/
+title:  Sherlock Chapter One  - link: https://kanobu.ru/games/sherlock-holmes-chapter-one/
+title:  DYSMANTLE  - link: https://kanobu.ru/games/dysmantle/
+title:  Bridge Constructor: The Walking Dead  - link: https://kanobu.ru/games/bridge-constructor-walking-dead/
+title:  Blood Bowl 3  - link: https://kanobu.ru/games/blood-bowl-3/
+title:  DARQ  - link: https://kanobu.ru/games/darq/
+title:  Kena: Bridge of Spirits  - link: https://kanobu.ru/games/kena-bridge-spirits/
+title:  Five Nights at Freddy’s: Security Breach  - link: https://kanobu.ru/games/five-nights-freddys-security-breach/
+title:  Ratchet & Clank Rift Apart  - link: https://kanobu.ru/games/ratchet-clank-rift-apart/
+title:  Scarlet Nexus  - link: https://kanobu.ru/games/scarlet-nexus/
+title:  Destiny 2: Lightfall  - link: https://kanobu.ru/games/destiny-2-lightfall/
+title:  Medium  - link: https://kanobu.ru/games/medium/
+title:  Madden NFL 21  - link: https://kanobu.ru/games/madden-nfl-21/
+title:  God of War 2: Ragnarok  - link: https://kanobu.ru/games/god-war-2-ragnarok/
+title:  Goodbye Volcano High  - link: https://kanobu.ru/games/goodbye-volcano-high/
+title:  Pragmata  - link: https://kanobu.ru/games/pragmata/
+title:  Project Athia  - link: https://kanobu.ru/games/project-athia/
+title:  Destiny 2: The Witch Queen  - link: https://kanobu.ru/games/destiny-2-witch-queen/
+title:  Gotham Knights  - link: https://kanobu.ru/games/gotham-knights/
+title:  Riders Republic  - link: https://kanobu.ru/games/riders-republic/
+title:  Returnal  - link: https://kanobu.ru/games/returnal/
+title:  Little Devil Inside  - link: https://kanobu.ru/games/little-devil-inside/
+title:  King Arthur: Knightʼs Tale  - link: https://kanobu.ru/games/king-arthur-knights-tale/
+title:  Lost in Random  - link: https://kanobu.ru/games/lost-random/
+title:  Flea Madness  - link: https://kanobu.ru/games/flea-madness/
+title:  Ode to a Moon  - link: https://kanobu.ru/games/ode-moon/
+title:  Dynasty Warriors 9: Empires  - link: https://kanobu.ru/games/dynasty-warriors-9-empires/
+title:  Haven  - link: https://kanobu.ru/games/haven/
+title:  Final Fantasy XVI  - link: https://kanobu.ru/games/final-fantasy-xvi/
+title:  The Dark Pictures: House of Ashes  - link: https://kanobu.ru/games/dark-pictures-house-ashes/
+title:  Cris Tales  - link: https://kanobu.ru/games/cris-tales/
+title:  Deck of Ashes  - link: https://kanobu.ru/games/deck-ashes/
+title:  BROK the InvestiGator  - link: https://kanobu.ru/games/brok-investigator/
+title:  Chorus  - link: https://kanobu.ru/games/chorus-2021/
+title:  It Takes Two  - link: https://kanobu.ru/games/it-takes-two/
+title:  Solar Ash  - link: https://kanobu.ru/games/solar-ash/
+title:  Maquette  - link: https://kanobu.ru/games/maquette/
+title:  Steelrising  - link: https://kanobu.ru/games/steelrising/
+title:  Where the Heart Is (2020)  - link: https://kanobu.ru/games/where-heart-2020/
+title:  EARTHLOCK 2  - link: https://kanobu.ru/games/earthlock-2/
+title:  Lands of Raynar  - link: https://kanobu.ru/games/lands-raynar/
+title:  Suicide Squad: Kill the Justice League  - link: https://kanobu.ru/games/suicide-squad-kill-justice-league/
+title:  Recompile  - link: https://kanobu.ru/games/recompile/
+title:  Poker Club  - link: https://kanobu.ru/games/poker-club/
+title:  FORECLOSED  - link: https://kanobu.ru/games/foreclosed/
+title:  Jett: The Far Shore  - link: https://kanobu.ru/games/jett-far-shore/
+title:  Quantum Error  - link: https://kanobu.ru/games/quantum-error/
+title:  The Invincible (2021)  - link: https://kanobu.ru/games/invincible-2021/
+title:  Ultimate Fishing Simulator 2  - link: https://kanobu.ru/games/ultimate-fishing-simulator-2/
+title:  Aragami 2  - link: https://kanobu.ru/games/aragami-2/
+title:  My Time at Sandrock  - link: https://kanobu.ru/games/my-time-sandrock/
+title:  Gladiux  - link: https://kanobu.ru/games/gladiux/
+title:  Skeletal Avenger  - link: https://kanobu.ru/games/skeletal-avenger/
+title:  PsyHotel Simulator  - link: https://kanobu.ru/games/psyhotel-simulator/
+title:  MicroMan  - link: https://kanobu.ru/games/microman/
+title:  Orphan of the Machine  - link: https://kanobu.ru/games/orphan-machine/
+title:  Dawn of the Monsters  - link: https://kanobu.ru/games/dawn-monsters/
+title:  Doors of Insanity  - link: https://kanobu.ru/games/doors-insanity/
+title:  Martha is Dead  - link: https://kanobu.ru/games/martha-dead/
+title:  LOW-FI  - link: https://kanobu.ru/games/low-fi/
+title:  Metal: Hellsinger  - link: https://kanobu.ru/games/metal-hellsinger/
+title:  Black Legend  - link: https://kanobu.ru/games/black-legend/
+title:  Yuoni  - link: https://kanobu.ru/games/yuoni/
+title:  Chrono Odyssey  - link: https://kanobu.ru/games/chrono-odyssey/
+title:  Hood: Outlaws & Legends  - link: https://kanobu.ru/games/hood-outlaws-legends/
+title:  DYING: 1983  - link: https://kanobu.ru/games/dying-1983/
+title:  SaGa Frontier Remastered  - link: https://kanobu.ru/games/saga-frontier-remastered/
+title:  In Sound Mind  - link: https://kanobu.ru/games/sound-mind/
+title:  Balan Wonderworld  - link: https://kanobu.ru/games/balan-wonderworld/
+title:  Dragon Audit  - link: https://kanobu.ru/games/dragon-audit/
+title:  Evil Dead: The Game  - link: https://kanobu.ru/games/evil-dead-game/
+title:  Neko Ghost, Jump!  - link: https://kanobu.ru/games/neko-ghost-jump/
+title:  GRAVEN  - link: https://kanobu.ru/games/graven/
+title:  Evil West  - link: https://kanobu.ru/games/evil-west/
+title:  WM  - link: https://kanobu.ru/games/wm/
+title:  Football Coach the Game 2022  - link: https://kanobu.ru/games/football-coach-game-2022/
+title:  Ruined King: A League of Legends Story  - link: https://kanobu.ru/games/ruined-king-league-legends-story/

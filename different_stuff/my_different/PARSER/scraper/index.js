@@ -37,8 +37,8 @@ const arrayFromLength = number => {
   return new Array.from(new Array(number).keys()).map(key => key + 1);
 }
 
-const site = ''
-const pages = 0
+const site = '';
+const pages = 0;
 
 (async () => {
   try {
