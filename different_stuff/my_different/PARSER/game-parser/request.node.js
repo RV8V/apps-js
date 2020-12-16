@@ -35,5 +35,74 @@ var cherio = require('cherio');
     socials[index] = url;
   });
 
-  console.log({ title, anotherTitle, poster, anotherPoster, year, name, date, socials })
+  var wiki = String('https://en.wikipedia.org/wiki/List_of_mosques');
+
+  var wikiArab = String('https://en.wikipedia.org/wiki/List_of_mosques_in_the_Arab_League');
+
+  var wikiResponse = await request(wikiArab);
+
+  var mosquesResponse = await request(wiki);
+  var sel = cherio.load(mosquesResponse);
+
+  var $ = cherio.load(wikiResponse);
+
+  var mosques = new Array();
+  var mosquesArab = new Array();
+
+  /*$('tr[valign=top] > td > b > a').each(function(index, element) {
+    var url = $(element).attr('href');
+    var name = $(element).text();
+    mosques[index] = new Object({url, name});
+  });*/
+
+/*  $('tr[valign=top] > td').each(function(index, element) {
+  //  var url = $(element).attr('href');
+    var name = $(element).text();
+    mosques[index] = new Object({url, name});
+  });*/
+
+//  $("li:first")
+
+/*  $('tr[valign=top] > td').each(function(index, element) {
+  //  var url = $(element).attr('href');
+    var name = $(element).children().first().text().trim();
+    if (name) {
+      mosquesArab.push(new Object({name}));
+    }
+  });*/
+
+  /*$('tr[valign=top] > td').each(function(index, element) {
+    //console.log({ element })
+    //  var url = $(element).attr('href');
+    var name = $(element).find('a').text().trim();
+    if (name) {
+      mosquesArab.push(new Object({name}));
+    }
+  });*/
+
+
+
+
+  $('tr[valign=top]').each(function(index, element) {
+    //console.log({ element })
+    //  var url = $(element).attr('href');
+    var name = $(element).first().find('a').text().trim();
+    if (name) {
+      mosquesArab.push(new Object({name}));
+    }
+  });
+
+
+
+
+
+
+
+  /*$('tr[valign=top] > td > a').each(function(index, element) {
+  //  var url = $(element).attr('href');
+    var name = $(element).first().attr('title');
+    mosquesArab[index] = new Object({name});
+  });*/
+
+  console.log({ title, anotherTitle, poster, anotherPoster, year, name, date, socials, mosquesArab: mosquesArab.length })
 }();
