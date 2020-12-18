@@ -1,0 +1,39 @@
+Introduction
+============
+
+Description
+The Node.js app - crud operations with authorization.
+Intalation
+===================
+
+- `git clone https://github.com/RV8V/News-Task.git`
+- `cd News-Task && npm i`
+- `bash firstrun.sh` - run 2 containers: mongo and redis
+- `npm run start:auth` - run server
+- `npm run test` - run test
+
+Notice
+===================
+
+- If you have problems starting bash script `firstrun.sh`, enter this comman `sed -i 's/\r$//g' firstrun.sh`
+- Open browser and enter `http://localhost:3000/render/register`
+- After registration, log in to get accessToken, refreshToken and userId for later usage
+- Use postman to check result (make sure that in headers you have key `authorization` and value `Bearer your access token`! When your access token expires, you can use refresh token that you have after logged in, to get new access token for later usage)
+- Before running bash script make sure that ports: redis `6379` and mongo `271017` are not blocked
+- Documentation is made using swagger: all the routers are described in files `docs/api.data.yml` and `docs/api.auth.yml` - accordingly to the API
+- Used JWT Authentication and Authorization
+- Used not relational database `MongoDB` for saving news and `Redis` for caching
+- In order to pass tests you should paste your valid refreshtoken into test for route `/user/token` and of course valid username and password for `/user/login`
+
+What to change:
+===================
+
+-decompose logic: seperate bussiness logic and controllers layer (src/controllers/user.js)
+-write more test for routes related to getting data
+-rewrite some functionality because there are similar code
+-rewrite on nestjs because of futher maintenance
+
+License and Authors
+===================
+
+Author:: Ruslan Volovik <rv.volovik88@gmail.com>
