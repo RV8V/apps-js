@@ -19,6 +19,29 @@
 
 //console.log({ res: f(str) })
 
+const e = eval('1+1')
+
+console.log({ e })
+
+const value = eval('let i = 0; ++i');
+
+console.log({ value })
+
+let a = 1;
+eval('a = 3');
+eval('console.log(a)');
+
+eval('var x = 3; function f1() {}');
+eval('console.log(typeof x, typeof f1)');
+
+var code = '[';
+var w = 0;
+for (; w < 4; ++w) {
+  code += w + ',';
+}
+code += w + ']';
+eval('console.log(code)')
+
 const str = 'aaassdddsaa'// -> '3a2s3d1s2a'
 
 const f = str => {
@@ -29,6 +52,7 @@ const f = str => {
     for (var cout = 1; str[i] === str[i + cout]; cout++) {}
     res += cout + str[i]
     i += cout
+    eval('console.log(res)')
   }
   return res
 }
