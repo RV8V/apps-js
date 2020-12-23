@@ -78,3 +78,9 @@ console.log({ result: sum(4) })
 
 printListRec(list)
 printList(list)
+
+const executeFunctions = (x, y) => {
+  const add = (x, y) => x + y;
+  const subtract = (x, y) => x — y;
+  const greaterThan = n => x => x > n;
+}
