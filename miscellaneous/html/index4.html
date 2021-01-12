@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title>form html</title>
+  </head>
+  <body>
+    <form name="test" action="" method="post">
+        <label for="test input id">Enter your name: </label>
+        <input id="test input id" name="test input" type="text" value="" placeholder="name" title="seach" maxlength="256" /><br /><br />
+        <label for="test input date id">Date of birth: </label>
+        <input id="test input date id" type="date" name="test input date" value="" placeholder="date..."><br /><br />
+        <label for="url id">url: </label>
+        <input id="url id" type="url" name="url name" value=""><br><br>
+        <input type="range" name="" value=""><br><br>
+        <label for="male">male: </label><input id="male" type="radio" name="state" value="">
+        <label for="female">female: </label><input id="female" type="radio" name="state" value=""><br><br>
+
+        enter password: <input type="password" name="" value=""><br><br>
+        choose file: <input type="file" name="" value=""><br><br>
+        enter your email: <input type="email" name="" value=""><br><br>
+        agreed with everything: <input type="checkbox" name="" value=""><br><br>
+        agreed with nothing: <input type="checkbox" name="" value=""><br><br>
+        <label for="choice">your choice: </label> <input id="choice" type="checkbox" name="" value=""><br><br>
+        without reload: <input type="button" name="" value="send button"><br><br>
+        with reload: <input type="submit" name="" value="send submit"><br><br>
+        clear: <input type="reset" name="" value="clear">
+
+        <textarea name="name" rows="8" cols="80">example</textarea>
+
+        <form action="" method="post">
+            <p><b>enter your feedback: </b></p>
+            <textarea rows="8" cols="10"></textarea>
+            <input type="submit" name="" value="send to server">
+            <button>send with reload</button>
+        </form>
+
+        <select>
+            <option>example</option>
+            <option selected="selected">.......</option>
+        </select>
+    </form>
+
+    <form action="select.php" method="post">
+        <select size="5" multiple="multiple" name="hero[]">
+            <option disabled="disabled">choose a hero</option>
+            <option value="batman">batman</option>
+            <option selected="selected" value="spider">spider</option>
+            <option value="another one">another one</option>
+            <option value="last one">last one</option>
+        </select>
+        <input type="submit" value="send to server with reload">
+
+        <select>
+            <option disabled="disabled">choose a hero</option>
+            <option value="batman">batman</option>
+            <option selected="selected" value="spider">spider</option>
+            <option <!-- value for sending value to server --> value="another one">another one</option>
+            <option value="last one">last one</option>
+        </select>
+    </form>
+
+    <header>header</header>
+    <footer>bottom of site</footer>
+    <aside>side of the site</aside>
+    <article>first article, second artincle</article>
+    <menu>
+        <li>first element</li>
+        <li>second element</li>
+    </menu>
+
+    <p>calm sound</p>
+    <audio controls="controls" autoplay="autoplay" loop="loop">
+        <source src="https://google.com/sound.mp3">
+    </audio>
+
+    <video controls="controls">
+        <source src="">
+    </video>
+
+    H<sub>2</sub>O
+    <br>5<sup>2</sup>
+
+    <details>
+        <summary>information about author</summary>
+        <p>name of author</p>
+    </details>
+
+    checking 123 <mark>marked</mark> 123 checking <br>
+
+    <progress max="100" value="25">
+        dowloaded on <span id="value">25</span>%
+    </progress>
+
+    <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+        <p>enter length in cm:
+        <input type="number" name="cm" autofocus></p>
+        <p>length in d: <output name="result">0</output></p>
+    </form>
+  </body>
+</html>
