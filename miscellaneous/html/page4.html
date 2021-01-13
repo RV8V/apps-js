@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>web forms</title>
+  </head>
+  <body>
+      <form action="" method="get">
+          <!-- needs to use it for go to input -->
+          <label for="person_name_id">enter your name: </label>
+          <input id="person_name_id" type="text" name="person_name" disabled><br>
+          enter your firstname: <input type="text" name="firstname"><br>
+          enter your password: <input type="password" name="password"><br>
+
+          apple: <input type="checkbox" name="1" value="">
+          grapes: <input type="checkbox" name="1" value="">
+          lemon: <input type="checkbox" name="1" value="">
+
+          <input type="radio" name="2" value="">
+          <input type="radio" name="2" value="">
+          <input type="radio" name="2" value=""><br>
+          <textarea name="test name" rows="2" cols="44" placeholder="enter data here..."></textarea><br>
+
+          <select name="choose">
+              <option value="txt format">txt</option> <!-- value -> value which goes to server  -->
+              <option value="">html</option>
+              <option value="">js</option>
+              <option value="php">php</option>
+          </select>
+
+          <input type="submit" name="submit" value="send">
+          <input type="reset" name="reset" value="reset">
+          <button type="submit" name="submit button">send</button>
+      </form>
+  </body>
+</html>
