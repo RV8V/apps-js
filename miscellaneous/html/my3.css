@@ -1,0 +1,14 @@
+img[title="title"] {
+  width: 100px;
+}
+
+a[href="https://yandex.com"] {
+  color: red;
+}
+
+h1, h2 {
+  color: rgba(255, 0, 0, 0.5);
+  border-bottom: 2px solid green;
+  padding-right: 2px;
+  padding-top: 3px;
+}

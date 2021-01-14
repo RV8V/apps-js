@@ -1,0 +1,36 @@
+a:hover {
+  background: green;
+}
+
+a:active {
+  font-size: 20px;
+}
+
+a:link {
+  color: red;
+}
+
+p::first-letter {
+  color: red;
+}
+
+input:focus {
+  background: green;
+}
+
+p.test:before {
+  content: "hello world";
+}
+
+.test:after {
+  content: "end";
+}
+
+p.test::selection {
+  color: red;
+}
+
+::selection {
+  color: white;
+  background: green;
+}
