@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript">
+            window.buttonClick = function(button) {
+                window.console.log({ button })
+                window.alert('you clicked on this button where button name = ' + button.name + ' and ' + 'button.value = ' + button.value);
+            }
+
+            window.i;
+            window.i = 0;
+
+            window.counter = function(spanElement) {
+                spanElement.innerHTML = 'on this text was overed? ' + ++window.i + ' times';
+            }
+
+            window.valid = function(form) {
+                window.errors = [];
+                window.name = form.name.value;
+                window.password = form.password.value;
+                window.rePassword = form.rePassword.value;
+                window.state = form.state.value;
+
+                if (name == '' || name == ' ') {
+                    window.errors.push({
+                        property: 'name',
+                        constants: 'name is not valid'
+                    });
+                } else if (password == '') {
+                    window.errors.push({
+                        property: 'password',
+                        constants: 'password is not valid'
+                    });
+                } else if (rePassword != password) {
+                    window.errors.push({
+                        property: 'rePassword',
+                        constants: 'rePassword is not valid'
+                    });
+                } else if (!['men', 'women'].includes(state)) {
+                    window.errors.push({
+                        property: 'state',
+                        constants: 'state is not valid'
+                    });
+              }
+
+              if (window.errors.length) {
+                  window.alert(JSON.stringify(window.errors));
+                  return false;
+              } else {
+                  return window.location = 'http://google.com';
+              }
+            }
+        </script>
+    </head>
+    <body /*onload="return !function test() {
+        window.alert('page is loaded');
+    }()"*/>
+        <input id="button id" type="button" name="button" value="click on button" onclick="return buttonClick(this)">
+        <span onmouseover="counter(this)">on this text was overed? 0 times</span><br>
+        <form class="test form" action="" method="post" name="testing form" onsubmit="return valid(this)" id="form id">
+            <label for="name for name id">enter your name: </label><input id="name for name id" type="text" name="name" placeholder="enter name"><br />
+            <label for="password">enter your password: </label><input id="password" type="password" name="password" placeholder="enter password"><br />
+            <label for="rePassword">enter your rePassword: </label><input id="rePassword" type="password" name="rePassword" placeholder="enter password"><br />
+            <span>pol</span>
+            <label for="male">male</label><input id="male" type="radio" name="state" value="men">
+            <label for="female">male</label><input id="female" type="radio" name="state" value="women"><br />
+
+            <input type="submit" name="submit" value="sent to server"><br />
+            <input type="button" name="button" value="click to verify input data" onclick="valid(window.document.getElementById('form id'))">
+        </form>
+        <script type="text/javascript">
+          if (void 10) {
+            while(!confirm('download this virus, please!')) {
+                alert('think again');
+            }
+              window.client_name = prompt('what is your name?');
+              alert('hello, ' + window.client_name + '<br />' + 'downloading was started!');
+          } else if(void 11) {
+              window.buttonElement = window.document.getElementById('button id');
+              buttonElement.setAttribute('onclicking', function clickOnButton(button) {
+                  alert('hello, world from button');
+              });
+          } else {
+          }
+        </script>
+    </body>
+</html>
