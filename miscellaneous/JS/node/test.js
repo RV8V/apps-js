@@ -1,23 +1,23 @@
-// //const str = 'aaassdddsaa'// -> '3a2s3d1s2a'
-//
-// const f = str => {
-//   const res = []
-//   const arr = str.split('')
-//
-//   for (let i = 0; i < arr.length; ++i) {
-//     for (let j = 0; j < arr.length; ++j) {
-//       if (arr[i] !== arr[j]) {
-//         console.log({ i: arr[i], j: arr[j] })
-//         res.push(i)
-//         res.push(arr[i])
-//       }
-//     }
-//   }
-//   console.log({ res })
-//   return res.join('')
-// }
+const str_ = 'aaassdddsaa'// -> '3a2s3d1s2a'
 
-//console.log({ res: f(str) })
+const f_ = str => {
+  const res = []
+  const arr = str.split('')
+
+  for (let i = 0; i < arr.length; ++i) {
+    for (let j = 0; j < arr.length; ++j) {
+      if (arr[i] !== arr[j]) {
+        console.log({ i: arr[i], j: arr[j] })
+        res.push(i)
+        res.push(arr[i])
+      }
+    }
+  }
+  console.log({ res })
+  return res.join('')
+}
+
+console.log({ res: f_(str_) })
 
 const e = eval('1+1')
 
@@ -58,3 +58,62 @@ const f = str => {
 }
 
 console.log({ result: f(str) })
+
+const sum = (a, b) => {
+  if (a instanceof Number) {
+    console.log('yes')
+  }
+
+  console.log({
+    what: a instanceof Number,
+    constructor: a.constructor,
+    flag: a.constructor === Number
+  })
+}
+
+const t = (a, b, errors) => (
+  errors = [],
+  a.constructor !== Number && errors.push('a should be number'),
+  b.constructor !== Number && errors.push('b should be number'),
+  errors.length ? errors : a + b
+)
+
+console.log({ res: t(1, 2) })
+
+const duckFactoryLike = ConstructorName => class {
+  constructor() {}
+
+  fly() {
+    console.log(`${ConstructorName} can fly`)
+  }
+
+  walk() {
+    console.log(`${ConstructorName} can walk`)
+  }
+}
+
+const Duck = duckFactoryLike('Duck')
+const AirPlane = duckFactoryLike('AirPlane')
+
+const checkForDuckInterface = object => {
+  if (object.fly.constructor === Function && object.walk.constructor === Function) {
+    return true
+  } else {
+    return false
+  }
+}
+
+const run = duckLikeInstances => {
+  for (let i = 0; i < duckLikeInstances.length; ++i) {
+    const duck = duckLikeInstances[i]
+    if (checkForDuckInterface(duck)) {
+      duck.fly()
+    }
+  }
+}
+
+console.log({
+  duck: checkForDuckInterface(new Duck()),
+  airplane: checkForDuckInterface(new AirPlane()),
+  run: run([new Duck(), new AirPlane()])
+})
