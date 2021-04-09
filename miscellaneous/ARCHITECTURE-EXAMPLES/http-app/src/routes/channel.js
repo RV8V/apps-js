@@ -2,7 +2,7 @@ const { Router } = require('express')
 
 const router = new Router()
 
-router.get('/channel/', (req, res) => {
+router.get('/', (req, res) => {
   try {
     res.send({ data: 'initial data for channels' })
   } catch(err) {

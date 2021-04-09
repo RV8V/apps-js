@@ -3,7 +3,7 @@ const api = require('../../config/api.json')
 
 const router = new Router()
 
-router.get('/api/', (req, res) => {
+router.get('/', (req, res) => {
   res.json({
     data: {
       version: api.version

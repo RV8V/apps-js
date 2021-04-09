@@ -5,11 +5,11 @@ const cors = require('cors')
 class HttpService {
   constructor(config, routes) {
     this.app = express()
-    this.routers = routes
+    this.routes = routes
     this.port = config.port
     this.app.use(cors())
     this.app.use(bodyParser.json())
-    this.routers.forEach(route => this.app.use(route))
+    this.app.use(this.routes)
   }
 
   start() {
