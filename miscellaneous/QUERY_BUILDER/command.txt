@@ -1,0 +1,10 @@
+npm i -y && : > .gitignore && echo 'node_modules/' > .gitignore
+
+knex migrate:make create_users_and_todos_tables
+knex seed:make 01_users
+knex seed:make 02_todos
+
+knex migrate:rollback
+knex migrate:latest
+
+knex seed:run
