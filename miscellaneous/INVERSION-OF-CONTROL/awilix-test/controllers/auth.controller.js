@@ -4,6 +4,8 @@ const UserService = require('../services/user.service.js')
 const RoleService = require('../services/role.service.js')
 const AuthService = require('../services/auth.service.js')
 
+console.log({ UserService })
+
 const validationResult = require('express-validator').validationResult
 const jwt = require('jsonwebtoken')
 
@@ -43,7 +45,6 @@ class AuthController {
       })
     } catch(err) {
       console.log(err)
-      
       res.status(400).json({
         message: 'registration error'
       })

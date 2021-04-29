@@ -1,0 +1,2 @@
+npm i -g fastify-cli
+fastify generate fastify-boostrap-api
