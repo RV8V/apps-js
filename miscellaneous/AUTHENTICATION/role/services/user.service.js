@@ -16,6 +16,10 @@ class UserService {
   async create(username, password, roles) {
     return new this.userRepository({ username, password, roles })
   }
+
+  async save(userEntity) {
+    await userEntity.save()
+  }
 }
 
 module.exports = UserService

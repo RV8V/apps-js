@@ -7,7 +7,8 @@ const userController = new UserController()
 
 const authMiddleware = require('../middlewares/auth.middleware.js')
 const roleMiddleware = require('../middlewares/role.middleware.js')
+const loggerMiddleware = require('../middlewares/logger.middleware.js')
 
-router.get('/', authMiddleware, roleMiddleware(['user']), userController.getAllUsers)
+router.get('/', loggerMiddleware, authMiddleware, roleMiddleware(['user']), userController.getAllUsers)
 
 module.exports = router

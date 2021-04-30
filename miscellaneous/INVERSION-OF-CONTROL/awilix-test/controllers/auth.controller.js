@@ -16,6 +16,10 @@ class AuthController {
     this.bcryptService = new BcryptService()
     this.userService = new UserService()
     this.roleService = new RoleService()
+
+    this.register = this.register.bind(this)
+    this.login = this.login.bind(this)
+    this.logout = this.logout.bind(this)
   }
 
   async register(req, res) {
@@ -37,14 +41,13 @@ class AuthController {
 
       const hashedPassword = this.bcryptService.hashSync(password)
       const userRole = await this.roleService.findOneByRole('user')
-      const user = this.userService.create(username, hashedPassword, [userRole.value])
+      const user = await this.userService.create(username, hashedPassword, [userRole.value])
       await user.save()
 
       res.json({
         message: 'user registrated with success'
       })
     } catch(err) {
-      console.log(err)
       res.status(400).json({
         message: 'registration error'
       })

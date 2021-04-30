@@ -1,3 +1,5 @@
+const jwt = require('jsonwebtoken')
+
 class TokenService {
   constructor() {}
 

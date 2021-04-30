@@ -1,49 +1,48 @@
-const TokenService = require('../services/token.service.js')
-const BcryptService = require('../services/bcrypt.service.js')
-const UserService = require('../services/user.service.js')
-const RoleService = require('../services/role.service.js')
+// const TokenService = require('../services/token.service.js')
+// const BcryptService = require('../services/bcrypt.service.js')
+// const UserService = require('../services/user.service.js')
+// const RoleService = require('../services/role.service.js')
 const AuthService = require('../services/auth.service.js')
+const LoggerService = require('../shared/logger.service.js')
 
 const validationResult = require('express-validator').validationResult
 const jwt = require('jsonwebtoken')
 
 class AuthController {
   constructor() {
-    this.tokenService = new TokenService()
+    //this.tokenService = new TokenService()
     this.authService = new AuthService()
-    this.bcryptService = new BcryptService()
-    this.userService = new UserService()
-    this.roleService = new RoleService()
+    // this.bcryptService = new BcryptService()
+    // this.userService = new UserService()
+    // this.roleService = new RoleService()
+    this.loggerService = new LoggerService()
+
+    this.authService = new AuthService()
+
+    this.register = this.register.bind(this)
+    this.login = this.login.bind(this)
+    this.logout = this.logout.bind(this)
   }
 
   async register(req, res) {
+    this.loggerService.log.info('/register', { body: req.body })
+    
     try {
       const errors = validationResult(req)
+
       if (!errors.isEmpty()) {
         return res.status(400).json({
           message: 'validation errors', errors
         })
       }
 
-      const { username, password } = req.body
+      const response = await this.authService.register(req.body)
 
-      if (await this.userService.findOneByUserName(username)) {
-        return res.status(400).json({
-          message: 'username already taken'
-        })
-      }
+      res.json(response)
 
-      const hashedPassword = this.bcryptService.hashSync(password)
-      const userRole = await this.roleService.findOneByRole('user')
-      const user = this.userService.create(username, hashedPassword, [userRole.value])
-      await user.save()
-
-      res.json({
-        message: 'user registrated with success'
-      })
     } catch(err) {
       console.log(err)
-      
+
       res.status(400).json({
         message: 'registration error'
       })
@@ -51,6 +50,8 @@ class AuthController {
   }
 
   async login(req, res) {
+    this.loggerService.log.info('/login', { body: req.body })
+
     try {
       const { username, password } = req.body
       const user = await this.userService.findOneByUserName(username)
@@ -79,7 +80,9 @@ class AuthController {
     }
   }
 
-  async logout() {}
+  async logout() {
+    this.loggerService.log.info('/logout', { body: req.body })
+  }
 }
 
 module.exports = AuthController
