@@ -10,6 +10,19 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
+const start = async () => {
+  const [seqId, table] = await Promise.all([
+    knex.raw(`select count(*) from todos where user_id = 1`),
+    knex.raw('select * from todos left join users on todos.user_id = users.id where todos.user_id = 2')
+  ])
+
+  console.log({ seqId, table: table.rows.shift() })
+  // const { rows } = await knex.raw('select * from todos left join users on todos.user_id = users.id where todos.user_id = 2')
+  // console.log({ rows });
+}
+
+start()
+
 app.get('/todos', async (req, res) => {
   knex.raw('select * from todos').then(todos => {})
   res.send(
