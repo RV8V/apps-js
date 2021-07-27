@@ -1,0 +1,13 @@
+medmo-db:
+    image: mysql:8.0
+    container_name: medmo-db
+    environment:
+        MYSQL_ROOT_PASSWORD: medmo
+        MYSQL_USER: medmo
+        MYSQL_DATABASE: medmo
+        MYSQL_PASSWORD: medmo
+        MYSQL_ROOT_HOST: "0.0.0.0"
+    stdin_open: true
+    tty: true
+    ports:
+      - 3306:3306/tcp
