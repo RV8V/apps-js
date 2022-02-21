@@ -12,9 +12,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * change log ([8dc2879](https://github.com/RV8V/apps-js/commit/8dc28794f9727d3ef378c495ae80e0bd718c0758))
 
 
-
-
-
 ## [1.2.3](https://github.com/RV8V/apps-js/compare/v1.2.2...v1.2.3) (2022-02-21)
 
 **Note:** Version bump only for package @workspaces/server
