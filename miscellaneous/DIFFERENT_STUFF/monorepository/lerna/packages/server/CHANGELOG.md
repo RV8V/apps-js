@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/RV8V/apps-js/compare/v1.1.3...v1.1.4) (2022-02-21)
+
+**Note:** Version bump only for package @workspaces/server
+
+
+
+
+
 ## [1.1.3](https://github.com/RV8V/apps-js/compare/v1.1.2...v1.1.3) (2022-02-21)
 
 **Note:** Version bump only for package @workspaces/server
