@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/RV8V/apps-js/compare/v1.2.3...v1.3.0) (2022-02-21)
+
+
+### Features
+
+* change console methods for intospection, console.dir ([6a6f487](https://github.com/RV8V/apps-js/commit/6a6f487b1de44c28f07eb0dfdc31beeeb9b72cc0))
+* change log ([8dc2879](https://github.com/RV8V/apps-js/commit/8dc28794f9727d3ef378c495ae80e0bd718c0758))
+
+
+
+
+
 ## [1.2.3](https://github.com/RV8V/apps-js/compare/v1.2.2...v1.2.3) (2022-02-21)
 
 **Note:** Version bump only for package lerna
