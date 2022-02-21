@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/RV8V/apps-js/compare/v1.2.1...v1.2.2) (2022-02-21)
+
+**Note:** Version bump only for package lerna
+
+
+
+
+
 ## [1.2.1](https://github.com/RV8V/apps-js/compare/v1.2.0...v1.2.1) (2022-02-21)
 
 **Note:** Version bump only for package lerna
