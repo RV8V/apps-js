@@ -1,0 +1,52 @@
+x-name: list-locations
+summary: Get all existing locations
+tags:
+  - Locations
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: coordinates
+    in: query
+    type: string
+    description: |
+      a string of coordinates concatenated by the comma,
+      there should not be any space, in the form:
+      longitude,latitude
+  - name: name
+    in: query
+    description: filter locations by name
+    type: string
+  - name: type
+    in: query
+    description: |
+      filter location by type, can be concatenated string by
+      comma, like LOCATION,WAYPOINT
+    type: string
+    enum:
+      - TRUCK
+      - LOCATION
+      - WAYPOINT
+  - name: empty
+    in: query
+    type: number
+    enum:
+      - 0
+      - 1
+    description: filter locations which haven't stored any cans yet
+  - name: deleted
+    in: query
+    type: number
+    enum:
+      - 0
+      - 1
+    description: get deleted locations
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of locations
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/Location'
+  500:
+    $ref: '#/responses/Unexpected'

@@ -1,0 +1,16 @@
+x-name: list-workorders
+summary: Get all of the work orders.
+tags:
+  - Work Orders
+$fs-ref: ./filter-params.yaml
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of work orders
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/WorkOrder'
+  500:
+    $ref: '#/responses/Unexpected'

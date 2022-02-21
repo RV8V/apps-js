@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Starlight API Docs login page</title>
+
+</head>
+<body>
+<script>
+
+function goToDocs(token){
+ window.location = '/docs?token=' + token;
+}
+
+window.onload = function onload(){
+  if(/reset/.test(window.location.search)){
+    localStorage.removeItem('id_token');
+  }
+
+  var token = localStorage.getItem('id_token');
+  if(token) {
+    goToDocs(token);
+  } else {
+    var thetoken = localStorage.setItem('id_token', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlSWQiOjExLCJ0eiI6IkFtZXJpY2EvRGVudmVyIiwiaWQiOiI4ODBlOWYwZS1lMTJkLTExZTctODBjMS05YTIxNGNmMDkzYWUiLCJvcmdJZCI6IjEiLCJ1c2VybmFtZSI6InN0cnVlcyIsImVtYWlsIjoic3RldmVuLnRydWVzZGVsbEBzdGFybGlnaHRwcm8uY29tIiwiZXhwIjoxNTc5ODgwMzUwfQ.CCR8mg9OBFUj7Nf_7TAlvRLfXfEq-BEjoPM4B0uh44U');
+    return goToDocs(thetoken);
+  }
+};
+  </script>
+</body>
+</html>

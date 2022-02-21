@@ -1,0 +1,40 @@
+x-name: list-sizes
+summary: Get sizes
+tags:
+  - Sizes
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: id
+    in: query
+    description: allows to filter sizes by id
+    type: integer
+  - name: name
+    in: query
+    description: allows to filter sizes by size name
+    type: string
+  - name: deleted
+    in: query
+    description: Allows get deleted sizes
+    type: number
+    enum:
+      - 0
+      - 1
+  - name: sort
+    in: query
+    description: Allows sort sizes by filed
+    type: string
+    default: id
+    enum:
+      - id
+      - name
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of sizes
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/Size'
+  500:
+    $ref: '#/responses/Unexpected'

@@ -1,0 +1,16 @@
+
+x-name: create-default-sizes
+summary: Create a list of default sizes
+tags:
+  - Sizes
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  201:
+    description: A list of default sizes
+    schema:
+      $ref: '#/definitions/Size'
+  500:
+    $ref: '#/responses/Unexpected'

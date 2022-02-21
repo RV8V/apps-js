@@ -1,0 +1,34 @@
+x-name: update-driver
+summary: Update a driver
+tags:
+  - Drivers
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: driverId
+    in: path
+    description: ID of the driver
+    type: string
+    required: true
+  - name: driver
+    in: body
+    description: new values for the driver, id will be ignored
+    schema:
+      $ref: '#/definitions/Driver'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  202:
+    description: An updated driver
+    schema:
+      $ref: '#/definitions/Driver'
+  404:
+    description: Driver not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid driver ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

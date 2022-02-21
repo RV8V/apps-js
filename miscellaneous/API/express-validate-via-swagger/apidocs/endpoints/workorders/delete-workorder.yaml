@@ -1,0 +1,22 @@
+x-name: delete-workorder
+summary: Delete a work order
+tags:
+  - Work Orders
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $fs-ref: './id.yaml'
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  204:
+    description: Work Order was deleted
+  404:
+    description: Work Order not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid Work Order ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

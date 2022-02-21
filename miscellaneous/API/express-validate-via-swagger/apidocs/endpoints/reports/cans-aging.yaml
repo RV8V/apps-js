@@ -1,0 +1,20 @@
+x-name: reports-cans-aging
+summary: Get cans aging report in csv format
+tags:
+  - Reports
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: beforeDate
+    in: query
+    description: date to search for all cans with a timestamp before
+    type: string
+    required: false
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: |
+      CSV file in format:
+      Can Number, Serial, Size, Action, Timestamp, Address
+  500:
+    $ref: '#/responses/Unexpected'

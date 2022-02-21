@@ -1,0 +1,26 @@
+x-name: delete-driver
+summary: Delete a driver
+tags:
+  - Drivers
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: driverId
+    in: path
+    description: ID of the driver
+    type: string
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  204:
+    description: Driver was deleted
+  404:
+    description: Driver not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid driver ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

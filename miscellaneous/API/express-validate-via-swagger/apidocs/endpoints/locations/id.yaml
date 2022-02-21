@@ -1,0 +1,5 @@
+name: locationId
+in: path
+description: ID of the location
+type: integer
+required: true

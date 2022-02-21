@@ -1,0 +1,16 @@
+x-name: list-templates
+summary: Get all the templates
+tags:
+  - Templates
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of templates
+    schema:
+      $ref: '#/definitions/Template'
+      type: array
+      items:
+        $ref: '#/definitions/Template'
+  500:
+    $ref: '#/responses/Unexpected'

@@ -1,0 +1,53 @@
+x-name: update-wo-note
+summary: Update a work order note
+tags:
+  - Work Orders
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $fs-ref: '../workorders/id.yaml'
+  - name: workOrderNoteId
+    in: path
+    description: ID of the Work Order Note
+    type: integer
+    required: true
+  - name: workOrderNote
+    in: body
+    description: a work order note to be updated
+    schema:
+      type: object
+      properties:
+        locationId:
+          type: number
+        type:
+          type: string
+          enum:
+            - MANIFEST
+            - NOTE
+            - SCALETICKET
+            - WEIGHT_RECORD
+            - TRANSITION
+            - SIGNED_DOC
+          description: Type of note. (Required for all)
+        note:
+          $ref: '#/definitions/Note'
+      required:
+        - type
+        - note
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  202:
+    description: Updated work order note
+    schema:
+      $ref: '#/definitions/WorkOrderNote'
+  404:
+    description: Work Order not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid Work Order or Work Order Note Parameter
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

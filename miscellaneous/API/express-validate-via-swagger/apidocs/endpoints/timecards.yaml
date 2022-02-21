@@ -1,0 +1,13 @@
+/v1/timecards:
+  post:
+    $fs-ref: ./timecards/create.yaml
+  get:
+    $fs-ref: ./timecards/list.yaml
+
+/v1/timecards/{timeCardId}:
+  put:
+    $fs-ref: ./timecards/update.yaml
+  get:
+    $fs-ref: ./timecards/view.yaml
+  delete:
+    $fs-ref: ./timecards/delete.yaml

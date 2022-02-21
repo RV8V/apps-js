@@ -1,0 +1,34 @@
+x-name: update-timecard
+summary: Update a time card
+tags:
+  - Time Cards
+parameters:
+  - $fs-ref: '../../globals/auth-params.yaml'
+  - name: timeCardId
+    in: path
+    description: ID of the TimeCard
+    type: integer
+    required: true
+  - name: timecard
+    in: body
+    description: new values for the timecard, id will be ignored
+    schema:
+      $ref: '#/definitions/TimeCard'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  202:
+    description: An updated time card
+    schema:
+      $ref: '#/definitions/TimeCard'
+  404:
+    description: time card not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid time card ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

@@ -1,0 +1,54 @@
+x-name: set-workorder-state
+summary: Set Work Order State and Create Transition Note
+tags:
+  - Work Orders
+parameters:
+  - $fs-ref: ../../../globals/auth-params.yaml
+  - $fs-ref: '../id.yaml'
+  - name: newState
+    in: path
+    description: new State to Transition to
+    type: string
+    required: true
+    enum:
+      - START WORK ORDER
+      - ARRIVE ON SITE
+      - START SERVICE
+      - SIGNATURE
+      - DROP CAN
+      - PICKUP CAN
+      - FINISH SERVICE
+      - RECORD WEIGHT
+      - RECORD MANIFESTS
+      - GOING TO FILL
+      - ARRIVE AT FILL
+      - FINISH DISPOSAL
+      - RECORD WEIGHT TICKETS
+      - RETURNING TO JOBSITE
+      - SPECIAL INSTRUCTIONS
+  - name: canId
+    in: query
+    description: set a can ID if you do PICKUP or DROPOFF
+    type: number
+  - name: location
+    in: body
+    description: location coordinates
+    schema:
+      $ref: '#/definitions/Location'
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  201:
+    description: A new work order transition note
+    schema:
+      $ref: '#/definitions/WorkOrderNote'
+  404:
+    description: Work Order Not Found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid Work Order ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

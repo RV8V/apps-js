@@ -1,0 +1,134 @@
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $ref: '#/parameters/bounds'
+  - $ref: '#/parameters/search'
+  - $ref: '#/parameters/date'
+  - name: modifiedSince
+    in: query
+    description: |
+      filters all the work orders, which were modified since the time passed in.
+      The format is a unix timestamp with milliseconds (+new Date()).
+    type: string
+  - name: driverId
+    in: query
+    description: driver Id
+    type: integer
+  - name: deepAssignmentSearch
+    in: query
+    description: |
+      if this param is passed, will be fetched all the work orders which are
+      assigned to the certain driverId.
+      You can only use it in the pair with driverId param.
+    type: number
+  - name: size
+    in: query
+    description: |
+      can size. You can pass one or more items separated by the comma.
+      "size=12" or "size=12,20,30"
+    type: string
+  - name: material
+    in: query
+    description: |
+      material type. You can pass one or more items separated by the comma.
+      "material=first" or "material=first,second,third"
+    type: string
+  - name: action
+    in: query
+    description: |
+      action can be a list of the SPOT, FINAL, SWITCH, DUMP & RETURN, LIVE LOAD,
+      PICKUP CAN, DROPOFF CAN, RELOCATE, REPOSITION, GENERAL PURPOSE.
+      To pass more than one, separate items with the comma.
+      Like action=SPOT,FINAL
+    type: string
+  - name: status
+    in: query
+    description: |
+      status can be a list of the UNASSIGNED, ASSIGNED, INPROGRESS, COMPLETED,
+      CANCELED.
+      To pass more than one, separate items with the comma.
+      Like status=UNASSIGNED,ASSIGNED
+    type: string
+  - name: cow
+    in: query
+    description: filter workorders by 'callOnWay'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: sos
+    in: query
+    description: filter workorders by 'seeOnSite'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: alleyPlacement
+    in: query
+    description: filter workorders by 'alleyPlacement'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: permittedCan
+    in: query
+    description: filter workorders by 'permittedCan'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: earlyPickUp
+    in: query
+    description: filter workorders by 'earlyPickUp'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: cabOver
+    in: query
+    description: filter workorders by 'cabOver'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: okToRoll
+    in: query
+    description: filter workorders by 'okToRoll'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: priority
+    in: query
+    description: filter workorders by 'priority'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: negotiatedFill
+    in: query
+    description: filter workorders by 'negotiatedFill'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: customerProvidedProfile
+    in: query
+    description: filter workorders by 'customerProvidedProfile'
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: scheduledStart
+    in: query
+    description: filter workorders by having scheduled start
+    enum:
+      - 0
+      - 1
+    type: number
+  - name: deleted
+    in: query
+    description: get deleted workorders
+    enum:
+      - 0
+      - 1
+    type: number

@@ -1,0 +1,40 @@
+type: object
+required:
+  - id
+  - name
+  - hotel_preview_url
+  - discount
+  - promo_code
+  - book_url
+  - travelPayoutsId
+properties:
+  id:
+    type: string
+  travelPayoutsId:
+    type: number
+  external_ids:
+    type: object
+    required:
+      - travelpayouts
+    properties:
+      travelpayouts:
+        type: string
+  name:
+    type: string
+  hotel_preview_url:
+    type: string
+  discount:
+    type: number
+  promo_code:
+    type: string
+  book_url:
+    type: string
+  photo_items:
+    type: array
+    items:
+      type: string
+  video_items:
+    type: array
+    items:
+      type: string
+additionalProperties: false

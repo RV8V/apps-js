@@ -1,0 +1,38 @@
+x-name: list-wo-notes
+summary: Get all of the work orders.
+tags:
+  - Work Orders
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $fs-ref: '../workorders/id.yaml'
+  - name: type
+    in: query
+    description: |
+      type of Note being MANIFEST, NOTE, SCALETICKET, WEIGHT_RECORD, SIGNED_DOC,
+      or TRANSITION
+    type: string
+    enum:
+      - MANIFEST
+      - NOTE
+      - SCALETICKET
+      - WEIGHT_RECORD
+      - TRANSITION
+      - SIGNED_DOC
+  - name: deleted
+    in: query
+    description: Allows get deleted cans
+    type: number
+    enum:
+      - 0
+      - 1
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of work order notes
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/WorkOrderNote'
+  500:
+    $ref: '#/responses/Unexpected'

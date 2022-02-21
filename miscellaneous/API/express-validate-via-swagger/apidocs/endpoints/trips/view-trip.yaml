@@ -1,0 +1,28 @@
+x-name: view-trip
+summary: Get a trip with a trip ID
+tags:
+  - Trips
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: tripId
+    in: path
+    description: ID of the trip
+    type: string
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: The trip with the trip ID
+    schema:
+      $ref: '#/definitions/Trip'
+  404:
+    description: Trip not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid trip ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

@@ -1,0 +1,37 @@
+x-name: update-material
+summary: Update a material
+tags:
+  - Materials
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: id
+    in: path
+    description: ID of the material
+    type: string
+    required: true
+  - name: material
+    in: body
+    description: New values for material, id will be ignored
+    schema:
+      type: object
+      properties:
+        name:
+          type: string
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  202:
+    description: An updated material
+    schema:
+      $ref: '#/definitions/Material'
+  404:
+    description: material not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid material ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

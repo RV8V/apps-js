@@ -1,0 +1,27 @@
+type: object
+properties:
+  id:
+    type: number
+  driverId:
+    type: number
+  startTime:
+    type: string
+    format: date-time
+  stopTime:
+    type: string
+    format: date-time
+  createdBy:
+    type: string
+  createdDate:
+    type: string
+    format: date-time
+  modifiedBy:
+    type: string
+  modifiedDate:
+    type: string
+    format: date-time
+  deleted:
+    type: number
+required:
+  - driverId
+  - startTime

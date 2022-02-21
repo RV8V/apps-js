@@ -1,0 +1,5 @@
+/v1/documents:
+  get:
+    $fs-ref: ./documents/list-documents.yaml
+  post:
+    $fs-ref: ./documents/create-document.yaml

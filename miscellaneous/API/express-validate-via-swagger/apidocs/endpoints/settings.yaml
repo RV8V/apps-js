@@ -1,0 +1,7 @@
+/v1/settings:
+  get:
+    $fs-ref: ./settings/view-by-keys.yaml
+  put:
+    $fs-ref: ./settings/bulk-update.yaml
+  delete:
+    $fs-ref: ./settings/delete-by-keys.yaml

@@ -1,0 +1,27 @@
+Error:
+  type: object
+  properties:
+    code:
+      type: string
+    message:
+      type: string
+
+NotFoundError:
+  type: object
+  allOf:
+    - $ref: '#/definitions/Error'
+
+InvalidParameterError:
+  type: object
+  allOf:
+    - $ref: '#/definitions/Error'
+
+ConflictError:
+  type: object
+  allOf:
+    - $ref: '#/definitions/Error'
+
+ForbiddenError:
+  type: object
+  allOf:
+    - $ref: '#/definitions/Error'

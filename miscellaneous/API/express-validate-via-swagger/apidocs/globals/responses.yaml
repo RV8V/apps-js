@@ -1,0 +1,8 @@
+Forbidden:
+  description: Access denied
+  schema:
+    $ref: '#/definitions/ForbiddenError'
+Unexpected:
+  description: Unexpected error
+  schema:
+    $ref: '#/definitions/Error'

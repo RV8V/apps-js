@@ -1,0 +1,30 @@
+type: object
+properties:
+  id:
+    type: number
+  url:
+    type: string
+  driver:
+    type: string
+  printedName:
+    type: string
+  signature:
+    type: string
+  templateId:
+    type: number
+  workOrderId:
+    type: number
+  createdBy:
+    type: string
+  createdDate:
+    type: string
+    format: date-time
+  modifiedBy:
+    type: string
+  modifiedDate:
+    type: string
+    format: date-time
+required:
+  - signature
+  - workOrderId
+  - printedName

@@ -1,0 +1,24 @@
+x-name: view-location
+summary: Get Location by ID
+tags:
+  - Locations
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $fs-ref: './id.yaml'
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: The location with the location ID
+    schema:
+      $ref: '#/definitions/Location'
+  404:
+    description: Location Not Found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid Location ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

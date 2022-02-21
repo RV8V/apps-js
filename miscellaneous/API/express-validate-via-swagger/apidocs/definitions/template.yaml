@@ -1,0 +1,61 @@
+type: object
+properties:
+  id:
+    type: number
+  name:
+    type: string
+  description:
+    type: string
+  logo:
+    type: string
+  companyName:
+    type: string
+  address:
+    type: string
+  address2:
+    type: string
+  city:
+    type: string
+  state:
+    type: string
+  zipcode:
+    type: string
+  phoneNumber:
+    type: string
+  content:
+    type: string
+  contentRaw:
+    type: string
+  footer:
+    type: string
+  footerRaw:
+    type: string
+  header:
+    type: string
+  headerRaw:
+    type: string
+  acknowledgement:
+    type: string
+  createdBy:
+    type: string
+  createdDate:
+    type: string
+    format: date-time
+  modifiedBy:
+    type: string
+  modifiedDate:
+    type: string
+    format: date-time
+  deleted:
+    type: number
+required:
+  - name
+  - logo
+  - companyName
+  - address
+  - city
+  - phoneNumber
+  - state
+  - zipcode
+  - content
+  - acknowledgement

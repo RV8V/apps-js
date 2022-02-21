@@ -1,0 +1,41 @@
+/v1/cans:
+  get:
+    $fs-ref: ./cans/list-cans.yaml
+  post:
+    $fs-ref: ./cans/create-can.yaml
+
+/v1/cans/{canId}:
+  get:
+    $fs-ref: ./cans/view-can.yaml
+  put:
+    $fs-ref: ./cans/update-can.yaml
+  delete:
+    $fs-ref: ./cans/delete-can.yaml
+
+/v1/cans/{canId}/move:
+  put:
+    $fs-ref: ./cans/move-can.yaml
+
+/v1/cans/{canId}/pickup:
+  put:
+    $fs-ref: ./cans/pickup-can.yaml
+
+/v1/cans/{canId}/dropoff:
+  put:
+    $fs-ref: ./cans/dropoff-can.yaml
+
+/v1/cans/{canId}/transfer:
+  put:
+    $fs-ref: ./cans/transfer-can.yaml
+
+/v1/cans/{canId}/note:
+  post:
+    $fs-ref: ./cans/add-note.yaml
+
+/v1/cans/import:
+  post:
+    $fs-ref: ./cans/import.yaml
+
+/v1/cans/export:
+  get:
+    $fs-ref: ./cans/export.yaml

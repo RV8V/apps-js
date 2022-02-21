@@ -1,0 +1,37 @@
+x-name: update-size
+summary: Update a size
+tags:
+  - Sizes
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: id
+    in: path
+    description: ID of the size
+    type: string
+    required: true
+  - name: size
+    in: body
+    description: New values for size, id will be ignored
+    schema:
+      type: object
+      properties:
+        name:
+          type: string
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  202:
+    description: An updated size
+    schema:
+      $ref: '#/definitions/Size'
+  404:
+    description: Size not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid size ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

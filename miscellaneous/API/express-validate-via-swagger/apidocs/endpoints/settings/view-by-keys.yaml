@@ -1,0 +1,28 @@
+x-name: view-settings-by-keys
+summary: Get settings by keys
+tags:
+  - Settings
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: keys
+    in: query
+    description: array of the settings keys concatenated by comma
+    type: string
+    required: false
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: Array of the settings keys
+    schema:
+      $ref: '#/definitions/Settings'
+  404:
+    description: Settings Not Found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid Settings key supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

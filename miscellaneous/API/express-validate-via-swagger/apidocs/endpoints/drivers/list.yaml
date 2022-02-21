@@ -1,0 +1,25 @@
+x-name: list-drivers
+summary: Get all the drivers
+tags:
+  - Drivers
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $ref: '#/parameters/search'
+  - name: deleted
+    in: query
+    description: get deleted drivers
+    type: number
+    enum:
+      - 0
+      - 1
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of drivers
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/Driver'
+  500:
+    $ref: '#/responses/Unexpected'

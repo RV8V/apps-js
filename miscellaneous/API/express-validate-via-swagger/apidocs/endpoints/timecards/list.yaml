@@ -1,0 +1,33 @@
+x-name: list-timecards
+summary: Get all existing time cards
+tags:
+  - Time Cards
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $ref: '#/parameters/date'
+  - name: driverId
+    in: query
+    description: filter time cards by driver's id
+    type: integer
+  - name: driverName
+    in: query
+    description: filter time cards by driver's name
+    type: string
+  - name: deleted
+    in: query
+    description: get deleted cans
+    type: number
+    enum:
+      - 0
+      - 1
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of time cards
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/TimeCard'
+  500:
+    $ref: '#/responses/Unexpected'

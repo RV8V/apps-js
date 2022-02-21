@@ -1,0 +1,25 @@
+x-name: create-trip
+summary: Create a trip
+tags:
+  - Trips
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: trip
+    in: body
+    description: the trip JSON you want to save
+    schema:
+      $ref: '#/definitions/Trip'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  201:
+    description: A new trip
+    schema:
+      $ref: '#/definitions/Trip'
+  400:
+    description: Invalid input
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

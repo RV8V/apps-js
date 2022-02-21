@@ -1,0 +1,46 @@
+x-name: workorders-import
+summary: Import list of work orders
+tags:
+  - Work Orders
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: type
+    in: query
+    description: |
+      import type can be one of the
+      APPEND, UPDATE, DELETE.
+      APPEND is default
+    type: string
+    enum:
+      - APPEND
+      - UPDATE
+      - DELETE
+    default: APPEND
+  - name: csv
+    in: body
+    description: CSV file
+    schema:
+      type: object
+      properties:
+        csv:
+          format: csv
+          description: |
+            id (optional), action, status, size, material,
+            scheduled date, scheduled start, scheduled end,
+            contact name, contact number, address 1, address 2,
+            priority, progress step
+          type: string
+      required:
+        - csv
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  204:
+    description: Loaded
+  400:
+    description: Invalid type or CSV
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

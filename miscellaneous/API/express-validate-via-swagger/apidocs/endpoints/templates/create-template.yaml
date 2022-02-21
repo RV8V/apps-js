@@ -1,0 +1,26 @@
+x-name: create-template
+summary: Create a template
+tags:
+  - Templates
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+
+  - name: template
+    in: body
+    description: the template you want to save
+    schema:
+      $ref: '#/definitions/Template'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  201:
+    description: A new template
+    schema:
+      $ref: '#/definitions/Template'
+  400:
+    description: Invalid input
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

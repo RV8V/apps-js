@@ -1,0 +1,15 @@
+$fs-ref:
+  - ./locations.yaml
+  - ./timecards.yaml
+  - ./trips.yaml
+  - ./workorders.yaml
+  - ./cans.yaml
+  - ./drivers.yaml
+  - ./util.yaml
+  - ./wo-notes.yaml
+  - ./settings.yaml
+  - ./reports.yaml
+  - ./materials.yaml
+  - ./documents.yaml
+  - ./sizes.yaml
+  - ./templates.yaml

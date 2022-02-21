@@ -1,0 +1,68 @@
+type: object
+properties:
+  id:
+    type: number
+  username:
+    type: string
+    description: Binds user with driver. This is really an email address.
+  name:
+    type: string
+  photo:
+    type: string
+  truck:
+    type: object
+    properties:
+      id:
+        type: number
+      name:
+        type: string
+      location:
+        type: object
+        properties:
+          lon:
+            type: number
+          lat:
+            type: number
+      type:
+        type: string
+        enum:
+          - TRUCK
+  createdBy:
+    type: string
+  createdDate:
+    type: string
+    format: date-time
+  modifiedBy:
+    type: string
+  modifiedDate:
+    type: string
+    format: date-time
+  deleted:
+    type: number
+  phoneNumber:
+    type: string
+  agreeWhipAround:
+    type: number
+    default: 0
+    description: 0 is false, 1 is true. True if the driver has agreed to the WhipAround license
+  enableWoControl:
+    type: number
+    default: 0
+    description: Toggles the ability for drivers to start work orders in the driver application in any order they'd like. 0 is false, 1 is true.
+  deviceToken:
+    type: string
+    default: ''
+    description: Device token is a unique identifier for the drivers phone used for push notifications.
+  language:
+    type: string
+    default: 'en'
+    description: The language the driver uses in their application
+  route:
+    type: string
+    description: The route defined by the dispatcher
+  allowOoS:
+    type: number
+    default: 0
+    description: Allow or disallow the driver to pickup cans which are marked Out Of Serivce. 1, true - the driver can pick up containers marked as out of service. 0, false - the driver is prevented from picking up Out Of Service cans.
+required:
+  - name

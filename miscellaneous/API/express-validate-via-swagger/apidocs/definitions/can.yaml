@@ -1,0 +1,46 @@
+type: object
+properties:
+  id:
+    type: number
+  name:
+    type: string
+  serial:
+    type: string
+  size:
+    type: string
+  requiresMaintenance:
+    type: number
+  outOfService:
+    type: number
+  location:
+    $ref: '#/definitions/Location'
+  source:
+    type: string
+  startDate:
+    type: string
+    format: date
+  hazardous:
+    type: number
+  action:
+    type: string
+  timestamp:
+    type: string
+    format: date-time
+  createdBy:
+    type: string
+  createdDate:
+    type: string
+    format: date-time
+  modifiedBy:
+    type: string
+  modifiedDate:
+    type: string
+    format: date-time
+  deleted:
+    type: number
+  inUse:
+    type: number
+    description: true if inUse for staging, false otherwise.
+required:
+  - name
+  - size

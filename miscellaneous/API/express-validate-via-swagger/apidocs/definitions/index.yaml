@@ -1,0 +1,49 @@
+Location:
+  $fs-ref: ./location.yaml
+
+Trip:
+  $fs-ref: ./trip.yaml
+
+TimeCard:
+  $fs-ref: ./timecard.yaml
+
+Transaction:
+  $fs-ref: ./transaction.yaml
+
+Can:
+  $fs-ref: ./can.yaml
+
+WorkOrder:
+  $fs-ref: ./workorder.yaml
+
+WorkOrderNote:
+  $fs-ref: ./workordernote.yaml
+
+Note:
+  $fs-ref: ./note.yaml
+
+CanView:
+  $fs-ref: ./can-view.yaml
+
+Document:
+  $fs-ref: ./document.yaml
+
+Template:
+  $fs-ref: ./template.yaml
+
+Driver:
+  $fs-ref: ./driver.yaml
+
+Settings:
+  $fs-ref: ./settings.yaml
+
+Reports:
+  $fs-ref: ./reports.yaml
+
+Material:
+  $fs-ref: ./material.yaml
+
+Size:
+  $fs-ref: ./size.yaml
+
+$fs-ref: ./errors.yaml

@@ -1,0 +1,5 @@
+name: templateId
+in: path
+description: ID of the template
+type: integer
+required: true

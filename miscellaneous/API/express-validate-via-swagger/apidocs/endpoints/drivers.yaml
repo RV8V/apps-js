@@ -1,0 +1,17 @@
+/v1/drivers:
+  get:
+    $fs-ref: ./drivers/list.yaml
+  post:
+    $fs-ref: ./drivers/create.yaml
+
+/v1/drivers/username/{username}:
+  get:
+    $fs-ref: ./drivers/view-by-username.yaml
+
+/v1/drivers/{driverId}:
+  get:
+    $fs-ref: ./drivers/view.yaml
+  put:
+    $fs-ref: ./drivers/update.yaml
+  delete:
+    $fs-ref: ./drivers/delete.yaml

@@ -1,0 +1,30 @@
+x-name: create-material
+summary: Create a material
+tags:
+  - Materials
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: material
+    in: body
+    description: The material JSON you want to save
+    schema:
+      type: object
+      properties:
+        name:
+          type: string
+      required:
+        - name
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  201:
+    description: A new material
+    schema:
+      $ref: '#/definitions/Material'
+  400:
+    description: Invalid input
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

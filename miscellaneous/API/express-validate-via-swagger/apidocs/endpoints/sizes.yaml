@@ -1,0 +1,13 @@
+/v1/sizes:
+  post:
+    $fs-ref: ./sizes/create.yaml
+  get:
+    $fs-ref: ./sizes/list.yaml
+  patch:
+    $fs-ref: ./sizes/create-default.yaml
+
+/v1/sizes/{id}:
+  put:
+    $fs-ref: ./sizes/update.yaml
+  delete:
+    $fs-ref: ./sizes/delete.yaml

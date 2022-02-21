@@ -1,0 +1,30 @@
+x-name: update-location
+summary: Update a location
+tags:
+  - Locations
+parameters:
+  - $fs-ref: '../../globals/auth-params.yaml'
+  - $fs-ref: './id.yaml'
+  - name: location
+    in: body
+    description: new values for location, id will be ignored
+    schema:
+      $ref: '#/definitions/Location'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  202:
+    description: An updated location
+    schema:
+      $ref: '#/definitions/Location'
+  404:
+    description: Location not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid location ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

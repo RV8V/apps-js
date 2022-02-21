@@ -1,0 +1,32 @@
+x-name: create-workorder
+x-corner-case-01: |
+  Can't create a work order that has a status of UNASSIGNED but contains a
+  driver id.
+summary: Create Work Order
+tags:
+  - Work Orders
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: workorder
+    in: body
+    description: work order JSON to Save
+    schema:
+      $ref: '#/definitions/WorkOrder'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  201:
+    description: A new work order
+    schema:
+      $ref: '#/definitions/WorkOrder'
+  400:
+    description: Invalid input
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  409:
+    description: See x-corner-cases
+    schema:
+      $ref: '#/definitions/ConflictError'
+  500:
+    $ref: '#/responses/Unexpected'

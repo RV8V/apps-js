@@ -1,0 +1,24 @@
+x-name: get-workorder-state
+summary: Get Work Order State
+tags:
+  - Work Orders
+parameters:
+  - $fs-ref: ../../../globals/auth-params.yaml
+  - $fs-ref: '../id.yaml'
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: The new work order state
+    schema:
+      $ref: '#/definitions/WorkOrderNote'
+  404:
+    description: Work Order Not Found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid Work Order ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

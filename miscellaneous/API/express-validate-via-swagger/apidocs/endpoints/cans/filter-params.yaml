@@ -1,0 +1,86 @@
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $ref: '#/parameters/bounds'
+  - $ref: '#/parameters/search'
+  - $ref: '#/parameters/date'
+  - name: id
+    in: query
+    description: get only cans with provided ids
+    type: array    
+    items:
+      type: integer
+  - name: locationId
+    in: query
+    description: get all cans associated with the specified location
+    type: number
+  - name: modifiedSince
+    in: query
+    description: |
+      filters all the cans, which were modified since the time passed in.
+      The format is a unix timestamp with milliseconds (+new Date()).
+    type: string
+  - name: isRequiredMaintenance
+    in: query
+    description: get required maintenance cans
+    type: number
+    enum:
+      - 0
+      - 1
+  - name: isOutOfService
+    in: query
+    description: get out of service cans
+    type: number
+    enum:
+      - 0
+      - 1
+  - name: allowNullLocations
+    in: query
+    description: allows cans with null locations
+    type: number
+    enum:
+      - 0
+      - 1
+  - name: withTransactions
+    in: query
+    description: get cans with transactions
+    type: number
+    default: 1
+    enum:
+      - 0
+      - 1
+  - name: lastTransactionOnly
+    in: query
+    description: get only last transaction with DROPOFF action
+    type: number
+    default: 0
+    enum:
+      - 0
+      - 1
+  - name: hazardous
+    in: query
+    description: get hazardous cans
+    type: number
+    enum:
+      - 0
+      - 1
+  - name: status
+    in: query
+    description: |
+      status can be one of the CREATE, UPDATE, MOVE, PICKUP, DROPOFF,
+      TRANSFER, REMOVE
+    enum:
+      - CREATE
+      - UPDATE
+      - MOVE
+      - PICKUP
+      - DROPOFF
+      - TRANSFER
+      - REMOVE
+    type: string
+  - name: deleted
+    in: query
+    description: get deleted cans
+    type: number
+    enum:
+      - 0
+      - 1

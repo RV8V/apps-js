@@ -1,0 +1,304 @@
+openapi: 3.0.0
+info:
+  title: api
+  description: vresorts api
+  version: 0.0.1
+servers:
+  - url: http://api.example.com/v1
+    description: Optional server description, e.g. Main (production) server
+  - url: http://staging-api.example.com
+    description: Optional server description, e.g. Internal staging server for testing
+paths:
+  /hotels/emails:
+    get:
+      tags:
+        - hotels
+        - emails
+      parameters:
+        - in: query
+          name: offset
+          schema:
+            type: number
+          required: true
+          description: offset
+        - in: query
+          name: limit
+          schema:
+            type: number
+          required: true
+          description: limit
+      responses:
+        '200':
+          description: message to recipient
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                additionalProperties: false
+
+  /hotels/email:
+    post:
+      tags:
+        - hotels
+        - email
+      summary: 'deliver message to persone and save to db'
+      requestBody:
+        description: Email body
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: 'openapi/schemas/email.yaml'
+      description: the email addres of person whom we want to deliver the message
+      responses:
+        '200':
+          description: successfully sended message
+  /hotels/autocomplete:
+    get:
+      tags:
+        - hotels
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: string
+          required: true
+          description: limit
+        - in: query
+          name: nameSubstring
+          schema:
+            type: string
+          required: true
+          description: nameSubstring
+      responses:
+        '200':
+          description: A JSON array of hotels matching query request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  hotels:
+                    type: array
+                  cities:
+                    type: array
+                additionalProperties: false
+
+  /hotels/hotel:
+    post:
+      tags:
+        - hotels
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: Hotel was successfully updated
+          content:
+            application/json:
+              schema:
+                $ref: 'openapi/schemas/hotel.yaml'
+
+  /hotels/hotel/:id:
+    delete:
+      tags:
+        - hotels
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: number
+          required: true
+          description: Numeric ID of hotel
+      responses:
+        '200':
+          description: Hotel was successfully delted
+        '204': # No Content
+          description: Hotel was not found
+    post:
+      tags:
+        - hotels
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: number
+          required: true
+          description: Numeric ID of hotel
+      responses:
+        '200':
+          description: Hotel was successfully updated
+        '404':
+          description: Hotel was not found
+      requestBody:
+        description: Hotel body
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: 'openapi/schemas/hotel.yaml'
+    get:
+      tags:
+        - hotels
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: number
+          required: true
+          description: Numeric ID of hotel
+      responses:
+        '200':
+          description: Hotel was found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  internalModel:
+                    $ref: 'openapi/schemas/hotel.yaml'
+                  externalModel:
+                    type: object
+                    properties:
+                      AssociatedCountry:
+                        type: string
+                  mediaItems:
+                    type: array
+                    items: {}
+                additionalProperties: false
+
+  /hotels/countries:
+    get:
+      tags:
+        - hotels
+      responses:
+        '200':
+          description: List of countries of hotels stored in db
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+                additionalProperties: false
+
+  /users/list_users:
+    get:
+      tags:
+        - users
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: query
+          name: offset
+          schema:
+            type: number
+          required: true
+          description: offset
+        - in: query
+          name: limit
+          schema:
+            type: number
+          required: true
+          description: limit
+      responses:
+        '200':
+          description: users found by regular expression
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: 'openapi/schemas/user.yaml'
+
+  /users/search:
+    get:
+      tags:
+        - users
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: users found by regular expression
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: 'openapi/schemas/user.yaml'
+
+  /users/grant_admin_access/:id:
+    get:
+      tags:
+        - users
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: number
+          required: true
+          description: Numeric ID of user
+      responses:
+        '200':
+          description: change for role admin
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - flag
+                properties:
+                  flag:
+                    type: boolean
+                additionalProperties: false
+
+  /auth/register:
+    post:
+      tags:
+        - auth
+      requestBody:
+        description: user body
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: 'openapi/schemas/register.yaml'
+      responses:
+        '200':
+          description: registrated user
+          content:
+            application/json:
+              schema:
+                $ref: 'openapi/schemas/register.yaml'
+
+  /auth/login:
+    post:
+      tags:
+        - auth
+      responses:
+        '200':
+          description: logged in user
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - access_token
+                properties:
+                  access_token:
+                    type: string
+                additionalProperties: false
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer

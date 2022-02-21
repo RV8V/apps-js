@@ -1,0 +1,13 @@
+/v1/locations:
+  get:
+    $fs-ref: ./locations/list-locations.yaml
+  post:
+    $fs-ref: ./locations/create.yaml
+
+/v1/locations/{locationId}:
+  get:
+    $fs-ref: ./locations/view-location.yaml
+  put:
+    $fs-ref: ./locations/update.yaml
+  delete:
+    $fs-ref: ./locations/delete.yaml

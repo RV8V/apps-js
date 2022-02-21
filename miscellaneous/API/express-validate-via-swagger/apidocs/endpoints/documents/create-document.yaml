@@ -1,0 +1,26 @@
+x-name: create-document
+summary: Create a document
+tags:
+  - Documents
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+
+  - name: document
+    in: body
+    description: the document you want to save
+    schema:
+      $ref: '#/definitions/Document'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  201:
+    description: A new document
+    schema:
+      $ref: '#/definitions/Document'
+  400:
+    description: Invalid input
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

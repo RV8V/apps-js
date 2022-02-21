@@ -1,0 +1,29 @@
+type: object
+properties:
+  id:
+    type: number
+  truckId:
+    type: number
+  driverId:
+    type: number
+  tripType:
+     type: string
+  odometer:
+     type: number
+  createdBy:
+    type: string
+  createdDate:
+    type: string
+    format: date-time
+  modifiedBy:
+    type: string
+  modifiedDate:
+    type: string
+    format: date-time
+  deleted:
+    type: number
+required:
+  - truckId
+  - driverId
+  - tripType
+  - odometer

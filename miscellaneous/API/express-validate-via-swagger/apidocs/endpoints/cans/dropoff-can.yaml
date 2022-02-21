@@ -1,0 +1,37 @@
+x-name: dropoff-can
+summary: Update a can to be dropped off from the truck
+tags:
+  - Cans
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+
+  - name: canId
+    in: path
+    description: ID of the can
+    type: string
+    required: true
+  - name: location
+    in: body
+    description: location to be dropped off
+    schema:
+      $ref: '#/definitions/Location'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  204:
+    description: Dropped off
+  404:
+    description: Can not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid can ID or location supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  409:
+    description: The can can't be dropped off
+    schema:
+      $ref: '#/definitions/ConflictError'
+  500:
+    $ref: '#/responses/Unexpected'

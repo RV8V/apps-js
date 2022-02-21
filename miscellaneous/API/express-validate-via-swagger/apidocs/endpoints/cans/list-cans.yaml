@@ -1,0 +1,17 @@
+x-name: list-cans
+summary: Get all the cans
+tags:
+  - Cans
+$fs-ref: ./filter-params.yaml
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of cans
+    schema:
+      $ref: '#/definitions/Can'
+      type: array
+      items:
+        $ref: '#/definitions/CanView'
+  500:
+    $ref: '#/responses/Unexpected'

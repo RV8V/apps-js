@@ -1,0 +1,40 @@
+x-name: list-materials
+summary: Get materials
+tags:
+  - Materials
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: id
+    in: query
+    description: allows to filter materials by id
+    type: integer
+  - name: name
+    in: query
+    description: allows to filter materials by material name
+    type: string
+  - name: deleted
+    in: query
+    description: Allows get deleted materials
+    type: number
+    enum:
+      - 0
+      - 1
+  - name: sort
+    in: query
+    description: Allows sort materials by filed
+    type: string
+    default: id
+    enum:
+      - id
+      - name
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of materials
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/Material'
+  500:
+    $ref: '#/responses/Unexpected'

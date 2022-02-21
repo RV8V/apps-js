@@ -1,0 +1,15 @@
+x-name: cans-export
+summary: Get list of cans in csv format
+tags:
+  - Cans
+$fs-ref: ./filter-params.yaml
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: |
+      CSV file in format:
+      id (optional), serial, size, name, startDate, source, address,
+      hazardous
+  500:
+    $ref: '#/responses/Unexpected'

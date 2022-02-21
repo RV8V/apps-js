@@ -1,0 +1,40 @@
+x-name: list-workorders-notes
+summary: Get all of the work orders notes.
+tags:
+  - Work Orders
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: workOrders
+    in: query
+    description: comma separated workorders id
+    type: string
+  - name: modifiedSince
+    in: query
+    description: |
+      filters all the work order notes, which were modified since the time passed in.
+      The format is a unix timestamp with milliseconds (+new Date()).
+    type: string
+  - name: type
+    in: query
+    description: |
+      type of Note being MANIFEST, NOTE, SCALETICKET, SIGNED_DOC, WEIGHT_RECORD,
+      or TRANSITION
+    type: string
+    enum:
+      - MANIFEST
+      - NOTE
+      - SCALETICKET
+      - WEIGHT_RECORD
+      - TRANSITION
+      - SIGNED_DOC
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of work order notes
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/WorkOrderNote'
+  500:
+    $ref: '#/responses/Unexpected'

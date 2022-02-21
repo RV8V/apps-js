@@ -1,0 +1,64 @@
+type: object
+properties:
+## Applicable to all (picture)
+  picture:
+    type: string
+    description: Picture (Applicable to all)
+## Applicable to note
+  text:
+    type: string
+    description: Note text. (Required for note)
+## Applicable to both manifests and scale tickets
+  quantity:
+    type: number
+    format: double
+    description: Decimal units (Req. for manifest and scale tickets)
+  unittype:
+    type: string
+    enum:
+      - YARDS
+      - TONS
+    description: Enumerated unit types (Req. for manifest and scale tickets)
+## Applicable to scale ticket
+  landfill:
+    type: string
+    description: |
+      Should be a dropdown of the landfill scale ticket was received from.
+      (Req. for scale ticket)
+  ticketNumber:
+    type: string
+    description: Scale Ticket Number (Req. for scale ticket)
+## Applicable to manifest
+  profileNumber:
+    type: string
+    description: Manifest profile number (Req. for manifest)
+  manifestNumber:
+    type: string
+    description: Manifest Number (Req. for manifest)
+## Transition states
+  newState:
+    type: string
+    enum:
+      - START_WORK_ORDER
+      - ARRIVE_ON_SITE
+      - SIGNATURE
+      - START_SERVICE
+      - DROP_CAN
+      - PICKUP_CAN
+      - FINISH_SERVICE
+      - RECORD_WEIGHT
+      - RECORD_MANIFESTS
+      - GOING_TO_FILL
+      - ARRIVE_AT_FILL
+      - FINISH_DISPOSAL
+      - RECORD_WEIGHT_TICKETS
+      - RETURNING_TO_JOBSITE
+      - SPECIAL_INSTRUCTIONS
+      - GOING_TO_SUSPENSION_SITE
+      - ARRIVE_AT_SUSPENSION_SITE
+      - DROP_STAGED_CAN
+      - SUSPEND_WORK_ORDER
+      - RESUME_WORK_ORDER
+      - GOING_TO_SUSPENSION_SITE
+      - PICKUP_STAGED_CAN
+    description: State the work order to be transitioned to.

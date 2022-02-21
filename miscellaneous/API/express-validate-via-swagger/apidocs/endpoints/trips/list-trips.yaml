@@ -1,0 +1,42 @@
+x-name: list-trips
+summary: Get all existing trips
+tags:
+  - Trips
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $ref: '#/parameters/date'
+  - name: driverId
+    in: query
+    description: filter trips by driver's id
+    type: integer
+  - name: driverName
+    in: query
+    description: filter trips by driver's name
+    type: string
+  - name: tripType
+    in: query
+    description: |
+      filter trips by tripType
+    type: string
+    enum:
+      - PRE_TRIP
+      - POST_TRIP
+  - name: deleted
+    in: query
+    description: |
+      get deleted trips
+    type: number
+    enum:
+      - 0
+      - 1
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: An array of trips
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/Trip'
+  500:
+    $ref: '#/responses/Unexpected'

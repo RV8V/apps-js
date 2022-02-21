@@ -1,0 +1,13 @@
+/v1/materials:
+  post:
+    $fs-ref: ./materials/create.yaml
+  get:
+    $fs-ref: ./materials/list.yaml
+  patch:
+    $fs-ref: ./materials/create-default.yaml
+
+/v1/materials/{id}:
+  put:
+    $fs-ref: ./materials/update.yaml
+  delete:
+    $fs-ref: ./materials/delete.yaml

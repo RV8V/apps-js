@@ -1,0 +1,17 @@
+x-name: workorders-export
+summary: Get list of work orders in csv format
+tags:
+  - Work Orders
+$fs-ref: ./filter-params.yaml
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: |
+      CSV file in format:
+      id (optional), action, status, size, material,
+      scheduled date, scheduled start, scheduled end,
+      contact name, contact number, address 1, address 2,
+      priority, progress step
+  500:
+    $ref: '#/responses/Unexpected'

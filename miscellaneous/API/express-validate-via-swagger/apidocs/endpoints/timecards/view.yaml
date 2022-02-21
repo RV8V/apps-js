@@ -1,0 +1,28 @@
+x-name: view-timecard
+summary: Get a time card with a time card ID
+tags:
+  - Time Cards
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: timeCardId
+    in: path
+    description: ID of the time card
+    type: string
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: The time card with the time card ID
+    schema:
+      $ref: '#/definitions/TimeCard'
+  404:
+    description: TimeCard not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid time card ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

@@ -1,0 +1,50 @@
+x-name: bulk-update-workorders
+x-corner-case-01: |
+  Can't update a work order that has a status of UNASSIGNED but
+  contains a driver id.
+summary: Bulk update of work orders
+tags:
+  - Work Orders
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: workorders
+    in: body
+    description: |
+      an array of work orders. If one of those work orders does not
+      have an id property, then it will be created
+    schema:
+      type: array
+      items:
+        type: object
+        allOf:
+          - $ref: '#/definitions/WorkOrder'
+          - type: object
+            properties:
+              id:
+                type: number
+                description: |
+                  if there is no id property, the new work order will be created
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  202:
+    description: Work orders updated
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/WorkOrder'
+  404:
+    description: Work Order not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid Work Order Parameter
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  409:
+    description: See x-corner-cases
+    schema:
+      $ref: '#/definitions/ConflictError'
+  500:
+    $ref: '#/responses/Unexpected'

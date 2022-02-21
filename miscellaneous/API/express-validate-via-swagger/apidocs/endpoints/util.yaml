@@ -1,0 +1,31 @@
+/v1/constants:
+  get:
+    x-name: constants
+    description: |
+      This route is supposed to return all the constants we should use
+    responses:
+      200:
+        description: Constants
+        schema:
+          type: object
+          description: See src/utils/constants.js
+
+/docs:
+  get:
+    x-name: docs-index
+    description: This is a service route to share swagger auto doc site
+    responses:
+      200:
+        description: Sends an HTML file
+      500:
+        $ref: '#/responses/Unexpected'
+
+/docs/swagger.yaml:
+  get:
+    x-name: docs-swagger
+    description: This is a service route to share swagger auto doc site
+    responses:
+      200:
+        description: Sends a swagger YAML file
+      500:
+        $ref: '#/responses/Unexpected'

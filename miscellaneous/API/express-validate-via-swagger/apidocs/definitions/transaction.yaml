@@ -1,0 +1,39 @@
+type: object
+properties:
+  id:
+    type: number
+  timestamp:
+    type: number
+  location1:
+    $ref: '#/definitions/Location'
+  location2:
+    $ref: '#/definitions/Location'
+  action:
+    type: string
+    enum:
+      - MOVE
+      - PICKUP
+      - DROPOFF
+      - TRANSFER
+      - NOTE
+      - UPDATE
+      - REMOVE
+      - CREATE
+  payload:
+    type: string
+    format: json
+  createdBy:
+    type: string
+  createdDate:
+    type: string
+    format: date-time
+  modifiedBy:
+    type: string
+  modifiedDate:
+    type: string
+    format: date-time
+required:
+  - timestamp
+  - location1
+  - location2
+  - action

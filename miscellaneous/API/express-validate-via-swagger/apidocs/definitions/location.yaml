@@ -1,0 +1,40 @@
+type: object
+properties:
+  id:
+    type: number
+  name:
+    type: string
+  description:
+    type: string
+  location:
+    type: object
+    properties:
+      lon:
+        type: number
+        format: double
+      lat:
+        type: number
+        format: double
+  type:
+    type: string
+    enum:
+      - WAYPOINT
+      - LOCATION
+      - TRUCK
+  waypointName:
+    type: string
+  waypointType:
+    type: string
+    enum:
+      - HOME_YARD
+      - LANDFILL_STORAGE_YARD
+      - LANDFILL
+      - RECYCLE_CENTER
+      - STORAGE_YARD
+      - TRANSFER_CENTER
+  deleted:
+    type: number
+  licensePlate:
+    type: string
+required:
+  - type

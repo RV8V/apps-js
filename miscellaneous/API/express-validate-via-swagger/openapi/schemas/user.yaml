@@ -1,0 +1,13 @@
+type: object
+required:
+  - id
+  - isAdmin
+  - username
+properties:
+  id:
+    type: number
+  isAdmin:
+    type: boolean
+  username:
+    type: string
+additionalProperties: false

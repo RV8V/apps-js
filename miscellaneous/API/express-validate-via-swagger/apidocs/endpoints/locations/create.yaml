@@ -1,0 +1,25 @@
+x-name: create-location
+summary: Create a location
+tags:
+  - Locations
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - name: location
+    in: body
+    description: the location JSON you want to save
+    schema:
+      $ref: '#/definitions/Location'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  201:
+    description: A new location
+    schema:
+      $ref: '#/definitions/Location'
+  400:
+    description: Invalid input
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

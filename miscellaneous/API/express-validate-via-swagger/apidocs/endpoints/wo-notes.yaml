@@ -1,0 +1,13 @@
+/v1/workorders/{workOrderId}/note:
+  get:
+    $fs-ref: ./wo-notes/list-wo-notes.yaml
+  post:
+    $fs-ref: ./wo-notes/create-wo-note.yaml
+
+/v1/workorders/{workOrderId}/note/{workOrderNoteId}:
+  get:
+    $fs-ref: ./wo-notes/view-wo-note.yaml
+  put:
+    $fs-ref: ./wo-notes/update-wo-note.yaml
+  delete:
+    $fs-ref: ./wo-notes/delete-wo-note.yaml

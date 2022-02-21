@@ -1,0 +1,21 @@
+bounds:
+  name: bounds
+  in: query
+  description: |
+    a string of bounding box coordinates concatenated by the comma,
+    there should not be any space, in the form:
+    xLow,yLow,xHigh,yHigh
+  type: string
+search:
+  name: search
+  in: query
+  description: this is a text search query
+  type: string
+date:
+  name: date
+  in: query
+  description: |
+    a date filter, takes a range of dates as
+    `${start.getTime()}..${end.getTime()}`, where start and end both
+    are JS Date objects
+  type: string

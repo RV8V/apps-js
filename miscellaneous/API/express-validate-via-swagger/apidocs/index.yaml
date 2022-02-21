@@ -1,0 +1,21 @@
+swagger: '2.0'
+info:
+  title: Trash API
+  version: '1.12.2'
+schemes:
+  - https
+  - http
+produces:
+  - application/json
+
+paths:
+  $fs-ref: ./endpoints/index.yaml
+
+parameters:
+  $fs-ref: ./globals/parameters.yaml
+
+responses:
+  $fs-ref: ./globals/responses.yaml
+
+definitions:
+  $fs-ref: ./definitions/index.yaml

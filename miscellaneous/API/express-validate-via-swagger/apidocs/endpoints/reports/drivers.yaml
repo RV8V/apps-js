@@ -1,0 +1,59 @@
+x-name: reports-drivers
+summary: Get drivers report in csv format
+tags:
+  - Reports
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $ref: '#/parameters/date'
+  - name: driverId
+    in: query
+    description: array of the Driver IDs
+    type: string
+    required: false
+  - name: reportType
+    in: query
+    description: |
+      report type can be one of the byDay, byDateRange
+    enum:
+      - byDay
+      - byDateRange
+    type: string
+    required: true
+  - name: timezone
+    in: query
+    description: |
+      time zone
+    enum:
+      - America/Chicago
+      - America/Denver
+      - America/Detroit
+      - America/Phoenix
+      - America/Los_Angeles
+      - America/New_York
+    type: string
+    required: true
+  - name: status
+    in: query
+    description: array of the WO statuses. To pass more than one, separate items with the comma.
+      If not set, status COMPLETED will be used by default.
+    type: string
+    required: false
+  - name: action
+    in: query
+    description: array of the WO Types. To pass more than one, separate items with the comma.
+    type: string
+    required: false
+  - name: material
+    in: query
+    description: array of the WO Materials. To pass more than one, separate items with the comma.
+    type: string
+    required: false
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  200:
+    description: |
+      CSV file in format:
+      Id, Driver, Adjusted Hours, Time Cards, Incomplete Time Cards, Hauls, HPH, Miles, MPH
+  500:
+    $ref: '#/responses/Unexpected'

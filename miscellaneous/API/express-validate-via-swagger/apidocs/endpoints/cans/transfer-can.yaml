@@ -1,0 +1,37 @@
+x-name: transfer-can
+summary: Update a can to be transferred from one truck to another
+tags:
+  - Cans
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+
+  - name: canId
+    in: path
+    description: ID of the can
+    type: string
+    required: true
+  - name: truck
+    in: body
+    description: truck to pick up a can
+    schema:
+      $ref: '#/definitions/Location'
+    required: true
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  204:
+    description: Transferred
+  404:
+    description: Can not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid can ID or truck supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  409:
+    description: The can can't be transferred
+    schema:
+      $ref: '#/definitions/ConflictError'
+  500:
+    $ref: '#/responses/Unexpected'

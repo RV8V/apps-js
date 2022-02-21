@@ -1,0 +1,22 @@
+x-name: delete-location
+summary: Delete a location
+tags:
+  - Locations
+parameters:
+  - $fs-ref: ../../globals/auth-params.yaml
+  - $fs-ref: './id.yaml'
+responses:
+  403:
+    $ref: '#/responses/Forbidden'
+  204:
+    description: Location was deleted
+  404:
+    description: Location not found
+    schema:
+      $ref: '#/definitions/NotFoundError'
+  400:
+    description: Invalid Location ID supplied
+    schema:
+      $ref: '#/definitions/InvalidParameterError'
+  500:
+    $ref: '#/responses/Unexpected'

@@ -1,0 +1,3754 @@
+swagger: '2.0'
+info:
+  title: Trash API
+  version: 1.12.2
+schemes:
+  - https
+  - http
+produces:
+  - application/json
+paths:
+  /v1/locations:
+    get:
+      x-name: list-locations
+      summary: Get all existing locations
+      tags:
+        - Locations
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: coordinates
+          in: query
+          type: string
+          description: |
+            a string of coordinates concatenated by the comma,
+            there should not be any space, in the form:
+            longitude,latitude
+        - name: name
+          in: query
+          description: filter locations by name
+          type: string
+        - name: type
+          in: query
+          description: |
+            filter location by type, can be concatenated string by
+            comma, like LOCATION,WAYPOINT
+          type: string
+          enum:
+            - TRUCK
+            - LOCATION
+            - WAYPOINT
+        - name: empty
+          in: query
+          type: number
+          enum:
+            - 0
+            - 1
+          description: filter locations which haven't stored any cans yet
+        - name: deleted
+          in: query
+          type: number
+          enum:
+            - 0
+            - 1
+          description: get deleted locations
+      responses:
+        '200':
+          description: An array of locations
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Location'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    post:
+      x-name: create-location
+      summary: Create a location
+      tags:
+        - Locations
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: location
+          in: body
+          description: the location JSON you want to save
+          schema:
+            $ref: '#/definitions/Location'
+          required: true
+      responses:
+        '201':
+          description: A new location
+          schema:
+            $ref: '#/definitions/Location'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/locations/{locationId}':
+    get:
+      x-name: view-location
+      summary: Get Location by ID
+      tags:
+        - Locations
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: locationId
+          in: path
+          description: ID of the location
+          type: integer
+          required: true
+      responses:
+        '200':
+          description: The location with the location ID
+          schema:
+            $ref: '#/definitions/Location'
+        '400':
+          description: Invalid Location ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Location Not Found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    put:
+      x-name: update-location
+      summary: Update a location
+      tags:
+        - Locations
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: locationId
+          in: path
+          description: ID of the location
+          type: integer
+          required: true
+        - name: location
+          in: body
+          description: 'new values for location, id will be ignored'
+          schema:
+            $ref: '#/definitions/Location'
+          required: true
+      responses:
+        '202':
+          description: An updated location
+          schema:
+            $ref: '#/definitions/Location'
+        '400':
+          description: Invalid location ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Location not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-location
+      summary: Delete a location
+      tags:
+        - Locations
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: locationId
+          in: path
+          description: ID of the location
+          type: integer
+          required: true
+      responses:
+        '204':
+          description: Location was deleted
+        '400':
+          description: Invalid Location ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Location not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/timecards:
+    post:
+      x-name: create-timecard
+      summary: Create a time card
+      tags:
+        - Time Cards
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: timecard
+          in: body
+          description: the time card JSON you want to save
+          schema:
+            $ref: '#/definitions/TimeCard'
+          required: true
+      responses:
+        '201':
+          description: A new time card
+          schema:
+            $ref: '#/definitions/TimeCard'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    get:
+      x-name: list-timecards
+      summary: Get all existing time cards
+      tags:
+        - Time Cards
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - $ref: '#/parameters/date'
+        - name: driverId
+          in: query
+          description: filter time cards by driver's id
+          type: integer
+        - name: driverName
+          in: query
+          description: filter time cards by driver's name
+          type: string
+        - name: deleted
+          in: query
+          description: get deleted cans
+          type: number
+          enum:
+            - 0
+            - 1
+      responses:
+        '200':
+          description: An array of time cards
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TimeCard'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/timecards/{timeCardId}':
+    put:
+      x-name: update-timecard
+      summary: Update a time card
+      tags:
+        - Time Cards
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: timeCardId
+          in: path
+          description: ID of the TimeCard
+          type: integer
+          required: true
+        - name: timecard
+          in: body
+          description: 'new values for the timecard, id will be ignored'
+          schema:
+            $ref: '#/definitions/TimeCard'
+          required: true
+      responses:
+        '202':
+          description: An updated time card
+          schema:
+            $ref: '#/definitions/TimeCard'
+        '400':
+          description: Invalid time card ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: time card not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    get:
+      x-name: view-timecard
+      summary: Get a time card with a time card ID
+      tags:
+        - Time Cards
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: timeCardId
+          in: path
+          description: ID of the time card
+          type: string
+          required: true
+      responses:
+        '200':
+          description: The time card with the time card ID
+          schema:
+            $ref: '#/definitions/TimeCard'
+        '400':
+          description: Invalid time card ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: TimeCard not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-timecard
+      summary: Delete a time card
+      tags:
+        - Time Cards
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: timeCardId
+          in: path
+          description: ID of the time card
+          type: string
+          required: true
+      responses:
+        '204':
+          description: TimeCard was deleted
+        '400':
+          description: Invalid TimeCard ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: TimeCard not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/trips:
+    post:
+      x-name: create-trip
+      summary: Create a trip
+      tags:
+        - Trips
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: trip
+          in: body
+          description: the trip JSON you want to save
+          schema:
+            $ref: '#/definitions/Trip'
+          required: true
+      responses:
+        '201':
+          description: A new trip
+          schema:
+            $ref: '#/definitions/Trip'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    get:
+      x-name: list-trips
+      summary: Get all existing trips
+      tags:
+        - Trips
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - $ref: '#/parameters/date'
+        - name: driverId
+          in: query
+          description: filter trips by driver's id
+          type: integer
+        - name: driverName
+          in: query
+          description: filter trips by driver's name
+          type: string
+        - name: tripType
+          in: query
+          description: |
+            filter trips by tripType
+          type: string
+          enum:
+            - PRE_TRIP
+            - POST_TRIP
+        - name: deleted
+          in: query
+          description: |
+            get deleted trips
+          type: number
+          enum:
+            - 0
+            - 1
+      responses:
+        '200':
+          description: An array of trips
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Trip'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/trips/{tripId}':
+    put:
+      x-name: update-trip
+      summary: Update a trip
+      tags:
+        - Trips
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: tripId
+          in: path
+          description: ID of the Trip
+          type: integer
+          required: true
+        - name: trip
+          in: body
+          description: 'new values for the trip, id will be ignored'
+          schema:
+            $ref: '#/definitions/Trip'
+          required: true
+      responses:
+        '202':
+          description: An updated trip
+          schema:
+            $ref: '#/definitions/Trip'
+        '400':
+          description: Invalid trip ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Trip not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    get:
+      x-name: view-trip
+      summary: Get a trip with a trip ID
+      tags:
+        - Trips
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: tripId
+          in: path
+          description: ID of the trip
+          type: string
+          required: true
+      responses:
+        '200':
+          description: The trip with the trip ID
+          schema:
+            $ref: '#/definitions/Trip'
+        '400':
+          description: Invalid trip ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Trip not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-trip
+      summary: Delete a trip
+      tags:
+        - Trips
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: tripId
+          in: path
+          description: ID of the trip
+          type: string
+          required: true
+      responses:
+        '204':
+          description: Trip was deleted
+        '400':
+          description: Invalid Trip ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Trip not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/workorders:
+    get:
+      x-name: list-workorders
+      summary: Get all of the work orders.
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - $ref: '#/parameters/bounds'
+        - $ref: '#/parameters/search'
+        - $ref: '#/parameters/date'
+        - name: modifiedSince
+          in: query
+          description: >
+            filters all the work orders, which were modified since the time
+            passed in.
+
+            The format is a unix timestamp with milliseconds (+new Date()).
+          type: string
+        - name: driverId
+          in: query
+          description: driver Id
+          type: integer
+        - name: deepAssignmentSearch
+          in: query
+          description: >
+            if this param is passed, will be fetched all the work orders which
+            are
+
+            assigned to the certain driverId.
+
+            You can only use it in the pair with driverId param.
+          type: number
+        - name: size
+          in: query
+          description: |
+            can size. You can pass one or more items separated by the comma.
+            "size=12" or "size=12,20,30"
+          type: string
+        - name: material
+          in: query
+          description: >
+            material type. You can pass one or more items separated by the
+            comma.
+
+            "material=first" or "material=first,second,third"
+          type: string
+        - name: action
+          in: query
+          description: >
+            action can be a list of the SPOT, FINAL, SWITCH, DUMP & RETURN, LIVE
+            LOAD,
+
+            PICKUP CAN, DROPOFF CAN, RELOCATE, REPOSITION, GENERAL PURPOSE.
+
+            To pass more than one, separate items with the comma.
+
+            Like action=SPOT,FINAL
+          type: string
+        - name: status
+          in: query
+          description: >
+            status can be a list of the UNASSIGNED, ASSIGNED, INPROGRESS,
+            COMPLETED,
+
+            CANCELED.
+
+            To pass more than one, separate items with the comma.
+
+            Like status=UNASSIGNED,ASSIGNED
+          type: string
+        - name: cow
+          in: query
+          description: filter workorders by 'callOnWay'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: sos
+          in: query
+          description: filter workorders by 'seeOnSite'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: alleyPlacement
+          in: query
+          description: filter workorders by 'alleyPlacement'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: permittedCan
+          in: query
+          description: filter workorders by 'permittedCan'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: earlyPickUp
+          in: query
+          description: filter workorders by 'earlyPickUp'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: cabOver
+          in: query
+          description: filter workorders by 'cabOver'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: okToRoll
+          in: query
+          description: filter workorders by 'okToRoll'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: priority
+          in: query
+          description: filter workorders by 'priority'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: negotiatedFill
+          in: query
+          description: filter workorders by 'negotiatedFill'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: customerProvidedProfile
+          in: query
+          description: filter workorders by 'customerProvidedProfile'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: scheduledStart
+          in: query
+          description: filter workorders by having scheduled start
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: deleted
+          in: query
+          description: get deleted workorders
+          enum:
+            - 0
+            - 1
+          type: number
+      responses:
+        '200':
+          description: An array of work orders
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/WorkOrder'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    post:
+      x-name: create-workorder
+      x-corner-case-01: |
+        Can't create a work order that has a status of UNASSIGNED but contains a
+        driver id.
+      summary: Create Work Order
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workorder
+          in: body
+          description: work order JSON to Save
+          schema:
+            $ref: '#/definitions/WorkOrder'
+          required: true
+      responses:
+        '201':
+          description: A new work order
+          schema:
+            $ref: '#/definitions/WorkOrder'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '409':
+          description: See x-corner-cases
+          schema:
+            $ref: '#/definitions/ConflictError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    put:
+      x-name: bulk-update-workorders
+      x-corner-case-01: |
+        Can't update a work order that has a status of UNASSIGNED but
+        contains a driver id.
+      summary: Bulk update of work orders
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workorders
+          in: body
+          description: |
+            an array of work orders. If one of those work orders does not
+            have an id property, then it will be created
+          schema:
+            type: array
+            items:
+              type: object
+              allOf:
+                - $ref: '#/definitions/WorkOrder'
+                - type: object
+                  properties:
+                    id:
+                      type: number
+                      description: >
+                        if there is no id property, the new work order will be
+                        created
+          required: true
+      responses:
+        '202':
+          description: Work orders updated
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/WorkOrder'
+        '400':
+          description: Invalid Work Order Parameter
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '409':
+          description: See x-corner-cases
+          schema:
+            $ref: '#/definitions/ConflictError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/workorders/notes:
+    get:
+      x-name: list-workorders-notes
+      summary: Get all of the work orders notes.
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrders
+          in: query
+          description: comma separated workorders id
+          type: string
+        - name: modifiedSince
+          in: query
+          description: >
+            filters all the work order notes, which were modified since the time
+            passed in.
+
+            The format is a unix timestamp with milliseconds (+new Date()).
+          type: string
+        - name: type
+          in: query
+          description: >
+            type of Note being MANIFEST, NOTE, SCALETICKET, SIGNED_DOC,
+            WEIGHT_RECORD,
+
+            or TRANSITION
+          type: string
+          enum:
+            - MANIFEST
+            - NOTE
+            - SCALETICKET
+            - WEIGHT_RECORD
+            - TRANSITION
+            - SIGNED_DOC
+      responses:
+        '200':
+          description: An array of work order notes
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/WorkOrderNote'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/workorders/driver/{driverId}':
+    get:
+      x-name: list-workorders-by-drivers
+      summary: |
+        Fetch all the work orders which were assigned to the driver no matter
+        are they assigned to this driver right now
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: driverId
+          in: path
+          description: ID of the Driver
+          type: integer
+          required: true
+      responses:
+        '200':
+          description: An array of work orders
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/WorkOrder'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/workorders/{workOrderId}':
+    get:
+      x-name: view-workorder
+      summary: Get Work Order by ID
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+      responses:
+        '200':
+          description: The work order with the work order id
+          schema:
+            $ref: '#/definitions/WorkOrder'
+        '400':
+          description: Invalid Work Order ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order Not Found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    put:
+      x-name: update-workorder
+      x-corner-case-01: |
+        Can't update a work order that has a status of UNASSIGNED but
+        contains a driver id.
+      summary: Update a work order
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+        - name: workorder
+          in: body
+          description: a work order to be updated
+          schema:
+            $ref: '#/definitions/WorkOrder'
+          required: true
+      responses:
+        '202':
+          description: Updated work order
+          schema:
+            $ref: '#/definitions/WorkOrder'
+        '400':
+          description: Invalid Work Order Parameter
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '409':
+          description: Work order can not be updated
+          schema:
+            $ref: '#/definitions/ConflictError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-workorder
+      summary: Delete a work order
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+      responses:
+        '204':
+          description: Work Order was deleted
+        '400':
+          description: Invalid Work Order ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/workorders/{workOrderId}/transition':
+    get:
+      x-name: get-workorder-state
+      summary: Get Work Order State
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+      responses:
+        '200':
+          description: The new work order state
+          schema:
+            $ref: '#/definitions/WorkOrderNote'
+        '400':
+          description: Invalid Work Order ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order Not Found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/workorders/{workOrderId}/transition/{newState}':
+    post:
+      x-name: set-workorder-state
+      summary: Set Work Order State and Create Transition Note
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+        - name: newState
+          in: path
+          description: new State to Transition to
+          type: string
+          required: true
+          enum:
+            - START WORK ORDER
+            - ARRIVE ON SITE
+            - START SERVICE
+            - SIGNATURE
+            - DROP CAN
+            - PICKUP CAN
+            - FINISH SERVICE
+            - RECORD WEIGHT
+            - RECORD MANIFESTS
+            - GOING TO FILL
+            - ARRIVE AT FILL
+            - FINISH DISPOSAL
+            - RECORD WEIGHT TICKETS
+            - RETURNING TO JOBSITE
+            - SPECIAL INSTRUCTIONS
+        - name: canId
+          in: query
+          description: set a can ID if you do PICKUP or DROPOFF
+          type: number
+        - name: location
+          in: body
+          description: location coordinates
+          schema:
+            $ref: '#/definitions/Location'
+      responses:
+        '201':
+          description: A new work order transition note
+          schema:
+            $ref: '#/definitions/WorkOrderNote'
+        '400':
+          description: Invalid Work Order ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order Not Found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/workorders/import:
+    post:
+      x-name: workorders-import
+      summary: Import list of work orders
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: type
+          in: query
+          description: |
+            import type can be one of the
+            APPEND, UPDATE, DELETE.
+            APPEND is default
+          type: string
+          enum:
+            - APPEND
+            - UPDATE
+            - DELETE
+          default: APPEND
+        - name: csv
+          in: body
+          description: CSV file
+          schema:
+            type: object
+            properties:
+              csv:
+                format: csv
+                description: |
+                  id (optional), action, status, size, material,
+                  scheduled date, scheduled start, scheduled end,
+                  contact name, contact number, address 1, address 2,
+                  priority, progress step
+                type: string
+            required:
+              - csv
+          required: true
+      responses:
+        '204':
+          description: Loaded
+        '400':
+          description: Invalid type or CSV
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/workorders/export:
+    get:
+      x-name: workorders-export
+      summary: Get list of work orders in csv format
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - $ref: '#/parameters/bounds'
+        - $ref: '#/parameters/search'
+        - $ref: '#/parameters/date'
+        - name: modifiedSince
+          in: query
+          description: >
+            filters all the work orders, which were modified since the time
+            passed in.
+
+            The format is a unix timestamp with milliseconds (+new Date()).
+          type: string
+        - name: driverId
+          in: query
+          description: driver Id
+          type: integer
+        - name: deepAssignmentSearch
+          in: query
+          description: >
+            if this param is passed, will be fetched all the work orders which
+            are
+
+            assigned to the certain driverId.
+
+            You can only use it in the pair with driverId param.
+          type: number
+        - name: size
+          in: query
+          description: |
+            can size. You can pass one or more items separated by the comma.
+            "size=12" or "size=12,20,30"
+          type: string
+        - name: material
+          in: query
+          description: >
+            material type. You can pass one or more items separated by the
+            comma.
+
+            "material=first" or "material=first,second,third"
+          type: string
+        - name: action
+          in: query
+          description: >
+            action can be a list of the SPOT, FINAL, SWITCH, DUMP & RETURN, LIVE
+            LOAD,
+
+            PICKUP CAN, DROPOFF CAN, RELOCATE, REPOSITION, GENERAL PURPOSE.
+
+            To pass more than one, separate items with the comma.
+
+            Like action=SPOT,FINAL
+          type: string
+        - name: status
+          in: query
+          description: >
+            status can be a list of the UNASSIGNED, ASSIGNED, INPROGRESS,
+            COMPLETED,
+
+            CANCELED.
+
+            To pass more than one, separate items with the comma.
+
+            Like status=UNASSIGNED,ASSIGNED
+          type: string
+        - name: cow
+          in: query
+          description: filter workorders by 'callOnWay'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: sos
+          in: query
+          description: filter workorders by 'seeOnSite'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: alleyPlacement
+          in: query
+          description: filter workorders by 'alleyPlacement'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: permittedCan
+          in: query
+          description: filter workorders by 'permittedCan'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: earlyPickUp
+          in: query
+          description: filter workorders by 'earlyPickUp'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: cabOver
+          in: query
+          description: filter workorders by 'cabOver'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: okToRoll
+          in: query
+          description: filter workorders by 'okToRoll'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: priority
+          in: query
+          description: filter workorders by 'priority'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: negotiatedFill
+          in: query
+          description: filter workorders by 'negotiatedFill'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: customerProvidedProfile
+          in: query
+          description: filter workorders by 'customerProvidedProfile'
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: scheduledStart
+          in: query
+          description: filter workorders by having scheduled start
+          enum:
+            - 0
+            - 1
+          type: number
+        - name: deleted
+          in: query
+          description: get deleted workorders
+          enum:
+            - 0
+            - 1
+          type: number
+      responses:
+        '200':
+          description: |
+            CSV file in format:
+            id (optional), action, status, size, material,
+            scheduled date, scheduled start, scheduled end,
+            contact name, contact number, address 1, address 2,
+            priority, progress step
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/cans:
+    get:
+      x-name: list-cans
+      summary: Get all the cans
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - $ref: '#/parameters/bounds'
+        - $ref: '#/parameters/search'
+        - $ref: '#/parameters/date'
+        - name: id
+          in: query
+          description: get only cans with provided ids
+          type: array
+          items:
+            type: integer
+        - name: locationId
+          in: query
+          description: get all cans associated with the specified location
+          type: number
+        - name: modifiedSince
+          in: query
+          description: |
+            filters all the cans, which were modified since the time passed in.
+            The format is a unix timestamp with milliseconds (+new Date()).
+          type: string
+        - name: isRequiredMaintenance
+          in: query
+          description: get required maintenance cans
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: isOutOfService
+          in: query
+          description: get out of service cans
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: allowNullLocations
+          in: query
+          description: allows cans with null locations
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: withTransactions
+          in: query
+          description: get cans with transactions
+          type: number
+          default: 1
+          enum:
+            - 0
+            - 1
+        - name: lastTransactionOnly
+          in: query
+          description: get only last transaction with DROPOFF action
+          type: number
+          default: 0
+          enum:
+            - 0
+            - 1
+        - name: hazardous
+          in: query
+          description: get hazardous cans
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: status
+          in: query
+          description: |
+            status can be one of the CREATE, UPDATE, MOVE, PICKUP, DROPOFF,
+            TRANSFER, REMOVE
+          enum:
+            - CREATE
+            - UPDATE
+            - MOVE
+            - PICKUP
+            - DROPOFF
+            - TRANSFER
+            - REMOVE
+          type: string
+        - name: deleted
+          in: query
+          description: get deleted cans
+          type: number
+          enum:
+            - 0
+            - 1
+      responses:
+        '200':
+          description: An array of cans
+          schema:
+            $ref: '#/definitions/Can'
+            type: array
+            items:
+              $ref: '#/definitions/CanView'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    post:
+      x-name: create-can
+      summary: Create a can
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: can
+          in: body
+          description: the can JSON you want to save
+          schema:
+            $ref: '#/definitions/Can'
+          required: true
+      responses:
+        '201':
+          description: A new can
+          schema:
+            $ref: '#/definitions/Can'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/cans/{canId}':
+    get:
+      x-name: view-can
+      summary: Get a can with a can ID
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: canId
+          in: path
+          description: ID of the can
+          type: string
+          required: true
+      responses:
+        '200':
+          description: The can with the can ID
+          schema:
+            $ref: '#/definitions/Can'
+        '400':
+          description: Invalid can ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Can not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    put:
+      x-name: update-can
+      summary: Update a can
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: canId
+          in: path
+          description: ID of the can
+          type: string
+          required: true
+        - name: can
+          in: body
+          description: 'new values for the can, id will be ignored'
+          schema:
+            $ref: '#/definitions/Can'
+          required: true
+      responses:
+        '202':
+          description: An updated can
+          schema:
+            $ref: '#/definitions/Can'
+        '400':
+          description: Invalid can ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Can not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-can
+      summary: Delete a can
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: canId
+          in: path
+          description: ID of the can
+          type: string
+          required: true
+      responses:
+        '204':
+          description: Can was deleted
+        '400':
+          description: Invalid can ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Can not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/cans/{canId}/move':
+    put:
+      x-name: move-can
+      summary: Update a can to be moved from one location to another
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: canId
+          in: path
+          description: ID of the can
+          type: string
+          required: true
+        - name: location
+          in: body
+          description: new location
+          schema:
+            $ref: '#/definitions/Location'
+          required: true
+      responses:
+        '204':
+          description: Moved
+        '400':
+          description: Invalid can ID or location object supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Can not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/cans/{canId}/pickup':
+    put:
+      x-name: pickup-can
+      summary: Update a can to be picked up on a truck
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: canId
+          in: path
+          description: ID of the can
+          type: string
+          required: true
+        - name: truck
+          in: body
+          description: truck to pick up a can
+          schema:
+            $ref: '#/definitions/Location'
+          required: true
+      responses:
+        '204':
+          description: Picked up
+        '400':
+          description: Invalid can ID or truck supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Can not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '409':
+          description: The can can't be picked up
+          schema:
+            $ref: '#/definitions/ConflictError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/cans/{canId}/dropoff':
+    put:
+      x-name: dropoff-can
+      summary: Update a can to be dropped off from the truck
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: canId
+          in: path
+          description: ID of the can
+          type: string
+          required: true
+        - name: location
+          in: body
+          description: location to be dropped off
+          schema:
+            $ref: '#/definitions/Location'
+          required: true
+      responses:
+        '204':
+          description: Dropped off
+        '400':
+          description: Invalid can ID or location supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Can not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '409':
+          description: The can can't be dropped off
+          schema:
+            $ref: '#/definitions/ConflictError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/cans/{canId}/transfer':
+    put:
+      x-name: transfer-can
+      summary: Update a can to be transferred from one truck to another
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: canId
+          in: path
+          description: ID of the can
+          type: string
+          required: true
+        - name: truck
+          in: body
+          description: truck to pick up a can
+          schema:
+            $ref: '#/definitions/Location'
+          required: true
+      responses:
+        '204':
+          description: Transferred
+        '400':
+          description: Invalid can ID or truck supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Can not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '409':
+          description: The can can't be transferred
+          schema:
+            $ref: '#/definitions/ConflictError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/cans/{canId}/note':
+    post:
+      x-name: add-note
+      summary: Create a note for a can ID
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: canId
+          in: path
+          description: ID of the can
+          type: string
+          required: true
+        - name: note
+          in: body
+          description: 'the note JSON, free schema'
+          schema:
+            type: object
+            properties:
+              text:
+                type: string
+              pictures:
+                type: array
+                description: list of decoded images
+                items:
+                  type: string
+                  description: decoded image
+                  format: base64
+          required: true
+      responses:
+        '204':
+          description: Note was saved
+        '400':
+          description: Invalid can ID or note JSON supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Can not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/cans/import:
+    post:
+      x-name: cans-import
+      summary: Import list of cans
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: type
+          in: query
+          description: |
+            import type can be one of the
+            APPEND, UPDATE, DELETE.
+            APPEND is default
+          type: string
+          enum:
+            - APPEND
+            - UPDATE
+            - DELETE
+          default: APPEND
+        - name: csv
+          in: body
+          description: CSV file
+          schema:
+            type: object
+            properties:
+              csv:
+                format: csv
+                description: |
+                  id (optional), serial, size, name, startDate, source, address
+                type: string
+            required:
+              - csv
+          required: true
+      responses:
+        '204':
+          description: Loaded
+        '400':
+          description: Invalid type or CSV
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/cans/export:
+    get:
+      x-name: cans-export
+      summary: Get list of cans in csv format
+      tags:
+        - Cans
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - $ref: '#/parameters/bounds'
+        - $ref: '#/parameters/search'
+        - $ref: '#/parameters/date'
+        - name: id
+          in: query
+          description: get only cans with provided ids
+          type: array
+          items:
+            type: integer
+        - name: locationId
+          in: query
+          description: get all cans associated with the specified location
+          type: number
+        - name: modifiedSince
+          in: query
+          description: |
+            filters all the cans, which were modified since the time passed in.
+            The format is a unix timestamp with milliseconds (+new Date()).
+          type: string
+        - name: isRequiredMaintenance
+          in: query
+          description: get required maintenance cans
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: isOutOfService
+          in: query
+          description: get out of service cans
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: allowNullLocations
+          in: query
+          description: allows cans with null locations
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: withTransactions
+          in: query
+          description: get cans with transactions
+          type: number
+          default: 1
+          enum:
+            - 0
+            - 1
+        - name: lastTransactionOnly
+          in: query
+          description: get only last transaction with DROPOFF action
+          type: number
+          default: 0
+          enum:
+            - 0
+            - 1
+        - name: hazardous
+          in: query
+          description: get hazardous cans
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: status
+          in: query
+          description: |
+            status can be one of the CREATE, UPDATE, MOVE, PICKUP, DROPOFF,
+            TRANSFER, REMOVE
+          enum:
+            - CREATE
+            - UPDATE
+            - MOVE
+            - PICKUP
+            - DROPOFF
+            - TRANSFER
+            - REMOVE
+          type: string
+        - name: deleted
+          in: query
+          description: get deleted cans
+          type: number
+          enum:
+            - 0
+            - 1
+      responses:
+        '200':
+          description: |
+            CSV file in format:
+            id (optional), serial, size, name, startDate, source, address,
+            hazardous
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/drivers:
+    get:
+      x-name: list-drivers
+      summary: Get all the drivers
+      tags:
+        - Drivers
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - $ref: '#/parameters/search'
+        - name: deleted
+          in: query
+          description: get deleted drivers
+          type: number
+          enum:
+            - 0
+            - 1
+      responses:
+        '200':
+          description: An array of drivers
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Driver'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    post:
+      x-name: create-driver
+      summary: Create a driver
+      tags:
+        - Drivers
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: driver
+          in: body
+          description: the driver JSON you want to save
+          schema:
+            $ref: '#/definitions/Driver'
+          required: true
+      responses:
+        '201':
+          description: A new driver
+          schema:
+            $ref: '#/definitions/Driver'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/drivers/username/{username}':
+    get:
+      x-name: view-driver-by-username
+      summary: Get a driver with a username
+      tags:
+        - Drivers
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: username
+          in: path
+          description: username which is associated with a driver
+          type: string
+          required: true
+      responses:
+        '200':
+          description: The driver with the username
+          schema:
+            $ref: '#/definitions/Driver'
+        '400':
+          description: Invalid username supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Driver not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/drivers/{driverId}':
+    get:
+      x-name: view-driver
+      summary: Get a driver with a driver ID
+      tags:
+        - Drivers
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: driverId
+          in: path
+          description: ID of the driver
+          type: string
+          required: true
+      responses:
+        '200':
+          description: The driver with driver ID
+          schema:
+            $ref: '#/definitions/Driver'
+        '400':
+          description: Invalid driver ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Driver not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    put:
+      x-name: update-driver
+      summary: Update a driver
+      tags:
+        - Drivers
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: driverId
+          in: path
+          description: ID of the driver
+          type: string
+          required: true
+        - name: driver
+          in: body
+          description: 'new values for the driver, id will be ignored'
+          schema:
+            $ref: '#/definitions/Driver'
+          required: true
+      responses:
+        '202':
+          description: An updated driver
+          schema:
+            $ref: '#/definitions/Driver'
+        '400':
+          description: Invalid driver ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Driver not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-driver
+      summary: Delete a driver
+      tags:
+        - Drivers
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: driverId
+          in: path
+          description: ID of the driver
+          type: string
+          required: true
+      responses:
+        '204':
+          description: Driver was deleted
+        '400':
+          description: Invalid driver ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Driver not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/constants:
+    get:
+      x-name: constants
+      description: |
+        This route is supposed to return all the constants we should use
+      responses:
+        '200':
+          description: Constants
+          schema:
+            type: object
+            description: See src/utils/constants.js
+  /docs:
+    get:
+      x-name: docs-index
+      description: This is a service route to share swagger auto doc site
+      responses:
+        '200':
+          description: Sends an HTML file
+        '500':
+          $ref: '#/responses/Unexpected'
+  /docs/swagger.yaml:
+    get:
+      x-name: docs-swagger
+      description: This is a service route to share swagger auto doc site
+      responses:
+        '200':
+          description: Sends a swagger YAML file
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/workorders/{workOrderId}/note':
+    get:
+      x-name: list-wo-notes
+      summary: Get all of the work orders.
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+        - name: type
+          in: query
+          description: >
+            type of Note being MANIFEST, NOTE, SCALETICKET, WEIGHT_RECORD,
+            SIGNED_DOC,
+
+            or TRANSITION
+          type: string
+          enum:
+            - MANIFEST
+            - NOTE
+            - SCALETICKET
+            - WEIGHT_RECORD
+            - TRANSITION
+            - SIGNED_DOC
+        - name: deleted
+          in: query
+          description: Allows get deleted cans
+          type: number
+          enum:
+            - 0
+            - 1
+      responses:
+        '200':
+          description: An array of work order notes
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/WorkOrderNote'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    post:
+      x-name: create-wo-note
+      summary: Create a work order note
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+        - name: note
+          in: body
+          description: 'note JSON to create, free schema'
+          required: true
+          schema:
+            type: object
+            properties:
+              locationId:
+                type: number
+              type:
+                type: string
+                enum:
+                  - MANIFEST
+                  - NOTE
+                  - SCALETICKET
+                  - WEIGHT_RECORD
+                  - TRANSITION
+                  - SIGNED_DOC
+                description: Type of note. (Required for all)
+              note:
+                $ref: '#/definitions/Note'
+            required:
+              - type
+              - note
+      responses:
+        '201':
+          description: A new work order note
+          schema:
+            $ref: '#/definitions/WorkOrderNote'
+        '400':
+          description: Invalid Work Order ID or no JSON supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/workorders/{workOrderId}/note/{workOrderNoteId}':
+    get:
+      x-name: view-wo-note
+      summary: Get Work Order Note by ID
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+        - name: workOrderNoteId
+          in: path
+          description: ID of the Work Order Note
+          type: integer
+          required: true
+      responses:
+        '200':
+          description: The work order note
+          schema:
+            $ref: '#/definitions/WorkOrderNote'
+        '400':
+          description: Invalid Work Order ID or Work Order Note ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order Note Not Found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    put:
+      x-name: update-wo-note
+      summary: Update a work order note
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+        - name: workOrderNoteId
+          in: path
+          description: ID of the Work Order Note
+          type: integer
+          required: true
+        - name: workOrderNote
+          in: body
+          description: a work order note to be updated
+          schema:
+            type: object
+            properties:
+              locationId:
+                type: number
+              type:
+                type: string
+                enum:
+                  - MANIFEST
+                  - NOTE
+                  - SCALETICKET
+                  - WEIGHT_RECORD
+                  - TRANSITION
+                  - SIGNED_DOC
+                description: Type of note. (Required for all)
+              note:
+                $ref: '#/definitions/Note'
+            required:
+              - type
+              - note
+          required: true
+      responses:
+        '202':
+          description: Updated work order note
+          schema:
+            $ref: '#/definitions/WorkOrderNote'
+        '400':
+          description: Invalid Work Order or Work Order Note Parameter
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-wo-note
+      summary: Delete a work order note
+      tags:
+        - Work Orders
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: workOrderId
+          in: path
+          description: ID of the Work Order
+          type: integer
+          required: true
+        - name: workOrderNoteId
+          in: path
+          description: ID of the Work Order Note
+          type: integer
+          required: true
+      responses:
+        '204':
+          description: Work Order Note was deleted
+        '400':
+          description: Invalid Work Order ID or Work Order Note ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Work Order or Work Order Note not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/settings:
+    get:
+      x-name: view-settings-by-keys
+      summary: Get settings by keys
+      tags:
+        - Settings
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: keys
+          in: query
+          description: array of the settings keys concatenated by comma
+          type: string
+          required: false
+      responses:
+        '200':
+          description: Array of the settings keys
+          schema:
+            $ref: '#/definitions/Settings'
+        '400':
+          description: Invalid Settings key supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Settings Not Found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    put:
+      x-name: bulk-update-settings
+      summary: Bulk Update Settings
+      tags:
+        - Settings
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: settings
+          in: body
+          description: |
+            an array of settings. If one of those settings does not
+            exist in DB, then it will be created
+          schema:
+            type: array
+            items:
+              type: object
+              allOf:
+                - $ref: '#/definitions/Settings'
+                - type: object
+          required: true
+      responses:
+        '202':
+          description: An updated settings
+          schema:
+            $ref: '#/definitions/Settings'
+        '400':
+          description: Invalid Settings
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Settings not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-settings-by-keys
+      summary: Delete settings by keys
+      tags:
+        - Settings
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: keys
+          in: query
+          description: Array of the settings keys
+          type: string
+          required: false
+      responses:
+        '204':
+          description: settings were deleted
+        '400':
+          description: Invalid Settings key supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Settings Not Found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/reports/drivers:
+    get:
+      x-name: reports-drivers
+      summary: Get drivers report in csv format
+      tags:
+        - Reports
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - $ref: '#/parameters/date'
+        - name: driverId
+          in: query
+          description: array of the Driver IDs
+          type: string
+          required: false
+        - name: reportType
+          in: query
+          description: |
+            report type can be one of the byDay, byDateRange
+          enum:
+            - byDay
+            - byDateRange
+          type: string
+          required: true
+        - name: timezone
+          in: query
+          description: |
+            time zone
+          enum:
+            - America/Chicago
+            - America/Denver
+            - America/Detroit
+            - America/Phoenix
+            - America/Los_Angeles
+            - America/New_York
+          type: string
+          required: true
+        - name: status
+          in: query
+          description: >-
+            array of the WO statuses. To pass more than one, separate items with
+            the comma. If not set, status COMPLETED will be used by default.
+          type: string
+          required: false
+        - name: action
+          in: query
+          description: >-
+            array of the WO Types. To pass more than one, separate items with
+            the comma.
+          type: string
+          required: false
+        - name: material
+          in: query
+          description: >-
+            array of the WO Materials. To pass more than one, separate items
+            with the comma.
+          type: string
+          required: false
+      responses:
+        '200':
+          description: >
+            CSV file in format:
+
+            Id, Driver, Adjusted Hours, Time Cards, Incomplete Time Cards,
+            Hauls, HPH, Miles, MPH
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/reports/cans-aging:
+    get:
+      x-name: reports-cans-aging
+      summary: Get cans aging report in csv format
+      tags:
+        - Reports
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: beforeDate
+          in: query
+          description: date to search for all cans with a timestamp before
+          type: string
+          required: false
+      responses:
+        '200':
+          description: |
+            CSV file in format:
+            Can Number, Serial, Size, Action, Timestamp, Address
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/materials:
+    post:
+      x-name: create-material
+      summary: Create a material
+      tags:
+        - Materials
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: material
+          in: body
+          description: The material JSON you want to save
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+            required:
+              - name
+          required: true
+      responses:
+        '201':
+          description: A new material
+          schema:
+            $ref: '#/definitions/Material'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    get:
+      x-name: list-materials
+      summary: Get materials
+      tags:
+        - Materials
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: id
+          in: query
+          description: allows to filter materials by id
+          type: integer
+        - name: name
+          in: query
+          description: allows to filter materials by material name
+          type: string
+        - name: deleted
+          in: query
+          description: Allows get deleted materials
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: sort
+          in: query
+          description: Allows sort materials by filed
+          type: string
+          default: id
+          enum:
+            - id
+            - name
+      responses:
+        '200':
+          description: An array of materials
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Material'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    patch:
+      x-name: create-default-materials
+      summary: Create a list of default materials
+      tags:
+        - Materials
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+      responses:
+        '201':
+          description: A list of default materials
+          schema:
+            $ref: '#/definitions/Material'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/materials/{id}':
+    put:
+      x-name: update-material
+      summary: Update a material
+      tags:
+        - Materials
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: id
+          in: path
+          description: ID of the material
+          type: string
+          required: true
+        - name: material
+          in: body
+          description: 'New values for material, id will be ignored'
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+          required: true
+      responses:
+        '202':
+          description: An updated material
+          schema:
+            $ref: '#/definitions/Material'
+        '400':
+          description: Invalid material ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: material not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-material
+      summary: Delete a material
+      tags:
+        - Materials
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: id
+          in: path
+          description: ID of the material
+          type: string
+          required: true
+      responses:
+        '204':
+          description: material was deleted
+        '400':
+          description: Invalid material ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: material not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/documents:
+    get:
+      x-name: list-documents
+      summary: Get all the documents
+      tags:
+        - Documents
+      responses:
+        '200':
+          description: An array of documents
+          schema:
+            $ref: '#/definitions/Document'
+            type: array
+            items:
+              $ref: '#/definitions/Document'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    post:
+      x-name: create-document
+      summary: Create a document
+      tags:
+        - Documents
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: document
+          in: body
+          description: the document you want to save
+          schema:
+            $ref: '#/definitions/Document'
+          required: true
+      responses:
+        '201':
+          description: A new document
+          schema:
+            $ref: '#/definitions/Document'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/sizes:
+    post:
+      x-name: create-size
+      summary: Create a size
+      tags:
+        - Sizes
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: size
+          in: body
+          description: The size JSON you want to save
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+            required:
+              - name
+          required: true
+      responses:
+        '201':
+          description: A new size
+          schema:
+            $ref: '#/definitions/Size'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    get:
+      x-name: list-sizes
+      summary: Get sizes
+      tags:
+        - Sizes
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: id
+          in: query
+          description: allows to filter sizes by id
+          type: integer
+        - name: name
+          in: query
+          description: allows to filter sizes by size name
+          type: string
+        - name: deleted
+          in: query
+          description: Allows get deleted sizes
+          type: number
+          enum:
+            - 0
+            - 1
+        - name: sort
+          in: query
+          description: Allows sort sizes by filed
+          type: string
+          default: id
+          enum:
+            - id
+            - name
+      responses:
+        '200':
+          description: An array of sizes
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Size'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    patch:
+      x-name: create-default-sizes
+      summary: Create a list of default sizes
+      tags:
+        - Sizes
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+      responses:
+        '201':
+          description: A list of default sizes
+          schema:
+            $ref: '#/definitions/Size'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/sizes/{id}':
+    put:
+      x-name: update-size
+      summary: Update a size
+      tags:
+        - Sizes
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: id
+          in: path
+          description: ID of the size
+          type: string
+          required: true
+        - name: size
+          in: body
+          description: 'New values for size, id will be ignored'
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+          required: true
+      responses:
+        '202':
+          description: An updated size
+          schema:
+            $ref: '#/definitions/Size'
+        '400':
+          description: Invalid size ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Size not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+    delete:
+      x-name: delete-size
+      summary: Delete a size
+      tags:
+        - Sizes
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: id
+          in: path
+          description: ID of the size
+          type: string
+          required: true
+      responses:
+        '204':
+          description: Size was deleted
+        '400':
+          description: Invalid size ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Size not found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+  /v1/templates:
+    get:
+      x-name: list-templates
+      summary: Get all the templates
+      tags:
+        - Templates
+      responses:
+        '200':
+          description: An array of templates
+          schema:
+            $ref: '#/definitions/Template'
+            type: array
+            items:
+              $ref: '#/definitions/Template'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+    post:
+      x-name: create-template
+      summary: Create a template
+      tags:
+        - Templates
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: template
+          in: body
+          description: the template you want to save
+          schema:
+            $ref: '#/definitions/Template'
+          required: true
+      responses:
+        '201':
+          description: A new template
+          schema:
+            $ref: '#/definitions/Template'
+        '400':
+          description: Invalid input
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/Unexpected'
+  '/v1/templates/{templateId}':
+    get:
+      x-name: get-template
+      summary: Get Template by ID
+      tags:
+        - Templates
+      parameters:
+        - name: token
+          in: query
+          type: string
+          description: json web token
+        - name: templateId
+          in: path
+          description: ID of the template
+          type: integer
+          required: true
+      responses:
+        '200':
+          description: The template with the template ID
+          schema:
+            $ref: '#/definitions/Template'
+        '400':
+          description: Invalid Template ID supplied
+          schema:
+            $ref: '#/definitions/InvalidParameterError'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '404':
+          description: Template Not Found
+          schema:
+            $ref: '#/definitions/NotFoundError'
+        '500':
+          $ref: '#/responses/Unexpected'
+parameters:
+  bounds:
+    name: bounds
+    in: query
+    description: |
+      a string of bounding box coordinates concatenated by the comma,
+      there should not be any space, in the form:
+      xLow,yLow,xHigh,yHigh
+    type: string
+  search:
+    name: search
+    in: query
+    description: this is a text search query
+    type: string
+  date:
+    name: date
+    in: query
+    description: |
+      a date filter, takes a range of dates as
+      `${start.getTime()}..${end.getTime()}`, where start and end both
+      are JS Date objects
+    type: string
+responses:
+  Forbidden:
+    description: Access denied
+    schema:
+      $ref: '#/definitions/ForbiddenError'
+  Unexpected:
+    description: Unexpected error
+    schema:
+      $ref: '#/definitions/Error'
+definitions:
+  Location:
+    type: object
+    properties:
+      id:
+        type: number
+      name:
+        type: string
+      description:
+        type: string
+      location:
+        type: object
+        properties:
+          lon:
+            type: number
+            format: double
+          lat:
+            type: number
+            format: double
+      type:
+        type: string
+        enum:
+          - WAYPOINT
+          - LOCATION
+          - TRUCK
+      waypointName:
+        type: string
+      waypointType:
+        type: string
+        enum:
+          - HOME_YARD
+          - LANDFILL_STORAGE_YARD
+          - LANDFILL
+          - RECYCLE_CENTER
+          - STORAGE_YARD
+          - TRANSFER_CENTER
+      deleted:
+        type: number
+      licensePlate:
+        type: string
+    required:
+      - type
+  Trip:
+    type: object
+    properties:
+      id:
+        type: number
+      truckId:
+        type: number
+      driverId:
+        type: number
+      tripType:
+        type: string
+      odometer:
+        type: number
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+      deleted:
+        type: number
+    required:
+      - truckId
+      - driverId
+      - tripType
+      - odometer
+  TimeCard:
+    type: object
+    properties:
+      id:
+        type: number
+      driverId:
+        type: number
+      startTime:
+        type: string
+        format: date-time
+      stopTime:
+        type: string
+        format: date-time
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+      deleted:
+        type: number
+    required:
+      - driverId
+      - startTime
+  Transaction:
+    type: object
+    properties:
+      id:
+        type: number
+      timestamp:
+        type: number
+      location1:
+        $ref: '#/definitions/Location'
+      location2:
+        $ref: '#/definitions/Location'
+      action:
+        type: string
+        enum:
+          - MOVE
+          - PICKUP
+          - DROPOFF
+          - TRANSFER
+          - NOTE
+          - UPDATE
+          - REMOVE
+          - CREATE
+      payload:
+        type: string
+        format: json
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+    required:
+      - timestamp
+      - location1
+      - location2
+      - action
+  Can:
+    type: object
+    properties:
+      id:
+        type: number
+      name:
+        type: string
+      serial:
+        type: string
+      size:
+        type: string
+      requiresMaintenance:
+        type: number
+      outOfService:
+        type: number
+      location:
+        $ref: '#/definitions/Location'
+      source:
+        type: string
+      startDate:
+        type: string
+        format: date
+      hazardous:
+        type: number
+      action:
+        type: string
+      timestamp:
+        type: string
+        format: date-time
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+      deleted:
+        type: number
+      inUse:
+        type: number
+        description: 'true if inUse for staging, false otherwise.'
+    required:
+      - name
+      - size
+  WorkOrder:
+    type: object
+    properties:
+      id:
+        type: number
+      status:
+        description: >
+          Status can be one of UNASSIGNED, ASSIGNED, INPROGRESS, COMPLETED,
+          CANCELED
+        enum:
+          - UNASSIGNED
+          - ASSIGNED
+          - INPROGRESS
+          - COMPLETED
+          - CANCELED
+        type: string
+      action:
+        description: |
+          Action can be one of SPOT, FINAL, SWITCH, DUMP_AND_RETURN, LIVE_LOAD,
+          PICKUP, DROPOFF, RELOCATE, REPOSITION, GENERAL PURPOSE, FINAL RESUME,
+          FINAL SUSPEND, SWITCH RESUME, SWITCH SUSPEND, LIVE LOAD RESUME,
+          LIVE LOAD RESUME, DUMP & RETURN SUSPEND, DUMP & RETURN RESUME
+        enum:
+          - SPOT
+          - FINAL
+          - SWITCH
+          - DUMP & RETURN
+          - LIVE LOAD
+          - PICKUP CAN
+          - DROPOFF CAN
+          - RELOCATE
+          - REPOSITION
+          - GENERAL PURPOSE
+          - FINAL SUSPEND
+          - FINAL RESUME
+          - SWITCH SUSPEND
+          - SWITCH RESUME
+          - DUMP & RETURN SUSPEND
+          - DUMP & RETURN RESUME
+          - LIVE LOAD SUSPEND
+          - LIVE LOAD RESUME
+        type: string
+      size:
+        type: string
+      material:
+        type: string
+      scheduledDate:
+        type: string
+        format: date
+      scheduledStart:
+        type: string
+        format: date-time
+      scheduledEnd:
+        type: string
+        format: date-time
+      poNumber:
+        type: string
+      contactName:
+        type: string
+      contactNumber:
+        type: string
+      customerName:
+        type: string
+      instructions:
+        type: string
+        default: ''
+      alleyPlacement:
+        type: number
+        description: '1 is true, 0 is false'
+      earlyPickUp:
+        type: number
+        description: '1 is true, 0 is false'
+      okToRoll:
+        type: number
+        description: '1 is true, 0 is false'
+      negotiatedFill:
+        type: number
+        description: '1 is true, 0 is false'
+      cow:
+        type: number
+        description: 'Call on Way  (1 is true, 0 is false)'
+      sos:
+        type: number
+        description: 'Someone on Site (1 is true, 0 is false)'
+      cabOver:
+        type: number
+        description: Requires a Cabover truck
+      permittedCan:
+        type: number
+        description: Requires a permit
+      permitNumber:
+        type: string
+      textOnWay:
+        type: string
+      profileNumber:
+        type: string
+      customerProvidedProfile:
+        type: number
+        description: '1 is true, 0 is false'
+      priority:
+        type: number
+        description: '1 is true, 0 is false'
+      step:
+        type: string
+        description: Current Step in Work Order Flow.
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+      location1:
+        $ref: '#/definitions/Location'
+      location2:
+        $ref: '#/definitions/Location'
+      driverId:
+        type: integer
+      index:
+        type: integer
+        description: Sequence number
+        default: 0
+      deleted:
+        type: number
+      signatureRequired:
+        type: number
+        default: 0
+        description: '1 is true, 0 is false'
+      templateId:
+        type: number
+        description: Typically will always be 1 because the feature is barely used.
+      documentId:
+        type: number
+      suspensionLocationId:
+        type: integer
+      suspendedCanId:
+        type: integer
+      pendingSuspend:
+        type: number
+        description: >-
+          1 is true, 0 is false. The work order is marked as pendingSuspend to
+          prevent the driver from passing the suspend step of the driver app.
+      suspendRequested:
+        type: number
+        description: >-
+          1 is true, 0 is false. The work order is marked as suspendRequested to
+          inform dispatch the driver thinks the order should be suspended
+    required:
+      - action
+      - size
+      - material
+      - scheduledDate
+      - priority
+      - location1
+      - signatureRequired
+  WorkOrderNote:
+    type: object
+    properties:
+      id:
+        type: number
+      workOrderId:
+        type: number
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+      type:
+        type: string
+        enum:
+          - MANIFEST
+          - NOTE
+          - SCALETICKET
+          - WEIGHT_RECORD
+          - TRANSITION
+          - SIGNED_DOC
+        description: Type of note. (Required for all)
+      location:
+        $ref: '#/definitions/Location'
+      note:
+        $ref: '#/definitions/Note'
+        required:
+          - type
+    required:
+      - note
+  Note:
+    type: object
+    properties:
+      picture:
+        type: string
+        description: Picture (Applicable to all)
+      text:
+        type: string
+        description: Note text. (Required for note)
+      quantity:
+        type: number
+        format: double
+        description: Decimal units (Req. for manifest and scale tickets)
+      unittype:
+        type: string
+        enum:
+          - YARDS
+          - TONS
+        description: Enumerated unit types (Req. for manifest and scale tickets)
+      landfill:
+        type: string
+        description: |
+          Should be a dropdown of the landfill scale ticket was received from.
+          (Req. for scale ticket)
+      ticketNumber:
+        type: string
+        description: Scale Ticket Number (Req. for scale ticket)
+      profileNumber:
+        type: string
+        description: Manifest profile number (Req. for manifest)
+      manifestNumber:
+        type: string
+        description: Manifest Number (Req. for manifest)
+      newState:
+        type: string
+        enum:
+          - START_WORK_ORDER
+          - ARRIVE_ON_SITE
+          - SIGNATURE
+          - START_SERVICE
+          - DROP_CAN
+          - PICKUP_CAN
+          - FINISH_SERVICE
+          - RECORD_WEIGHT
+          - RECORD_MANIFESTS
+          - GOING_TO_FILL
+          - ARRIVE_AT_FILL
+          - FINISH_DISPOSAL
+          - RECORD_WEIGHT_TICKETS
+          - RETURNING_TO_JOBSITE
+          - SPECIAL_INSTRUCTIONS
+          - GOING_TO_SUSPENSION_SITE
+          - ARRIVE_AT_SUSPENSION_SITE
+          - DROP_STAGED_CAN
+          - SUSPEND_WORK_ORDER
+          - RESUME_WORK_ORDER
+          - GOING_TO_SUSPENSION_SITE
+          - PICKUP_STAGED_CAN
+        description: State the work order to be transitioned to.
+  CanView:
+    type: object
+    properties:
+      id:
+        type: string
+        example: hello-api
+  Document:
+    type: object
+    properties:
+      id:
+        type: number
+      url:
+        type: string
+      driver:
+        type: string
+      printedName:
+        type: string
+      signature:
+        type: string
+      templateId:
+        type: number
+      workOrderId:
+        type: number
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+    required:
+      - signature
+      - workOrderId
+      - printedName
+  Template:
+    type: object
+    properties:
+      id:
+        type: number
+      name:
+        type: string
+      description:
+        type: string
+      logo:
+        type: string
+      companyName:
+        type: string
+      address:
+        type: string
+      address2:
+        type: string
+      city:
+        type: string
+      state:
+        type: string
+      zipcode:
+        type: string
+      phoneNumber:
+        type: string
+      content:
+        type: string
+      contentRaw:
+        type: string
+      footer:
+        type: string
+      footerRaw:
+        type: string
+      header:
+        type: string
+      headerRaw:
+        type: string
+      acknowledgement:
+        type: string
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+      deleted:
+        type: number
+    required:
+      - name
+      - logo
+      - companyName
+      - address
+      - city
+      - phoneNumber
+      - state
+      - zipcode
+      - content
+      - acknowledgement
+  Driver:
+    type: object
+    properties:
+      id:
+        type: number
+      username:
+        type: string
+        description: Binds user with driver. This is really an email address.
+      name:
+        type: string
+      photo:
+        type: string
+      truck:
+        type: object
+        properties:
+          id:
+            type: number
+          name:
+            type: string
+          location:
+            type: object
+            properties:
+              lon:
+                type: number
+              lat:
+                type: number
+          type:
+            type: string
+            enum:
+              - TRUCK
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+      deleted:
+        type: number
+      phoneNumber:
+        type: string
+      agreeWhipAround:
+        type: number
+        default: 0
+        description: >-
+          0 is false, 1 is true. True if the driver has agreed to the WhipAround
+          license
+      enableWoControl:
+        type: number
+        default: 0
+        description: >-
+          Toggles the ability for drivers to start work orders in the driver
+          application in any order they'd like. 0 is false, 1 is true.
+      deviceToken:
+        type: string
+        default: ''
+        description: >-
+          Device token is a unique identifier for the drivers phone used for
+          push notifications.
+      language:
+        type: string
+        default: en
+        description: The language the driver uses in their application
+      route:
+        type: string
+        description: The route defined by the dispatcher
+      allowOoS:
+        type: number
+        default: 0
+        description: >-
+          Allow or disallow the driver to pickup cans which are marked Out Of
+          Serivce. 1, true - the driver can pick up containers marked as out of
+          service. 0, false - the driver is prevented from picking up Out Of
+          Service cans.
+    required:
+      - name
+  Settings:
+    type: object
+    properties:
+      key:
+        type: string
+      value:
+        type: object
+    required:
+      - key
+      - value
+  Reports:
+    type: object
+  Material:
+    type: object
+    properties:
+      id:
+        type: number
+      name:
+        type: string
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+      deleted:
+        type: number
+    required:
+      - name
+  Size:
+    type: object
+    properties:
+      id:
+        type: number
+      name:
+        type: string
+      createdBy:
+        type: string
+      createdDate:
+        type: string
+        format: date-time
+      modifiedBy:
+        type: string
+      modifiedDate:
+        type: string
+        format: date-time
+      deleted:
+        type: number
+    required:
+      - name
+  Error:
+    type: object
+    properties:
+      code:
+        type: string
+      message:
+        type: string
+  NotFoundError:
+    type: object
+    allOf:
+      - $ref: '#/definitions/Error'
+  InvalidParameterError:
+    type: object
+    allOf:
+      - $ref: '#/definitions/Error'
+  ConflictError:
+    type: object
+    allOf:
+      - $ref: '#/definitions/Error'
+  ForbiddenError:
+    type: object
+    allOf:
+      - $ref: '#/definitions/Error'

@@ -1,0 +1,153 @@
+type: object
+properties:
+  id:
+    type: number
+  status:
+    description: |
+      Status can be one of UNASSIGNED, ASSIGNED, INPROGRESS, COMPLETED, CANCELED
+    enum:
+      - UNASSIGNED
+      - ASSIGNED
+      - INPROGRESS
+      - COMPLETED
+      - CANCELED
+    type: string
+  action:
+    description: |
+      Action can be one of SPOT, FINAL, SWITCH, DUMP_AND_RETURN, LIVE_LOAD,
+      PICKUP, DROPOFF, RELOCATE, REPOSITION, GENERAL PURPOSE, FINAL RESUME,
+      FINAL SUSPEND, SWITCH RESUME, SWITCH SUSPEND, LIVE LOAD RESUME,
+      LIVE LOAD RESUME, DUMP & RETURN SUSPEND, DUMP & RETURN RESUME
+    enum:
+      - SPOT
+      - FINAL
+      - SWITCH
+      - DUMP & RETURN
+      - LIVE LOAD
+      - PICKUP CAN
+      - DROPOFF CAN
+      - RELOCATE
+      - REPOSITION
+      - GENERAL PURPOSE
+      - FINAL SUSPEND
+      - FINAL RESUME
+      - SWITCH SUSPEND
+      - SWITCH RESUME
+      - DUMP & RETURN SUSPEND
+      - DUMP & RETURN RESUME
+      - LIVE LOAD SUSPEND
+      - LIVE LOAD RESUME
+    type: string
+  size:
+    type: string
+  material:
+    type: string
+  scheduledDate:
+    type: string
+    format: date
+  scheduledStart:
+    type: string
+    format: date-time
+  scheduledEnd:
+    type: string
+    format: date-time
+  poNumber:
+    type: string
+  contactName:
+    type: string
+  contactNumber:
+    type: string
+  customerName:
+    type: string
+  instructions:
+    type: string
+    default: ''
+  alleyPlacement:
+    type: number
+    description:  1 is true, 0 is false
+  earlyPickUp:
+    type: number
+    description:  1 is true, 0 is false
+  okToRoll:
+    type: number
+    description:  1 is true, 0 is false
+  negotiatedFill:
+    type: number
+    description:  1 is true, 0 is false
+  cow:
+    type: number
+    description: Call on Way  (1 is true, 0 is false)
+  sos:
+    type: number
+    description: Someone on Site (1 is true, 0 is false)
+  cabOver:
+    type: number
+    description: Requires a Cabover truck
+  permittedCan:
+    type: number
+    description: Requires a permit
+  permitNumber:
+    type: string
+  textOnWay:
+    type: string
+  profileNumber:
+    type: string
+  customerProvidedProfile:
+    type: number
+    description:  1 is true, 0 is false
+  priority:
+    type: number
+    description:  1 is true, 0 is false
+  step:
+    type: string
+    description: Current Step in Work Order Flow.
+  createdBy:
+    type: string
+  createdDate:
+    type: string
+    format: date-time
+  modifiedBy:
+    type: string
+  modifiedDate:
+    type: string
+    format: date-time
+  location1:
+    $ref: '#/definitions/Location'
+  location2:
+    $ref: '#/definitions/Location'
+  driverId:
+    type: integer
+  index:
+    type: integer
+    description: Sequence number
+    default: 0
+  deleted:
+    type: number
+  signatureRequired:
+    type: number
+    default: 0
+    description:  1 is true, 0 is false
+  templateId:
+    type: number
+    description: Typically will always be 1 because the feature is barely used.
+  documentId:
+    type: number
+  suspensionLocationId:
+    type: integer
+
+  suspendedCanId:
+     type: integer
+  pendingSuspend:
+    type: number
+    description:  1 is true, 0 is false. The work order is marked as pendingSuspend to prevent the driver from passing the suspend step of the driver app.
+  suspendRequested:
+    type: number
+    description:  1 is true, 0 is false. The work order is marked as suspendRequested to inform dispatch the driver thinks the order should be suspended
+required:
+  - action
+  - size
+  - material
+  - scheduledDate
+  - priority
+  - location1
+  - signatureRequired

@@ -1,0 +1,39 @@
+/v1/workorders:
+  get:
+    $fs-ref: ./workorders/list-workorders.yaml
+  post:
+    $fs-ref: ./workorders/create-workorder.yaml
+  put:
+    $fs-ref: ./workorders/bulk-update.yaml
+
+/v1/workorders/notes:
+  get:
+    $fs-ref: ./workorders/notes.yaml
+
+/v1/workorders/driver/{driverId}:
+  get:
+    $fs-ref: ./workorders/list-workorders-by-driver.yaml
+
+/v1/workorders/{workOrderId}:
+  get:
+    $fs-ref: ./workorders/view-workorder.yaml
+  put:
+    $fs-ref: ./workorders/update-workorder.yaml
+  delete:
+    $fs-ref: ./workorders/delete-workorder.yaml
+
+/v1/workorders/{workOrderId}/transition:
+  get:
+    $fs-ref: ./workorders/states/get-workorder-state.yaml
+
+/v1/workorders/{workOrderId}/transition/{newState}:
+  post:
+    $fs-ref: ./workorders/states/set-workorder-state.yaml
+
+/v1/workorders/import:
+  post:
+    $fs-ref: ./workorders/import.yaml
+
+/v1/workorders/export:
+  get:
+    $fs-ref: ./workorders/export.yaml
