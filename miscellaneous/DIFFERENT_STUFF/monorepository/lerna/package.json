@@ -8,7 +8,7 @@
     "test:all-packages-also": "lerna run test --scope={@workspaces/common,@workspaces/server}",
     "test:common": "lerna run test --scope=@workspaces/common",
     "test:server": "lerna run test --scope=@workspaces/server",
-    "new-version": "lerna version --conventional-commits --yes",
+    "new-version": "lerna version --conventional-commits --yes --no-push",
     "diff": "lerna diff"
   },
   "devDependencies": {
