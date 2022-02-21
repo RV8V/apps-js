@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  datica_carete_update:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: datica_carete_update
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_ROOT_HOST: "0.0.0.0"
+    ports:
+      - '3307:3306'
