@@ -1,3 +1,5 @@
 const common = require('@workspaces/common');
 
-console.log({ common: common().message });
+const getMessage = message => message;
+
+console.log({ common: getMessage(common().message) });
