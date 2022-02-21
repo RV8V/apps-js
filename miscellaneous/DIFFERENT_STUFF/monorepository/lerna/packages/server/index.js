@@ -1,3 +1,3 @@
-const common = require('@workspaces/common')
+const common = require('@workspaces/common');
 
-console.log({ common: common().message })
+console.log({ common: common().message });
