@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/RV8V/apps-js/compare/v1.1.11...v1.2.0) (2022-02-21)
+
+
+### Features
+
+* update changelog manually ([3e797b5](https://github.com/RV8V/apps-js/commit/3e797b59f24471ffe854660c027a516fa11f5ac9))
+
+
+
+
+
 ## [1.1.11](https://github.com/RV8V/apps-js/compare/v1.1.10...v1.1.11) (2022-02-21)
 
 
