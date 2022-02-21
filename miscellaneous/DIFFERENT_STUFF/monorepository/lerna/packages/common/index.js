@@ -1,3 +1,3 @@
 module.exports = () => ({
-  message: 'hello from common'
+  message: 'hello from common',
 });
