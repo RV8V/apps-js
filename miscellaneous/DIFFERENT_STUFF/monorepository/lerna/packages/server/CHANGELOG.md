@@ -11,9 +11,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * change log ([5bca679](https://github.com/RV8V/apps-js/commit/5bca679f9d10f5e8d8c7a80ddace0c44b3e52b4d))
 
 
-
-
-
 # [1.3.0](https://github.com/RV8V/apps-js/compare/v1.2.3...v1.3.0) (2022-02-21)
 
 
