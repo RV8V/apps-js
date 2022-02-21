@@ -1,0 +1,9 @@
+{
+  "name": "@workspaces/common",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo hello from common package, version: $npm_package_version"
+  }
+}
