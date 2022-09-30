@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/hello-world_2.13-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/users[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users/UserPreferences.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/users/UserPreferences.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users/User.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/users/User.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users/UserProfile.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/users/UserProfile.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$Transaction$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/Main$Transaction$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$Debug$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/Main$Debug$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$Comparator$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/Main$Comparator$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	intro[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/intro[0m
+[0m[[0m[0mdebug[0m] [0m[0m	intro/Block.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/target/scala-2.13/classes/intro/Block.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
