@@ -1,0 +1,1716 @@
+2022.06.01 23:01:58 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.01 23:01:58 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.01 23:01:58 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.01 23:02:14 INFO  time: initialize in 15s
+2022.06.01 23:02:14 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.01 23:02:14 WARN  Build server is not auto-connectable.
+2022.06.01 23:02:14 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.01 23:14:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/index.scala
+2022.06.01 23:15:07 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:17:25 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/index.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.01 23:17:26 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+2022.06.01 23:17:26 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+2022.06.01 23:17:26 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 26
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 38
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 31
+Jun 01, 2022 11:17:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30
+2022.06.01 23:17:26 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.22s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.22s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.23s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.22s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.23s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.2s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.22s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.22s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.2s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.17s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.16s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.22s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.25s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.25s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.25s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.26s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.29s
+2022.06.01 23:17:27 INFO  time: code lens generation in 2m27s
+2022.06.01 23:17:27 INFO  time: code lens generation in 1.29s
+2022.06.01 23:17:27 INFO  time: code lens generation in 2m20s
+2022.06.01 23:17:27 INFO  time: code lens generation in 2m27s
+2022.06.01 23:17:27 INFO  time: code lens generation in 2m20s
+2022.06.01 23:17:30 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:18:36 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+2022.06.01 23:18:43 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+Jun 01, 2022 11:19:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 89
+2022.06.01 23:19:17 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:19:19 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:19:26 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:19:38 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:19:41 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:20:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:20:50 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:21:11 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:21:15 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:21:47 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:22:29 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:22:35 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:22:53 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:24:06 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:24:20 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:25:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:26:00 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:26:17 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:28:49 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:28:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:29:05 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:29:25 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:29:29 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:29:52 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:29:55 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:29:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:30:13 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:30:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:30:23 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:30:39 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:30:43 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:30:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:30:53 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:33:01 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:33:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:33:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:34:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:36:14 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:36:39 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:37:24 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:37:41 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:39:19 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:39:44 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:39:50 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:40:18 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:40:23 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:40:45 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:41:26 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:41:41 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:41:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:41:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:42:29 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:43:03 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:43:15 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:43:35 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:45:12 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:45:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:45:39 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:46:19 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:46:34 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:47:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:47:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:47:48 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:48:05 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:48:15 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:48:31 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:48:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:48:53 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:49:06 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:49:16 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:49:27 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:49:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:49:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:50:39 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:51:13 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:51:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:52:01 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:52:13 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:52:50 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:53:19 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:54:17 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:55:11 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:55:43 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:55:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:55:54 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:55:56 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:56:13 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:56:42 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:57:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:57:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:58:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:58:47 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:59:00 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:59:03 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:59:05 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:59:11 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:59:17 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.01 23:59:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:00:27 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:00:57 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:01:04 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:03:03 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/users/User.scala
+2022.06.02 00:03:16 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/users/UserProfile.scala
+2022.06.02 00:03:30 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/users/UserPreferences.scala
+Jun 02, 2022 12:04:34 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8545
+2022.06.02 00:04:44 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/users/User.scala
+2022.06.02 00:04:57 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/users/User.scala
+Jun 02, 2022 12:06:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8679
+2022.06.02 00:07:08 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/users/UserPreferences.scala
+2022.06.02 00:07:13 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/users/UserPreferences.scala
+Jun 02, 2022 12:07:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9048
+2022.06.02 00:07:40 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/users/UserProfile.scala
+Jun 02, 2022 12:07:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9164
+2022.06.02 00:08:02 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/users/User.scala
+Jun 02, 2022 12:08:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9251
+2022.06.02 00:09:14 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:09:38 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:09:42 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:10:15 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:10:45 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:10:52 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:10:56 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:12:23 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/intro/Block.scala
+2022.06.02 00:12:39 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/intro/Block.scala
+2022.06.02 00:13:00 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/intro/Block.scala
+2022.06.02 00:13:02 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/intro/Block.scala
+2022.06.02 00:13:05 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/intro/Block.scala
+2022.06.02 00:13:31 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/intro/Block.scala
+2022.06.02 00:13:40 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/intro/Block.scala
+Jun 02, 2022 12:13:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10228
+2022.06.02 00:14:16 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:14:28 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:14:39 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/intro/Block.scala
+2022.06.02 00:15:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:15:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:15:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:15:50 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:15:56 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:16:27 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:16:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:16:36 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:16:40 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:16:49 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:16:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 12:16:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11116
+2022.06.02 00:17:07 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 12:17:20 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11144
+2022.06.02 00:20:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Exception in thread "pool-3-thread-1" java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2495)
+	at scala.meta.internal.pc.SemanticdbSymbols$.addSymName(SemanticdbSymbols.scala:136)
+	at scala.meta.internal.pc.SemanticdbSymbols$.symbolName(SemanticdbSymbols.scala:79)
+	at scala.meta.internal.pc.PcDefinitionProvider.semanticSymbolsSorted$$anonfun$1(PcDefinitionProvider.scala:106)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.meta.internal.pc.PcDefinitionProvider.semanticSymbolsSorted(PcDefinitionProvider.scala:106)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:82)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.definition$$anonfun$1(ScalaPresentationCompiler.scala:113)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022.06.02 00:21:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:21:23 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:23:04 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:23:32 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 12:24:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12171
+2022.06.02 00:24:07 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:24:41 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:24:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:25:07 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:28:57 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:29:08 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 12:29:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: expected identifier; obtained rbrace
+}
+^
+}
+^
+java.util.concurrent.CompletionException: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: expected identifier; obtained rbrace
+}
+^
+}
+^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: expected identifier; obtained rbrace
+}
+^
+}
+^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:358)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:343)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:245)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:118)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:50)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:40)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:96)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:269)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:202)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:202)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:197)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:33)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:29)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1467)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Jun 02, 2022 12:29:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: expected identifier; obtained rbrace
+}
+^
+}
+^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:358)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:343)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:245)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:118)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:50)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:40)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:96)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:269)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:202)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:202)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:197)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$definitionOrReferences$1(MetalsLanguageServer.scala:2463)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLanguageServer.definitionOrReferences(MetalsLanguageServer.scala:2459)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$definition$1(MetalsLanguageServer.scala:1422)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.definition(MetalsLanguageServer.scala:1421)
+	... 16 more
+
+Jun 02, 2022 12:29:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: expected identifier; obtained rbrace
+}
+^
+}
+^
+java.util.concurrent.CompletionException: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: expected identifier; obtained rbrace
+}
+^
+}
+^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: file:///home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala:147: error: expected identifier; obtained rbrace
+}
+^
+}
+^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:358)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:343)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:245)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:118)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:50)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:40)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:96)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:269)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:202)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:202)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:197)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:33)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:29)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1467)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.06.02 00:29:22 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:30:15 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:30:25 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:30:40 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:30:44 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:30:52 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:50:24 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:50:35 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:50:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:50:47 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:50:53 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:51:05 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:51:14 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:51:29 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:51:38 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:52:05 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:53:04 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:53:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:54:06 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:54:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:54:36 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:54:38 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:55:27 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:56:22 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:56:30 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:56:41 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:56:52 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:57:15 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:57:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:57:43 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:58:03 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:59:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:59:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 00:59:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 01:00:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 01:00:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 01:00:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 1:00:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15037
+2022.06.02 01:01:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 01:01:12 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 10:32:16 INFO  shutting down Metals
+2022.06.02 11:08:20 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 11:08:21 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 11:08:21 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 11:08:24 INFO  time: initialize in 3.18s
+2022.06.02 11:08:24 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 11:08:24 WARN  Build server is not auto-connectable.
+2022.06.02 11:08:24 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 11:08:26 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 11:08:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Jun 02, 2022 11:08:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+2022.06.02 11:08:29 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 11:08:31 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:08:33 INFO  time: code lens generation in 5.21s
+2022.06.02 11:08:33 INFO  time: code lens generation in 6.26s
+2022.06.02 11:08:33 INFO  time: code lens generation in 5.21s
+2022.06.02 11:08:33 INFO  time: code lens generation in 5.25s
+2022.06.02 11:08:33 INFO  time: code lens generation in 6.27s
+2022.06.02 11:08:33 INFO  time: code lens generation in 5.25s
+2022.06.02 11:08:33 INFO  time: code lens generation in 1.64s
+2022.06.02 11:08:33 INFO  time: code lens generation in 6.26s
+2022.06.02 11:08:33 INFO  time: code lens generation in 1.65s
+2022.06.02 11:08:55 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:08:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:09:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:09:28 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:12:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+2022.06.02 11:14:05 INFO  shutting down Metals
+2022.06.02 11:17:47 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 11:17:48 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 11:17:48 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 11:17:51 INFO  time: initialize in 2.82s
+2022.06.02 11:17:51 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 11:17:51 WARN  Build server is not auto-connectable.
+2022.06.02 11:17:51 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 11:17:53 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+2022.06.02 11:17:56 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 11:17:57 INFO  time: code lens generation in 4.01s
+2022.06.02 11:17:57 INFO  time: code lens generation in 4.01s
+2022.06.02 11:17:57 INFO  time: code lens generation in 4s
+2022.06.02 11:18:18 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+2022.06.02 11:18:20 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+2022.06.02 11:18:24 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+2022.06.02 11:20:03 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+2022.06.02 11:20:35 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:20:48 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:20:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:22:27 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:26:17 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:26:22 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 11:26:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 267
+Jun 02, 2022 11:26:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 285
+2022.06.02 11:26:55 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 11:26:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 290
+2022.06.02 11:28:04 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+Jun 02, 2022 11:28:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 339
+2022.06.02 11:29:53 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+2022.06.02 11:30:02 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+2022.06.02 11:30:38 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/build.sbt
+Jun 02, 2022 11:30:53 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 497
+2022.06.02 11:31:00 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:31:07 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:31:12 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:33:36 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:34:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:35:36 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:35:45 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:36:07 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:36:15 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:37:01 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 11:37:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 996
+2022.06.02 11:37:25 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:38:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:39:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:39:20 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:39:30 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:40:04 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:40:29 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:41:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:41:36 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:42:36 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:43:05 INFO  shutting down Metals
+2022.06.02 11:45:11 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 11:45:12 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 11:45:12 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 11:45:16 INFO  time: initialize in 4.05s
+2022.06.02 11:45:16 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 11:45:16 WARN  Build server is not auto-connectable.
+2022.06.02 11:45:16 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 11:45:19 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:45:24 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 11:45:28 INFO  time: code lens generation in 8.66s
+2022.06.02 11:45:28 INFO  time: code lens generation in 8.66s
+2022.06.02 11:45:28 INFO  time: code lens generation in 8.68s
+2022.06.02 11:45:28 INFO  time: code lens generation in 6.05s
+2022.06.02 11:45:28 INFO  time: code lens generation in 3.45s
+2022.06.02 11:45:28 INFO  time: code lens generation in 6.05s
+2022.06.02 11:45:28 INFO  time: code lens generation in 3.45s
+2022.06.02 11:45:39 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:46:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:46:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:47:18 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:47:42 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:47:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:47:49 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:48:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:48:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:48:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:50:06 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:50:48 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:51:08 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:51:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:51:41 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:54:34 INFO  shutting down Metals
+2022.06.02 11:56:45 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 11:56:45 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 11:56:45 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 11:56:48 INFO  time: initialize in 2.67s
+2022.06.02 11:56:48 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 11:56:48 WARN  Build server is not auto-connectable.
+2022.06.02 11:56:48 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 11:56:50 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 11:56:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Jun 02, 2022 11:56:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+2022.06.02 11:56:53 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 11:56:55 INFO  time: code lens generation in 4.46s
+2022.06.02 11:56:55 INFO  time: code lens generation in 4.45s
+2022.06.02 11:56:55 INFO  time: code lens generation in 4.39s
+2022.06.02 11:56:55 INFO  time: code lens generation in 4.41s
+2022.06.02 11:56:55 INFO  time: code lens generation in 4.46s
+2022.06.02 11:56:55 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 11:56:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+Jun 02, 2022 11:56:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+Jun 02, 2022 11:57:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 272 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+Jun 02, 2022 11:57:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 272 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+Jun 02, 2022 11:57:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 270 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+Jun 02, 2022 11:57:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 270 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+Jun 02, 2022 11:57:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 270 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+Jun 02, 2022 11:57:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 270 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+Jun 02, 2022 11:57:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 268 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+Jun 02, 2022 11:57:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 269 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+Jun 02, 2022 11:57:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 269 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 15 more
+
+Jun 02, 2022 11:57:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 270 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 15 more
+
+Jun 02, 2022 11:57:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 269 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 15 more
+
+Jun 02, 2022 11:57:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 268 is not a valid line number, allowed [0..260]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 15 more
+
+2022.06.02 11:57:41 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 11:57:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = (2020, 1, 1)
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = (2020, 1, 1)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = (2020, 1, 1)
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.Init$.internal$265(Trees.scala:494)
+	at scala.meta.Init$.apply(Trees.scala:493)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:3821)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:3799)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:3787)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:3878)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:3888)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:3936)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:3924)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$4(ScalametaParser.scala:2077)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2075)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:334)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:344)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2043)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2041)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2007)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1568)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1457)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1339)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1367)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:3265)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:339)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:341)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3251)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3215)
+	at scala.meta.internal.parsers.ScalametaParser.localDef(ScalametaParser.scala:4207)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$1(ScalametaParser.scala:4233)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$1$adapted(ScalametaParser.scala:4218)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:516)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4218)
+	at scala.meta.internal.parsers.ScalametaParser.blockWithStats$1(ScalametaParser.scala:2266)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2268)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2265)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2262)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2072)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:334)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:344)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2043)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2041)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2007)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1568)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1457)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1339)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1367)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3493)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:339)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:341)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3435)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3380)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3221)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3200)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4162)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4156)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4108)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1(ScalametaParser.scala:4148)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1$adapted(ScalametaParser.scala:4147)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:516)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4147)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:231)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:227)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4001)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:3982)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:3956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:3702)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:339)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:341)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:3694)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3571)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3552)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4127)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4115)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4108)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$14(ScalametaParser.scala:4324)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4324)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4279)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4272)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4272)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4277)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:129)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:56)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:51)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:129)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:126)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:119)
+	at scala.meta.internal.parsing.Trees.didChange(Trees.scala:89)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:307)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.06.02 11:57:56 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:58:14 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 11:58:18 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 11:59:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 433
+2022.06.02 12:01:29 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:04:16 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:04:53 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:05:00 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:05:02 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:05:24 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:05:43 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:06:23 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:06:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:08:05 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:08:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:08:44 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:09:15 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:09:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:10:16 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:11:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:13:20 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:13:49 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:14:03 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:14:24 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:14:42 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:15:01 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:15:15 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:15:31 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:15:35 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:16:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:20:19 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:20:54 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:21:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:21:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:22:38 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:23:08 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:23:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:24:28 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:24:32 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:24:53 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:24:56 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:25:02 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:25:18 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:25:29 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:27:12 INFO  shutting down Metals
+2022.06.02 12:28:51 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 12:28:52 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 12:28:52 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 12:28:55 INFO  time: initialize in 2.97s
+2022.06.02 12:28:55 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 12:28:55 WARN  Build server is not auto-connectable.
+2022.06.02 12:28:55 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 12:28:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:29:01 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 12:29:04 INFO  time: code lens generation in 2.71s
+2022.06.02 12:29:04 INFO  time: code lens generation in 2.7s
+2022.06.02 12:29:04 INFO  time: code lens generation in 2.71s
+2022.06.02 12:29:04 INFO  time: code lens generation in 2.7s
+2022.06.02 12:29:22 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:30:12 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:31:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:31:42 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:32:50 INFO  shutting down Metals
+2022.06.02 12:43:35 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 12:43:36 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 12:43:36 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 12:43:39 INFO  time: initialize in 2.95s
+2022.06.02 12:43:39 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 12:43:39 WARN  Build server is not auto-connectable.
+2022.06.02 12:43:39 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 12:43:42 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:43:45 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 12:43:49 INFO  time: code lens generation in 2.41s
+2022.06.02 12:43:49 INFO  time: code lens generation in 2.87s
+2022.06.02 12:43:49 INFO  time: code lens generation in 2.42s
+2022.06.02 12:43:49 INFO  time: code lens generation in 1.9s
+2022.06.02 12:43:49 INFO  time: code lens generation in 1.91s
+2022.06.02 12:43:49 INFO  time: code lens generation in 7.67s
+2022.06.02 12:43:49 INFO  time: code lens generation in 2.9s
+2022.06.02 12:43:49 INFO  time: code lens generation in 7.69s
+2022.06.02 12:43:49 INFO  time: code lens generation in 7.69s
+2022.06.02 12:43:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:49:38 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 12:49:38 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 12:49:38 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 12:49:41 INFO  time: initialize in 2.37s
+2022.06.02 12:49:44 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 12:49:44 WARN  Build server is not auto-connectable.
+2022.06.02 12:49:44 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 12:49:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 12:49:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Jun 02, 2022 12:49:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+2022.06.02 12:49:48 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 12:49:51 INFO  time: code lens generation in 1.43s
+2022.06.02 12:49:51 INFO  time: code lens generation in 4.52s
+2022.06.02 12:49:51 INFO  time: code lens generation in 4.52s
+2022.06.02 12:49:51 INFO  time: code lens generation in 4.51s
+2022.06.02 12:49:51 INFO  time: code lens generation in 1.44s
+2022.06.02 12:51:29 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:51:47 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:52:12 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:54:14 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:55:20 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:55:56 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:56:40 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:56:50 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:56:57 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:57:11 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:57:18 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:58:08 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:58:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:59:00 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 12:59:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:00:19 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:00:28 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:00:42 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:00:47 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:01:12 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:09:15 INFO  shutting down Metals
+2022.06.02 13:14:39 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 13:14:39 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 13:14:39 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 13:14:42 INFO  time: initialize in 2.63s
+2022.06.02 13:14:42 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 13:14:42 WARN  Build server is not auto-connectable.
+2022.06.02 13:14:42 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 13:14:44 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:14:47 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 13:14:50 INFO  shutting down Metals
+2022.06.02 13:14:51 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 13:26:43 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 13:26:43 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 13:26:43 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 13:26:46 INFO  time: initialize in 2.84s
+2022.06.02 13:26:46 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 13:26:46 WARN  Build server is not auto-connectable.
+2022.06.02 13:26:46 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 13:26:48 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:26:51 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 13:26:54 INFO  time: code lens generation in 5.2s
+2022.06.02 13:26:54 INFO  time: code lens generation in 5.2s
+2022.06.02 13:26:54 INFO  time: code lens generation in 5.2s
+2022.06.02 13:27:00 INFO  shutting down Metals
+2022.06.02 13:27:53 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 13:27:53 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 13:27:53 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 13:27:56 INFO  time: initialize in 2.71s
+2022.06.02 13:27:56 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 13:27:56 WARN  Build server is not auto-connectable.
+2022.06.02 13:27:56 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 13:27:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:28:02 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+Jun 02, 2022 1:28:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+Jun 02, 2022 1:28:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+2022.06.02 13:28:05 INFO  time: code lens generation in 1.09s
+2022.06.02 13:28:05 INFO  time: code lens generation in 5.14s
+2022.06.02 13:28:05 INFO  time: code lens generation in 2.6s
+2022.06.02 13:28:05 INFO  time: code lens generation in 2.09s
+2022.06.02 13:28:05 INFO  time: code lens generation in 6.3s
+2022.06.02 13:28:05 INFO  time: code lens generation in 2.85s
+2022.06.02 13:28:05 INFO  time: code lens generation in 2.63s
+2022.06.02 13:28:05 INFO  time: code lens generation in 6.32s
+2022.06.02 13:28:05 INFO  time: code lens generation in 2.62s
+2022.06.02 13:28:05 INFO  time: code lens generation in 2.72s
+2022.06.02 13:28:05 INFO  time: code lens generation in 2.7s
+2022.06.02 13:28:05 INFO  time: code lens generation in 1.79s
+2022.06.02 13:28:05 INFO  time: code lens generation in 2.13s
+2022.06.02 13:28:05 INFO  time: code lens generation in 1.13s
+2022.06.02 13:28:05 INFO  time: code lens generation in 1.79s
+2022.06.02 13:28:05 INFO  time: code lens generation in 5.18s
+2022.06.02 13:28:17 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:28:22 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:28:44 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:29:01 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:29:14 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:29:25 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:29:53 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:30:17 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:30:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:34:27 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:34:47 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:35:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:35:31 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 1:36:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = (0)
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = (0)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable
+found that scala.meta.internal.trees.`package`.XtensionTreesType(tpe).isConstructable is false
+where tpe = (0)
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.Init$.internal$265(Trees.scala:494)
+	at scala.meta.Init$.apply(Trees.scala:493)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:3821)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:3799)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:3787)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:3878)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:3888)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:3936)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:3924)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$4(ScalametaParser.scala:2077)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2075)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:334)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:344)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2043)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2041)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2007)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1568)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1457)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExpr(ScalametaParser.scala:2229)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$argumentExprsWithUsing$2(ScalametaParser.scala:2243)
+	at scala.meta.internal.parsers.ScalametaParser.iter$1(ScalametaParser.scala:600)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$tokenSeparated$1(ScalametaParser.scala:606)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$tokenSeparated$1$adapted(ScalametaParser.scala:593)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:516)
+	at scala.meta.internal.parsers.ScalametaParser.tokenSeparated(ScalametaParser.scala:593)
+	at scala.meta.internal.parsers.ScalametaParser.commaSeparated(ScalametaParser.scala:610)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$argumentExprsWithUsing$1(ScalametaParser.scala:2243)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$inParensOnOpen(ScalametaParser.scala:218)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprsWithUsing(ScalametaParser.scala:2236)
+	at scala.meta.internal.parsers.ScalametaParser.argumentExprs(ScalametaParser.scala:2249)
+	at scala.meta.internal.parsers.ScalametaParser.body$4(ScalametaParser.scala:3814)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$initRest$1(ScalametaParser.scala:3819)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.initRest(ScalametaParser.scala:3799)
+	at scala.meta.internal.parsers.ScalametaParser.initInsideTemplate(ScalametaParser.scala:3787)
+	at scala.meta.internal.parsers.ScalametaParser.init(ScalametaParser.scala:3878)
+	at scala.meta.internal.parsers.ScalametaParser.templateParents(ScalametaParser.scala:3888)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$template$1(ScalametaParser.scala:3936)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.template(ScalametaParser.scala:3924)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$4(ScalametaParser.scala:2077)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2075)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:334)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:344)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2043)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2041)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2007)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1568)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1457)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1339)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1367)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:3265)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:339)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:341)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3251)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3215)
+	at scala.meta.internal.parsers.ScalametaParser.localDef(ScalametaParser.scala:4207)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$1(ScalametaParser.scala:4233)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$1$adapted(ScalametaParser.scala:4218)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:516)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4218)
+	at scala.meta.internal.parsers.ScalametaParser.blockWithStats$1(ScalametaParser.scala:2266)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2268)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2265)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2262)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2072)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:334)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:344)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2043)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2041)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2007)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1568)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1457)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1339)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1723)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1457)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1339)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1367)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$patDefOrDcl$1(ScalametaParser.scala:3265)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:339)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:341)
+	at scala.meta.internal.parsers.ScalametaParser.patDefOrDcl(ScalametaParser.scala:3251)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3215)
+	at scala.meta.internal.parsers.ScalametaParser.localDef(ScalametaParser.scala:4207)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$1(ScalametaParser.scala:4233)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$blockStatSeq$1$adapted(ScalametaParser.scala:4218)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:516)
+	at scala.meta.internal.parsers.ScalametaParser.blockStatSeq(ScalametaParser.scala:4218)
+	at scala.meta.internal.parsers.ScalametaParser.blockWithStats$1(ScalametaParser.scala:2266)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$block$1(ScalametaParser.scala:2268)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.block(ScalametaParser.scala:2265)
+	at scala.meta.internal.parsers.ScalametaParser.blockExpr(ScalametaParser.scala:2262)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$simpleExpr0$1(ScalametaParser.scala:2072)
+	at scala.meta.internal.parsers.ScalametaParser.atPosTry(ScalametaParser.scala:334)
+	at scala.meta.internal.parsers.ScalametaParser.autoPosTry(ScalametaParser.scala:344)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr0(ScalametaParser.scala:2043)
+	at scala.meta.internal.parsers.ScalametaParser.simpleExpr(ScalametaParser.scala:2041)
+	at scala.meta.internal.parsers.ScalametaParser.prefixExpr(ScalametaParser.scala:2025)
+	at scala.meta.internal.parsers.ScalametaParser.postfixExpr(ScalametaParser.scala:2007)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1568)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1457)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1339)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1367)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3493)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:339)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:341)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3435)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3380)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3221)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3200)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4162)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4156)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4108)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1(ScalametaParser.scala:4148)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1$adapted(ScalametaParser.scala:4147)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:516)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4147)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:231)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:227)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:3993)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4001)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:3982)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:3956)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:3702)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:339)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:341)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:3694)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3571)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3552)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4127)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4115)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4108)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$14(ScalametaParser.scala:4324)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4324)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4279)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4272)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:296)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:337)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4272)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4277)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:129)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:56)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:51)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:129)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:126)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:119)
+	at scala.meta.internal.parsing.Trees.didChange(Trees.scala:89)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:307)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.06.02 13:36:48 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:39:02 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:39:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:41:17 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:41:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:42:30 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:42:39 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:42:48 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:43:03 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:43:31 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:43:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:44:14 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:45:05 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:45:23 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:45:37 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:45:56 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:46:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:46:25 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:46:40 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:46:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:48:36 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:48:41 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:49:33 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:50:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:50:25 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:51:10 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:51:44 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:51:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:52:56 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:53:14 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:53:22 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:54:25 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:54:34 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:55:24 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 13:55:40 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:00:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:01:14 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+Jun 02, 2022 2:02:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4714
+2022.06.02 14:02:22 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:02:58 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:03:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:04:12 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:04:40 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:05:12 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:05:51 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:06:20 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:07:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:07:59 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:08:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:09:21 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:10:06 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:10:29 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:11:02 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:11:26 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:12:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:12:36 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:12:41 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:12:46 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 14:14:35 INFO  shutting down Metals
+2022.06.02 15:01:03 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.02 15:01:04 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.02 15:01:04 INFO  Started: Metals version 0.11.5 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.02 15:01:06 INFO  time: initialize in 2.33s
+2022.06.02 15:01:06 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.02 15:01:06 WARN  Build server is not auto-connectable.
+2022.06.02 15:01:06 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.02 15:01:09 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala
+2022.06.02 15:01:12 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.02 15:01:15 INFO  time: code lens generation in 5.73s
+2022.06.02 15:01:15 INFO  time: code lens generation in 5.73s
+2022.06.02 15:01:15 INFO  time: code lens generation in 5.73s
+2022.06.02 15:01:30 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Form8949.scala
+2022.06.02 15:01:32 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Form8949.scala
+2022.06.02 15:01:54 INFO  shutting down Metals
+2022.06.07 16:28:48 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/ruslan/Documents/projects/apps-js/.metals/lsp.trace.json or /home/ruslan/.cache/metals/lsp.trace.json
+2022.06.07 16:28:49 INFO  logging to file /home/ruslan/Documents/projects/apps-js/.metals/metals.log
+2022.06.07 16:28:49 INFO  Started: Metals version 0.11.6 in workspace '/home/ruslan/Documents/projects/apps-js' for client Visual Studio Code 1.62.3.
+2022.06.07 16:28:51 INFO  time: initialize in 1.57s
+2022.06.07 16:28:51 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.06.07 16:28:51 WARN  Build server is not auto-connectable.
+2022.06.07 16:28:51 WARN  no build tool detected in workspace '/home/ruslan/Documents/projects/apps-js'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.06.07 16:28:54 WARN  no build target for: /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Form8949.scala
+2022.06.07 16:29:44 INFO  no build target found for /home/ruslan/Documents/projects/apps-js/miscellaneous/DIFFERENT_STUFF/scala-node/hello-world-template/src/main/scala/Form8949.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.06.07 20:02:59 INFO  shutting down Metals
