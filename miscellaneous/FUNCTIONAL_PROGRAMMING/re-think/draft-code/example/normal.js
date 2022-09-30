@@ -119,3 +119,4 @@ const depsColumnifyDataF = fnDepsColumnifyDataF(
 depsColumnifyDataF
   .map(columnify)
   .fork(logger('err while logging columns'), logger('worked with success'));
+// .fork(logger('err while logging columns'), console.table);
